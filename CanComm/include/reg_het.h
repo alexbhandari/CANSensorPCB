@@ -52,8 +52,6 @@
 #include "sys_common.h"
 #include "reg_gio.h"
 
-
-
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -108,28 +106,70 @@ typedef volatile struct hetBase
     uint32   rsvd5; /**< 0x0088: Reserved                             */
     uint32 LBPSEL;  /**< 0x008C: Loop back pair select register       */
     uint32 LBPDIR;  /**< 0x0090: Loop back pair direction register    */
+    uint32 PINDIS;  /**< 0x0094: Pin disable register                 */
 } hetBASE_t;
 
 
-/** @def hetREG
+/** @struct hetInstructionBase
+*   @brief HET Instruction Definition
+*
+*   This structure is used to access the HET RAM.
+*/
+/** @typedef hetINSTRUCTION_t
+*   @brief HET Instruction Type Definition
+*
+*   This type is used to access a HET Instruction.
+*/
+typedef volatile struct hetInstructionBase
+{
+    uint32 Program;
+    uint32 Control;
+    uint32 Data;
+    uint32   rsvd1;
+} hetINSTRUCTION_t;
+
+
+/** @struct hetRamBase
+*   @brief HET RAM Definition
+*
+*   This structure is used to access the HET RAM.
+*/
+/** @typedef hetRAMBASE_t
+*   @brief HET RAM Type Definition
+*
+*   This type is used to access the HET RAM.
+*/
+typedef volatile struct het1RamBase
+{
+    hetINSTRUCTION_t Instruction[160U];
+} hetRAMBASE_t;
+
+
+/** @def hetREG1
 *   @brief HET Register Frame Pointer
 *
 *   This pointer is used by the HET driver to access the het module registers.
 */
-#define hetREG ((hetBASE_t *)0xFFF7B800U)
+#define hetREG1 ((hetBASE_t *)0xFFF7B800U)
 
 
-/** @def hetPORT
+/** @def hetPORT1
 *   @brief HET GIO Port Register Pointer
 *
-*   Pointer used by the GIO driver to access I/O PORT of HET
+*   Pointer used by the GIO driver to access I/O PORT of HET1
 *   (use the GIO drivers to access the port pins).
 */
-#define hetPORT ((gioPORT_t *)0xFFF7B84CU)
+#define hetPORT1 ((gioPORT_t *)0xFFF7B84CU)
 
+/** @def hetRAM1
+*   @brief NHET1 RAM Pointer
+*
+*   This pointer is used by the HET driver to access the NHET1 memory.
+*/
+#define hetRAM1 ((hetRAMBASE_t *)0xFF460000U)
 
-
-#define hetRAM ((hetRAMBASE_t *)0xFF460000U)
+#define NHET1RAMPARLOC	(*(volatile uint32 *)0xFF462000U)
+#define NHET1RAMLOC		(*(volatile uint32 *)0xFF460000U)
 
 /* USER CODE BEGIN (1) */
 /* USER CODE END */

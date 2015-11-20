@@ -42,6 +42,9 @@
 ;-------------------------------------------------------------------------------
 ; Initialize Pmu
 ; Note: It will reset all counters
+; SourceId : PMU_SourceId_001
+; DesignId : PMU_DesignId_001
+; Requirements : HL_SR484
 
     .def     _pmuInit_
     .asmfunc
@@ -81,6 +84,9 @@ _pmuInit_
 ;-------------------------------------------------------------------------------
 ; Enable Counters Global [Cycle, Event [0..2]]
 ; Note: It will reset all counters
+; SourceId : PMU_SourceId_002
+; DesignId : PMU_DesignId_002
+; Requirements : HL_SR485
 
     .def     _pmuEnableCountersGlobal_
     .asmfunc
@@ -98,6 +104,9 @@ _pmuEnableCountersGlobal_
 
 ;-------------------------------------------------------------------------------
 ; Disable Counters Global [Cycle, Event [0..2]]
+; SourceId : PMU_SourceId_003
+; DesignId : PMU_DesignId_003
+; Requirements : HL_SR485
 
     .def     _pmuDisableCountersGlobal_
     .asmfunc
@@ -115,6 +124,9 @@ _pmuDisableCountersGlobal_
 
 ;-------------------------------------------------------------------------------
 ; Reset Cycle Counter
+; SourceId : PMU_SourceId_004
+; DesignId : PMU_DesignId_004
+; Requirements : HL_SR485
 
     .def     _pmuResetCycleCounter_
     .asmfunc
@@ -132,6 +144,9 @@ _pmuResetCycleCounter_
 
 ;-------------------------------------------------------------------------------
 ; Reset Event Counters [0..2]
+; SourceId : PMU_SourceId_005
+; DesignId : PMU_DesignId_005
+; Requirements : HL_SR485
 
     .def     _pmuResetEventCounters_
     .asmfunc
@@ -149,6 +164,9 @@ _pmuResetEventCounters_
 
 ;-------------------------------------------------------------------------------
 ; Reset Cycle Counter abd Event Counters [0..2]
+; SourceId : PMU_SourceId_006
+; DesignId : PMU_DesignId_006
+; Requirements : HL_SR485
 
     .def     _pmuResetCounters_
     .asmfunc
@@ -166,6 +184,9 @@ _pmuResetCounters_
 
 ;-------------------------------------------------------------------------------
 ; Start Counters [Cycle, 0..2]
+; SourceId : PMU_SourceId_007
+; DesignId : PMU_DesignId_007
+; Requirements : HL_SR485
 
     .def     _pmuStartCounters_
     .asmfunc
@@ -179,6 +200,9 @@ _pmuStartCounters_
 
 ;-------------------------------------------------------------------------------
 ; Stop Counters [Cycle, 0..2]
+; SourceId : PMU_SourceId_008
+; DesignId : PMU_DesignId_008
+; Requirements : HL_SR485
 
     .def     _pmuStopCounters_
     .asmfunc
@@ -192,6 +216,9 @@ _pmuStopCounters_
 
 ;-------------------------------------------------------------------------------
 ; Set Count event
+; SourceId : PMU_SourceId_009
+; DesignId : PMU_DesignId_009
+; Requirements : HL_SR485
 
     .def     _pmuSetCountEvent_
     .asmfunc
@@ -206,6 +233,9 @@ _pmuSetCountEvent_
 
 ;-------------------------------------------------------------------------------
 ; Get Cycle Count
+; SourceId : PMU_SourceId_010
+; DesignId : PMU_DesignId_010
+; Requirements : HL_SR486
 
     .def     _pmuGetCycleCount_
     .asmfunc
@@ -219,6 +249,9 @@ _pmuGetCycleCount_
 
 ;-------------------------------------------------------------------------------
 ; Get Event Counter Count Value
+; SourceId : PMU_SourceId_011
+; DesignId : PMU_DesignId_011
+; Requirements : HL_SR486
 
     .def     _pmuGetEventCount_
     .asmfunc
@@ -233,6 +266,9 @@ _pmuGetEventCount_
 
 ;-------------------------------------------------------------------------------
 ; Get Overflow Flags
+; SourceId : PMU_SourceId_012
+; DesignId : PMU_DesignId_012
+; Requirements : HL_SR486
 
     .def     _pmuGetOverflow_
     .asmfunc

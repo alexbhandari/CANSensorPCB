@@ -8,7 +8,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com 
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -42,16 +42,20 @@
 */
 
 
+#include "sys_common.h"
+#include "sys_vim.h"
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
-
 
 /* Phantom Interrupt Handler */
 
 /* USER CODE BEGIN (1) */
 /* USER CODE END */
 
+#pragma CODE_STATE(phantomInterrupt, 32)
 #pragma INTERRUPT(phantomInterrupt, IRQ)
+#pragma WEAK(phantomInterrupt)
 
 void phantomInterrupt(void)
 {

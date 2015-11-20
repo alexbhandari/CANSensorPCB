@@ -10,7 +10,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com 
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -49,6 +49,9 @@
 
 #include "hal_stdtypes.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -71,8 +74,8 @@ typedef boolean tBoolean;
 */
 typedef enum loopBackType 
 {
-    Digital = 0U, 
-    Analog = 1U
+    Digital_Lbk = 0U, 
+    Analog_Lbk = 1U
 }loopBackType_t;
 
 /** @enum config_value_type
@@ -90,10 +93,10 @@ typedef enum config_value_type
 }config_value_type_t;
 
 #ifndef __little_endian__
-#define __little_endian__  0
+#define __little_endian__  1
 #endif
 #ifndef __LITTLE_ENDIAN__
-#define __LITTLE_ENDIAN__  0
+#define __LITTLE_ENDIAN__  1
 #endif
 
 /* USER CODE BEGIN (1) */
@@ -116,5 +119,12 @@ typedef enum config_value_type
 
 /* USER CODE BEGIN (2) */
 /* USER CODE END */
+
+/* USER CODE BEGIN (3) */
+/* USER CODE END */
+#ifdef __cplusplus
+}
+#endif
+
 
 #endif

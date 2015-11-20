@@ -70,16 +70,18 @@
 typedef volatile struct gioBase
 {
     uint32 GCR0;      /**< 0x0000: Global Control Register */
-    uint32 PWDN;      /**< 0x0004: Power Down Register */
+    uint32   rsvd;    /**< 0x0004: Reserved*/
     uint32 INTDET;    /**< 0x0008: Interrupt Detect Register*/
     uint32 POL;       /**< 0x000C: Interrupt Polarity Register */
-    uint32 INTENASET; /**< 0x0010: Interrupt Enable Set Register */
-    uint32 INTENACLR; /**< 0x0014: Interrupt Enable Clear Register */
+    uint32 ENASET;    /**< 0x0010: Interrupt Enable Set Register */
+    uint32 ENACLR;    /**< 0x0014: Interrupt Enable Clear Register */
     uint32 LVLSET;    /**< 0x0018: Interrupt Priority Set Register */
     uint32 LVLCLR;    /**< 0x001C: Interrupt Priority Clear Register */
     uint32 FLG;       /**< 0x0020: Interrupt Flag Register */
-    uint32 OFFSET0;   /**< 0x0024: Interrupt Offset A Register */
-    uint32 OFFSET1;   /**< 0x0028: Interrupt Offset B Register */
+    uint32 OFF1;      /**< 0x0024: Interrupt Offset A Register */
+    uint32 OFF2;      /**< 0x0028: Interrupt Offset B Register */
+    uint32 EMU1;      /**< 0x002C: Emulation 1 Register */
+	uint32 EMU2;      /**< 0x0030: Emulation 2 Register */
 } gioBASE_t;
 
 
@@ -117,13 +119,6 @@ typedef volatile struct gioPort
 *   Pointer used by the GIO driver to access PORTA
 */
 #define gioPORTA ((gioPORT_t *)0xFFF7BC34U)
-
-/** @def gioPORTB
-*   @brief GIO Port (B) Register Pointer
-*
-*   Pointer used by the GIO driver to access PORTB
-*/
-#define gioPORTB ((gioPORT_t *)0xFFF7BC54U)
 
 /* USER CODE BEGIN (1) */
 /* USER CODE END */

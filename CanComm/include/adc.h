@@ -51,6 +51,9 @@
 
 #include "reg_adc.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
@@ -79,6 +82,11 @@
 */
 #define adcGROUP2 2U
 
+/** @def ADC_12_BIT_MODE
+*   @brief Alias name for ADC 12-bit mode of operation
+*/
+#define ADC_12_BIT_MODE 0x80000000U
+
 /** @enum adcResolution
 *   @brief Alias names for data resolution
 *   This enumeration is used to provide alias names for the data resolution:
@@ -86,7 +94,6 @@
 *     - 10 bit resolution
 *     - 8  bit resolution
 */
-
 enum adcResolution
 {
     ADC_12_BIT = 0x00000000U, /**< Alias for 12 bit data resolution */
@@ -122,35 +129,26 @@ enum adcConversionStatus
     ADC_CONVERSION_IS_FINISHED     = 8U  /**< Alias for current conversion is  finished    */
 };
 
-/** @enum adcHwTriggerSource
+/** @enum adc1HwTriggerSource
 *   @brief Alias names for hardware trigger source
 *   This enumeration is used to provide alias names for the hardware trigger sources:
-*     - event pin
-*     - 10 bit resolution
-*     - HET pin 8
-*     - HET pin 10
-*     - RTI compare 0 match
-*     - HET pin 17
-*     - HET pin 19 
-*     - GIO port b pin 0
-*     - GIO port b pin 1
 */
 
-enum adcHwTriggerSource
+enum adc1HwTriggerSource
 {
-    ADC_EVENT,     /**< Alias for event pin           */
-    ADC_HET8,      /**< Alias for HET pin 8           */
-    ADC_HET10,     /**< Alias for HET pin 10          */
-    ADC_RTI_COMP0, /**< Alias for RTI compare 0 match */
-    ADC_HET17,     /**< Alias for HET pin 17          */
-    ADC_HET19,     /**< Alias for HET pin 19          */
-    ADC_GIOB0,     /**< Alias for GIO port b pin 0    */
-    ADC_GIOB1      /**< Alias for GIO port b pin 1    */
+	ADC1_EVENT = 0U,       /**< Alias for event pin             */
+	ADC1_HET1_8 = 1U,      /**< Alias for HET1 pin 8            */
+	ADC1_HET1_10 = 2U,     /**< Alias for HET1 pin 10           */
+	ADC1_RTI_COMP0 = 3U,   /**< Alias for RTI compare 0 match   */
+	ADC1_HET1_12 = 4U,     /**< Alias for HET1 pin 12           */
+	ADC1_HET1_14 = 5U,     /**< Alias for HET1 pin 14           */
+	ADC1_HET1_17 = 6U,     /**< Alias for HET1 pin 17           */
+	ADC1_HET1_19 = 7U      /**< Alias for HET1 pin 19           */
 };
+
 
 /* USER CODE BEGIN (1) */
 /* USER CODE END */
-
 
 /** @struct adcData
 *   @brief ADC Conversion data structure
@@ -169,6 +167,25 @@ typedef struct adcData
 
 /* USER CODE BEGIN (2) */
 /* USER CODE END */
+typedef struct adc_config_reg
+{           
+    uint32 CONFIG_OPMODECR;
+    uint32 CONFIG_CLOCKCR;
+    uint32 CONFIG_GxMODECR[3U];
+    uint32 CONFIG_G0SRC;
+    uint32 CONFIG_G1SRC;
+    uint32 CONFIG_G2SRC;
+    uint32 CONFIG_BNDCR;
+    uint32 CONFIG_BNDEND;
+    uint32 CONFIG_G0SAMP;
+    uint32 CONFIG_G1SAMP;
+    uint32 CONFIG_G2SAMP;
+    uint32 CONFIG_G0SAMPDISEN;
+    uint32 CONFIG_G1SAMPDISEN;
+    uint32 CONFIG_G2SAMPDISEN;
+    uint32 CONFIG_PARCR;
+}adc_config_reg_t;
+
 
 /** 
  *  @defgroup ADC ADC
@@ -195,12 +212,16 @@ uint32  adcIsFifoFull(adcBASE_t *adc, uint32 group);
 uint32  adcIsConversionComplete(adcBASE_t *adc, uint32 group);
 void adcEnableNotification(adcBASE_t *adc, uint32 group);
 void adcDisableNotification(adcBASE_t *adc, uint32 group);
+void adcCalibration(adcBASE_t *adc);
+uint32 adcMidPointCalibration(adcBASE_t *adc);
+void adcSetEVTPin(adcBASE_t *adc, uint32 value);
+uint32 adcGetEVTPin(adcBASE_t *adc);
 
 /** @fn void adcNotification(adcBASE_t *adc, uint32 group)
 *   @brief Group notification
 *   @param[in] adc Pointer to ADC node:
 *              - adcREG1: ADC1 module pointer
-*              - adcREG2: ADC2 module pointer
+
 *   @param[in] group number of ADC node:
 *              - adcGROUP0: ADC event group
 *              - adcGROUP1: ADC group 1
@@ -214,5 +235,8 @@ void adcNotification(adcBASE_t *adc, uint32 group);
 /* USER CODE BEGIN (3) */
 /* USER CODE END */
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

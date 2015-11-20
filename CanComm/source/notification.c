@@ -12,7 +12,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com 
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -49,9 +49,15 @@
 /* Include Files */
 
 #include "esm.h"
+#include "sys_selftest.h"
 #include "can.h"
 
 /* USER CODE BEGIN (0) */
+
+extern uint32 tx_done;
+extern uint8 *tx_ptr;
+extern uint8 *rx_ptr;
+
 /* USER CODE END */
 #pragma WEAK(esmGroup1Notification)
 void esmGroup1Notification(uint32 channel)
@@ -63,7 +69,6 @@ void esmGroup1Notification(uint32 channel)
 
 /* USER CODE BEGIN (2) */
 /* USER CODE END */
-
 #pragma WEAK(esmGroup2Notification)
 void esmGroup2Notification(uint32 channel)
 {
@@ -74,39 +79,94 @@ void esmGroup2Notification(uint32 channel)
 
 /* USER CODE BEGIN (4) */
 /* USER CODE END */
+#pragma WEAK(memoryPort0TestFailNotification)
+void memoryPort0TestFailNotification(uint32 groupSelect, uint32 dataSelect, uint32 address, uint32 data)
+{
+/*  enter user code between the USER CODE BEGIN and USER CODE END. */
+/* USER CODE BEGIN (5) */
+/* USER CODE END */
+}
 
+/* USER CODE BEGIN (6) */
+/* USER CODE END */
+#pragma WEAK(memoryPort1TestFailNotification)
+void memoryPort1TestFailNotification(uint32 groupSelect, uint32 dataSelect, uint32 address, uint32 data)
+{
+/*  enter user code between the USER CODE BEGIN and USER CODE END. */
+/* USER CODE BEGIN (7) */
+/* USER CODE END */
+}
+
+/* USER CODE BEGIN (8) */
+/* USER CODE END */
 #pragma WEAK(canErrorNotification)
 void canErrorNotification(canBASE_t *node, uint32 notification)
 {
 /*  enter user code between the USER CODE BEGIN and USER CODE END. */
-/* USER CODE BEGIN (9) */
+/* USER CODE BEGIN (13) */
 /* USER CODE END */
 }
-
-/* USER CODE BEGIN (10) */
-/* USER CODE END */
-
-#pragma WEAK(canMessageNotification)
-void canMessageNotification(canBASE_t *node, uint32 messageBox)  
-{
-/*  enter user code between the USER CODE BEGIN and USER CODE END. */
-/* USER CODE BEGIN (11) */
-/* USER CODE END */
-}
-
-/* USER CODE BEGIN (12) */
-/* USER CODE END */
-
-/* USER CODE BEGIN (29) */
-/* USER CODE END */
 
 #pragma WEAK(canStatusChangeNotification)
 void canStatusChangeNotification(canBASE_t *node, uint32 notification)  
 {
 /*  enter user code between the USER CODE BEGIN and USER CODE END. */
-/* USER CODE BEGIN (30) */
+/* USER CODE BEGIN (14) */
 /* USER CODE END */
 }
 
-/* USER CODE BEGIN (31) */
+#pragma WEAK(canMessageNotification)
+void canMessageNotification(canBASE_t *node, uint32 messageBox)  
+{
+/*  enter user code between the USER CODE BEGIN and USER CODE END. */
+/* USER CODE BEGIN (15) */
+
+	/* node 1 - transfer request */
+	     if(node==canREG1)
+	     {
+	       tx_done=1; /* confirm transfer request */
+	     }
+
+	     /* node 2 - receive complete */
+	     if(node==canREG2)
+	     {
+	      while(!canIsRxMessageArrived(canREG2, canMESSAGE_BOX1));
+	      canGetData(canREG2, canMESSAGE_BOX1, rx_ptr); /* copy to RAM */
+	      rx_ptr +=8;
+	     }
+
+	    /* Note: since only message box 1 is used on both nodes we dont check it here.*/
+
+/* USER CODE END */
+}
+
+/* USER CODE BEGIN (16) */
+/* USER CODE END */
+
+
+
+
+/* USER CODE BEGIN (43) */
+/* USER CODE END */
+
+
+/* USER CODE BEGIN (47) */
+/* USER CODE END */
+
+
+/* USER CODE BEGIN (50) */
+/* USER CODE END */
+
+
+/* USER CODE BEGIN (53) */
+/* USER CODE END */
+
+
+/* USER CODE BEGIN (56) */
+/* USER CODE END */
+
+/* USER CODE BEGIN (58) */
+/* USER CODE END */
+
+/* USER CODE BEGIN (60) */
 /* USER CODE END */
