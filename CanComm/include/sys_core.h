@@ -10,7 +10,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com 
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -49,6 +49,10 @@
 
 #include "sys_common.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -65,7 +69,7 @@ void _coreInitRegisters_(void);
 */
 void _coreInitStackPointer_(void);
 
-/** @fn void _coreEnableVfp_(void)
+/** @fn void _getCPSRValue_(void)
 *   @brief Get CPSR Value
 */
 uint32 _getCPSRValue_(void);
@@ -79,11 +83,6 @@ void _gotoCPUIdle_(void);
 *   @brief Enable Irq offset propagation via Vic controller
 */
 void _coreEnableIrqVicOffset_(void);
-
-/** @fn void _coreEnableVfp_(void)
-*   @brief Enable vector floating point unit
-*/
-void _coreEnableVfp_(void);
 
 /** @fn void _coreEnableEventBusExport_(void)
 *   @brief Enable event bus export for external monitoring modules
@@ -270,8 +269,24 @@ void _disable_FIQ_interrupt_(void);
 */
 void _enable_interrupt_(void);
 
-/* USER CODE BEGIN (1) */
-/* USER CODE END */
+/** @fn void _esmCcmErrorsClear_(void)
+*   @brief Clears ESM Error caused due to CCM Errata in RevA Silicon
+*
+*   This function Clears ESM Error caused due to CCM Errata 
+*   in RevA Silicon immediately after powerup.
+*/
+void _esmCcmErrorsClear_(void);
 
+/** @fn void _errata_CORTEXR4_66_(void)
+*   @brief Work Around for Errata CORTEX-R4#66
+*
+*   This function Disable out-of-order completion for divide 
+*   instructions in Auxiliary Control register.
+*/
+void _errata_CORTEXR4_66_(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

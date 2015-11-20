@@ -47,7 +47,9 @@
 #include "reg_het.h"
 #include <string.h>
 
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
@@ -245,6 +247,7 @@
 
 /* USER CODE BEGIN (1) */
 /* USER CODE END */
+
 /** @struct hetBase
 *   @brief HET Register Definition
 *
@@ -293,41 +296,6 @@ enum hetPinSelect
 };
 
 
-/** @struct hetInstructionBase
-*   @brief HET Instruction Definition
-*
-*   This structure is used to access the HET RAM.
-*/
-/** @typedef hetINSTRUCTION_t
-*   @brief HET Instruction Type Definition
-*
-*   This type is used to access a HET Instruction.
-*/
-typedef volatile struct hetInstructionBase
-{
-    uint32 Program;
-    uint32 Control;
-    uint32 Data;
-    uint32   rsvd1;
-} hetINSTRUCTION_t;
-
-
-/** @struct hetRamBase
-*   @brief HET RAM Definition
-*
-*   This structure is used to access the HET RAM.
-*/
-/** @typedef hetRAMBASE_t
-*   @brief HET RAM Type Definition
-*
-*   This type is used to access the HET RAM.
-*/
-typedef volatile struct hetRamBase
-{
-    hetINSTRUCTION_t Instruction[128U];
-} hetRAMBASE_t;
-
-
 /** @struct hetSignal
 *   @brief HET Signal Definition
 *
@@ -344,9 +312,31 @@ typedef struct hetSignal
 	float64   period; /**< Period in us                   */
 } hetSIGNAL_t;
 
+
+/* Configuration registers */
+typedef struct het_config_reg
+{
+    uint32 CONFIG_GCR;
+    uint32 CONFIG_PFR;
+    uint32 CONFIG_INTENAS;
+    uint32 CONFIG_INTENAC;
+    uint32 CONFIG_PRY;
+    uint32 CONFIG_AND;
+    uint32 CONFIG_HRSH;
+    uint32 CONFIG_XOR;
+    uint32 CONFIG_DIR;
+    uint32 CONFIG_PDR;	
+	uint32 CONFIG_PULDIS;
+	uint32 CONFIG_PSL;	
+	uint32 CONFIG_PCR;	
+} het_config_reg_t;
+
+
+
+
 /** 
  *  @defgroup HET HET
- *  @brief Inter-Integrated Circuit Module.
+ *  @brief HighEnd Timer Module.
  *  
  *  The HET is a software-controlled timer with a dedicated specialized timer micromachine and a set of 30 instructions.
  *  The HET micromachine is connected to a port of up to 32 input/output (I/O) pins.
@@ -355,6 +345,8 @@ typedef struct hetSignal
  *   - reg_het.h
  *   - het.h
  *   - het.c
+ *   - reg_htu.h
+ *   - htu.h
  *   - std_nhet.h
  *  @addtogroup HET
  *  @{
@@ -364,33 +356,34 @@ typedef struct hetSignal
 void hetInit(void);
 
 /* PWM Interface Functions */
-void        pwmStart(uint32 pwm);
-void        pwmStop(uint32 pwm);
-void        pwmSetDuty(uint32 pwm, uint32 pwmDuty);
-void        pwmSetSignal(uint32 pwm, hetSIGNAL_t signal);
-hetSIGNAL_t pwmGetSignal(uint32 pwm);
-void        pwmEnableNotification(uint32 pwm, uint32 notification);
-void        pwmDisableNotification(uint32 pwm, uint32 notification);
-void        pwmNotification(uint32 pwm, uint32 notification);
+void   pwmStart(hetRAMBASE_t * hetRAM,uint32 pwm);
+void   pwmStop(hetRAMBASE_t * hetRAM,uint32 pwm);
+void   pwmSetDuty(hetRAMBASE_t * hetRAM,uint32 pwm, uint32 pwmDuty);
+void   pwmSetSignal(hetRAMBASE_t * hetRAM,uint32 pwm, hetSIGNAL_t signal);
+void   pwmGetSignal(hetRAMBASE_t * hetRAM,uint32 pwm, hetSIGNAL_t *signal);
+void   pwmEnableNotification(hetBASE_t * hetREG,uint32 pwm, uint32 notification);
+void   pwmDisableNotification(hetBASE_t * hetREG,uint32 pwm, uint32 notification);
+void   pwmNotification(hetBASE_t * hetREG,uint32 pwm, uint32 notification);
 
 /* Edge Interface Functions */
-void     edgeResetCounter(uint32 edge);
-uint32 edgeGetCounter(uint32 edge);
-void     edgeEnableNotification(uint32 edge);
-void     edgeDisableNotification(uint32 edge);
-void     edgeNotification(uint32 edge);
+void   edgeResetCounter(hetRAMBASE_t * hetRAM,uint32 edge);
+uint32 edgeGetCounter(hetRAMBASE_t * hetRAM,uint32 edge);
+void   edgeEnableNotification(hetBASE_t * hetREG,uint32 edge);
+void   edgeDisableNotification(hetBASE_t * hetREG,uint32 edge);
+void   edgeNotification(hetBASE_t * hetREG,uint32 edge);
 
 /* Captured Signal Interface Functions */
-hetSIGNAL_t capGetSignal(uint32 cap);
+void capGetSignal(hetRAMBASE_t * hetRAM, uint32 cap, hetSIGNAL_t *signal);
 
 /* Timestamp Interface Functions */
-void     hetResetTimestamp(void);
-uint32 hetGetTimestamp(void);
+void   hetResetTimestamp(hetRAMBASE_t * hetRAM);
+uint32 hetGetTimestamp(hetRAMBASE_t * hetRAM);
+
 /** @fn void hetNotification(hetBASE_t *het, uint32 offset)
 *   @brief het interrupt callback
 *   @param[in] het - Het module base address
-*              - hetREG: HET module base address pointer
-*            
+*              - hetREG1: HET1 module base address pointer
+*              - hetREG2: HET2 module base address pointer
 *   @param[in] offset - het interrupt offset / Source number
 *
 *   @note This function has to be provide by the user.
@@ -401,7 +394,12 @@ uint32 hetGetTimestamp(void);
 */
 void hetNotification(hetBASE_t *het, uint32 offset);
 
-/**@}*/
 /* USER CODE BEGIN (2) */
 /* USER CODE END */
+
+/**@}*/
+#ifdef __cplusplus
+}
+#endif /*extern "C" */
+
 #endif

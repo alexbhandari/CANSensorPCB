@@ -52,6 +52,9 @@
 
 #include "reg_rti.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
@@ -178,6 +181,86 @@
 /* USER CODE BEGIN (1) */
 /* USER CODE END */
 
+/** @enum dwdViolationTag
+*   @brief DWD Violations
+*/
+typedef enum dwdViolationTag
+{
+	NoTime_Violation = 0U,
+	Time_Window_Violation = 1U,
+	EndTime_Window_Violation = 2U,
+	StartTime_Window_Violation = 3U,
+	Key_Seq_Violation = 4U
+}dwdViolation_t;
+
+/* USER CODE BEGIN (2) */
+/* USER CODE END */
+
+/** @enum dwdResetStatusTag
+*   @brief DWD Reset status
+*/
+typedef enum dwdResetStatusTag
+{
+	No_Reset_Generated = 0U,
+	Reset_Generated    = 1U
+}dwdResetStatus_t;
+
+/* USER CODE BEGIN (3) */
+/* USER CODE END */
+
+/** @enum dwwdReactionTag
+*   @brief DWWD Reaction on vioaltion
+*/
+typedef enum dwwdReactionTag
+{
+	Generate_Reset = 0x00000005U,
+	Generate_NMI   = 0x0000000AU
+}dwwdReaction_t;
+
+/* USER CODE BEGIN (4) */
+/* USER CODE END */
+
+/** @enum dwwdWindowSizeTag
+*   @brief DWWD Window size
+*/
+typedef enum dwwdWindowSizeTag
+{
+	Size_100_Percent   = 0x00000005U,
+	Size_50_Percent    = 0x00000050U,
+	Size_25_Percent    = 0x00000500U,
+	Size_12_5_Percent  = 0x00005000U,
+	Size_6_25_Percent  = 0x00050000U,
+	Size_3_125_Percent = 0x00500000U
+}dwwdWindowSize_t;
+
+/* USER CODE BEGIN (5) */
+/* USER CODE END */
+
+/* Configuration registers */
+typedef struct rti_config_reg
+{
+    uint32 CONFIG_GCTRL;
+    uint32 CONFIG_TBCTRL;
+    uint32 CONFIG_CAPCTRL;
+    uint32 CONFIG_COMPCTRL;
+    uint32 CONFIG_UDCP0;
+    uint32 CONFIG_UDCP1;
+    uint32 CONFIG_UDCP2;
+    uint32 CONFIG_UDCP3;
+} rti_config_reg_t;
+
+
+/* Configuration registers initial value */
+#define RTI_GCTRL_CONFIGVALUE	0x00000000U
+#define RTI_TBCTRL_CONFIGVALUE  0x00000000U
+#define RTI_CAPCTRL_CONFIGVALUE  (0U | 0U)
+#define RTI_COMPCTRL_CONFIGVALUE (0x00001000U | 0x00000100U | 0x00000000U | 0x00000000U)
+#define RTI_UDCP0_CONFIGVALUE 10000U
+#define RTI_UDCP1_CONFIGVALUE 50000U
+#define RTI_UDCP2_CONFIGVALUE 80000U
+#define RTI_UDCP3_CONFIGVALUE 100000U
+
+
 /** 
  *  @defgroup RTI RTI
  *  @brief Real Time Interrupt Module.
@@ -205,7 +288,18 @@ uint32 rtiGetPeriod(uint32 compare);
 uint32 rtiGetCurrentTick(uint32 compare);
 void rtiEnableNotification(uint32 notification);
 void rtiDisableNotification(uint32 notification);
-
+void dwdInit(uint16 dwdPreload);
+void dwwdInit(dwwdReaction_t Reaction, uint16 dwdPreload, dwwdWindowSize_t Window_Size);
+uint32 dwwdGetCurrentDownCounter(void);
+void dwdCounterEnable(void);
+void dwdSetPreload(uint16 dwdPreload);
+void dwdReset(void);
+void dwdGenerateSysReset(void);
+boolean IsdwdKeySequenceCorrect(void);
+dwdResetStatus_t dwdGetStatus(void);
+dwdViolation_t dwdGetViolationStatus(void);
+void dwdClearFlag(void);
+void rtiGetConfigValue(rti_config_reg_t *config_reg, config_value_type_t type);
 /** @fn void rtiNotification(uint32 notification)
 *   @brief Notification of RTI module
 *   @param[in] notification Select notification of RTI module:
@@ -221,9 +315,12 @@ void rtiDisableNotification(uint32 notification);
 */
 void rtiNotification(uint32 notification);
 
-/**@}*/
-/* USER CODE BEGIN (2) */
+/* USER CODE BEGIN (6) */
 /* USER CODE END */
 
+/**@}*/
+#ifdef __cplusplus
+}
+#endif /*extern "C" */
 
 #endif

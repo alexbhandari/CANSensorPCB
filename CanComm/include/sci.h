@@ -46,6 +46,12 @@
 
 #include "reg_sci.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* USER CODE BEGIN (0) */
+/* USER CODE END */
 
 /** @enum sciIntFlags
 *   @brief Interrupt Flag Definitions
@@ -63,7 +69,82 @@ enum sciIntFlags
     SCI_BREAK_INT = 0x00000001U   /* break detect */
 };
 
+/** @def SCI_IDLE
+*   @brief Alias name for the SCI IDLE Flag
+*
+*   This is an alias name for the SCI IDLE Flag.
+*
+*/
+#define SCI_IDLE 0x00000004U
 
+/** @struct sciBase
+*   @brief SCI Register Definition
+*
+*   This structure is used to access the SCI module registers.
+*/
+/** @typedef sciBASE_t
+*   @brief SCI Register Frame Type Definition
+*
+*   This type is used to access the SCI Registers.
+*/
+
+enum sciPinSelect
+{
+    PIN_SCI_TX = 4U,
+    PIN_SCI_RX = 2U
+};
+
+
+/* Configuration registers */
+typedef struct sci_config_reg
+{
+    uint32 CONFIG_GCR0;
+    uint32 CONFIG_GCR1;
+    uint32 CONFIG_SETINT;
+    uint32 CONFIG_SETINTLVL;
+    uint32 CONFIG_FORMAT;
+    uint32 CONFIG_BRS;
+    uint32 CONFIG_PIO0;
+    uint32 CONFIG_PIO1;
+    uint32 CONFIG_PIO6;
+    uint32 CONFIG_PIO7;	
+	uint32 CONFIG_PIO8;
+} sci_config_reg_t;
+
+
+/* Configuration registers initial value for SCI*/
+#define SCILIN_GCR0_CONFIGVALUE       0x00000001U   
+#define SCILIN_GCR1_CONFIGVALUE       ((uint32)((uint32)1U << 5U) \
+                                      |(uint32)((uint32)(2U-1U) << 4U) \
+                                      |(uint32)((uint32)0U << 3U) \
+                                      |(uint32)((uint32)0U << 2U) \
+                                      |(uint32)((uint32)1U << 1U) \
+                                      |(uint32)((uint32)0U << 2U) \
+                                      |(uint32)(0x03000080U))
+									  
+#define SCILIN_SETINTLVL_CONFIGVALUE  ((uint32)((uint32)0U << 26U) \
+                                      |(uint32)((uint32)0U << 25U) \
+                                      |(uint32)((uint32)0U << 24U) \
+                                      |(uint32)((uint32)0U << 9U) \
+                                      |(uint32)((uint32)0U << 8U) \
+                                      |(uint32)((uint32)0U << 1U) \
+                                      |(uint32)((uint32)0U))
+
+#define SCILIN_SETINT_CONFIGVALUE     ((uint32)((uint32)0U << 26U) \
+                                      |(uint32)((uint32)0U << 25U) \
+                                      |(uint32)((uint32)0U << 24U) \
+                                      |(uint32)((uint32)0U << 9U) \
+                                      |(uint32)((uint32)0U << 1U) \
+                                      |(uint32)((uint32)0U << 0U))
+
+#define SCILIN_FORMAT_CONFIGVALUE     (8U - 1U)
+#define SCILIN_BRS_CONFIGVALUE        (650U)
+#define SCILIN_PIO0_CONFIGVALUE       ((uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U))
+#define SCILIN_PIO1_CONFIGVALUE       ((uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U))
+#define SCILIN_PIO6_CONFIGVALUE       ((uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U))
+#define SCILIN_PIO7_CONFIGVALUE       ((uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U))
+#define SCILIN_PIO8_CONFIGVALUE       ((uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U))
+ 
 /** 
  *  @defgroup SCI SCI
  *  @brief Serial Communication Interface Module.
@@ -87,13 +168,16 @@ uint32  sciIsTxReady(sciBASE_t *sci);
 void sciSendByte(sciBASE_t *sci, uint8 byte);
 void sciSend(sciBASE_t *sci, uint32 length, uint8 * data);
 uint32  sciIsRxReady(sciBASE_t *sci);
+uint32  sciIsIdleDetected(sciBASE_t *sci);
 uint32  sciRxError(sciBASE_t *sci);
 uint32  sciReceiveByte(sciBASE_t *sci);
 void sciReceive(sciBASE_t *sci, uint32 length, uint8 * data);
 void sciEnableNotification(sciBASE_t *sci, uint32 flags);
 void sciDisableNotification(sciBASE_t *sci, uint32 flags);
+void sciEnableLoopback(sciBASE_t *sci, loopBackType_t Loopbacktype);
+void sciDisableLoopback(sciBASE_t *sci);
 
-
+void scilinGetConfigValue(sci_config_reg_t *config_reg, config_value_type_t type);
 /** @fn void sciNotification(sciBASE_t *sci, uint32 flags)
 *   @brief Interrupt callback
 *   @param[in] sci   - sci module base address
@@ -105,5 +189,11 @@ void sciDisableNotification(sciBASE_t *sci, uint32 flags);
 */
 void sciNotification(sciBASE_t *sci, uint32 flags);
 
+/* USER CODE BEGIN (1) */
+/* USER CODE END */
 /**@}*/
+#ifdef __cplusplus
+}
+#endif
+
 #endif

@@ -10,7 +10,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com 
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -49,34 +49,46 @@
 
 #include "sys_common.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
 /** @def pmuCOUNTER0
-*   @brief pmu event counter 0
+*   @brief pmu event counter 0 mask
 *
-*   Alias for pmu event counter 0
+*   Alias for pmu event counter 0 mask
+*
+*	@Note: Use this macro as a parameter 'counters' in APIs _pmuStartCounters_ and _pmuStopCounters_
 */
 #define pmuCOUNTER0 0x00000001U
 
 /** @def pmuCOUNTER1
-*   @brief pmu event counter 1
+*   @brief pmu event counter 1 mask
 *
-*   Alias for pmu event counter 1
+*   Alias for pmu event counter 1 mask
+*
+*	@Note: Use this macro as a parameter 'counters' in APIs _pmuStartCounters_ and _pmuStopCounters_
 */
 #define pmuCOUNTER1 0x00000002U
 
 /** @def pmuCOUNTER2
-*   @brief pmu event counter 2
+*   @brief pmu event counter 2 mask
 *
-*   Alias for pmu event counter 2
+*   Alias for pmu event counter 2 mask
+*
+*	@Note: Use this macro as a parameter 'counters' in APIs _pmuStartCounters_ and _pmuStopCounters_
 */
 #define pmuCOUNTER2 0x00000004U
 
 /** @def pmuCYCLE_COUNTER
-*   @brief pmu cycle counter
+*   @brief pmu cycle counter mask
 *
-*   Alias for pmu event counter
+*   Alias for pmu event counter mask
+*
+*	@Note: Use this macro as a parameter 'counters' in APIs _pmuStartCounters_ and _pmuStopCounters_
 */
 #define pmuCYCLE_COUNTER 0x80000000U
 
@@ -220,5 +232,10 @@ uint32 _pmuGetEventCount_(uint32 counter);
 */
 uint32 _pmuGetOverflow_(void);
 
+/* USER CODE BEGIN (1) */
+/* USER CODE END */
 
+#ifdef __cplusplus
+}
+#endif /*extern "C" */
 #endif

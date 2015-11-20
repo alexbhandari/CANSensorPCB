@@ -96,11 +96,23 @@ typedef volatile struct rtiBase
                                     - 3: Compare 3                                       */
     uint32 TBLCOMP;        /**< 0x0070: External Clock Timebase Low Compare Register   */
     uint32 TBHCOMP;        /**< 0x0074: External Clock Timebase High Compare Register  */
-    uint32   rsvd3[2U];     /**< 0x0078: Reserved                                       */
-    uint32 SETINT;         /**< 0x0080: Set/Status Interrupt Register                  */
-    uint32 CLEARINT;       /**< 0x0084: Clear/Status Interrupt Register                */
+    uint32   rsvd3[2U];    /**< 0x0078: Reserved                                       */
+    uint32 SETINTENA;      /**< 0x0080: Set/Status Interrupt Register                  */
+    uint32 CLEARINTENA;    /**< 0x0084: Clear/Status Interrupt Register                */
     uint32 INTFLAG;        /**< 0x0088: Interrupt Flag Register                        */
     uint32   rsvd4;        /**< 0x008C: Reserved                                       */
+    uint32 DWDCTRL;        /**< 0x0090: Digital Watchdog Control Register   */
+    uint32 DWDPRLD;        /**< 0x0094: Digital Watchdog Preload Register */
+    uint32 WDSTATUS;       /**< 0x0098: Watchdog Status Register  */
+    uint32 WDKEY;          /**< 0x009C: Watchdog Key Register  */
+    uint32 DWDCNTR;        /**< 0x00A0: Digital Watchdog Down Counter   */
+    uint32 WWDRXNCTRL;     /**< 0x00A4: Digital Windowed Watchdog Reaction Control */
+    uint32 WWDSIZECTRL;    /**< 0x00A8: Digital Windowed Watchdog Window Size Control  */
+    uint32 INTCLRENABLE;   /**< 0x00AC: RTI Compare Interrupt Clear Enable Register  */
+    uint32 COMP0CLR;       /**< 0x00B0: RTI Compare 0 Clear Register   */
+    uint32 COMP1CLR;       /**< 0x00B4: RTI Compare 1 Clear Register */
+    uint32 COMP2CLR;       /**< 0x00B8: RTI Compare 2 Clear Register  */
+    uint32 COMP3CLR;       /**< 0x00BC: RTI Compare 3 Clear Register  */
 } rtiBASE_t;
 
 /** @def rtiREG1

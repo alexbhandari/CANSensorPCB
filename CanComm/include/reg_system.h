@@ -49,7 +49,7 @@
 #define __REG_SYSTEM_H__
 
 #include "sys_common.h"
-#include "gio.h"
+#include "reg_gio.h"
 
 
 /* System Register Frame 1 Definition */
@@ -74,9 +74,9 @@ typedef volatile struct systemBase1
     uint32 SYSPC7;                 /* 0x0018 */
     uint32 SYSPC8;                 /* 0x001C */
     uint32 SYSPC9;                 /* 0x0020 */
-    uint32 SSWPLL1;                /* 0x0024 */
-    uint32 SSWPLL2;                /* 0x0028 */
-    uint32 SSWPLL3;                /* 0x002C */
+    uint32   rsvd1;                /* 0x0024 */
+    uint32   rsvd2;                /* 0x0028 */
+    uint32   rsvd3;                /* 0x002C */
     uint32 CSDIS;                  /* 0x0030 */
     uint32 CSDISSET;               /* 0x0034 */
     uint32 CSDISCLR;               /* 0x0038 */
@@ -95,18 +95,18 @@ typedef volatile struct systemBase1
     uint32 MINISTAT;               /* 0x006C */
     uint32 PLLCTL1;                /* 0x0070 */
     uint32 PLLCTL2;                /* 0x0074 */
-    uint32 UERFLAG;                /* 0x0078 */
+    uint32 SYSPC10;                /* 0x0078 */
     uint32 DIEIDL;                 /* 0x007C */
     uint32 DIEIDH;                 /* 0x0080 */
-    uint32 VRCTL;                  /* 0x0084 */
+    uint32   rsvd4;                /* 0x0084 */
     uint32 LPOMONCTL;              /* 0x0088 */
     uint32 CLKTEST;                /* 0x008C */
     uint32 DFTCTRLREG1;            /* 0x0090 */
     uint32 DFTCTRLREG2;            /* 0x0094 */
-    uint32   rsvd1;                /* 0x0098 */
-    uint32   rsvd2;                /* 0x009C */
+    uint32   rsvd5;                /* 0x0098 */
+    uint32   rsvd6;                /* 0x009C */
     uint32 GPREG1;                 /* 0x00A0 */
-    uint32 BTRMSEL;                /* 0x00A4 */
+    uint32   rsvd7;                /* 0x00A4 */
     uint32 IMPFASTS;               /* 0x00A8 */
     uint32 IMPFTADD;               /* 0x00AC */
     uint32 SSISR1;                 /* 0x00B0 */
@@ -116,10 +116,10 @@ typedef volatile struct systemBase1
     uint32 RAMGCR;                 /* 0x00C0 */
     uint32 BMMCR1;                 /* 0x00C4 */
     uint32 BMMCR2;                 /* 0x00C8 */
-    uint32 MMUGCR;                 /* 0x00CC */
+    uint32 CPURSTCR;               /* 0x00CC */
 	uint32 CLKCNTL;                /* 0x00D0 */
     uint32 ECPCNTL;                /* 0x00D4 */
-    uint32 DSPGCR;                 /* 0x00D8 */
+    uint32   rsvd8;                /* 0x00D8 */
     uint32 DEVCR1;                 /* 0x00DC */
     uint32 SYSECR;                 /* 0x00E0 */
     uint32 SYSESR;                 /* 0x00E4 */
@@ -128,7 +128,6 @@ typedef volatile struct systemBase1
     uint32 DEV;                    /* 0x00F0 */
     uint32 SSIVEC;                 /* 0x00F4 */
     uint32 SSIF;                   /* 0x00F8 */
-    uint32 SSIR1;                  /* 0x00FC */	
 } systemBASE1_t;
 
 
@@ -150,7 +149,6 @@ typedef volatile struct systemBase1
 /* USER CODE BEGIN (0) */
 /* USER CODE END */
 
-
 /* System Register Frame 2 Definition */
 /** @struct systemBase2
 *   @brief System Register Frame 2 Definition
@@ -164,25 +162,18 @@ typedef volatile struct systemBase1
 */
 typedef volatile struct systemBase2
 {
-    uint32 PLLCTL3;        /* 0x0000 */
-    uint32   rsvd1;        /* 0x0004 */
+    uint32   rsvd1;        /* 0x0000 */
+    uint32   rsvd2;        /* 0x0004 */
     uint32 STCCLKDIV;      /* 0x0008 */
-    uint32 CLKHB_GLBREG;   /* 0x000C */
-    uint32 CLKHB_RTIDREG;  /* 0x0010 */
-    uint32 HBCD_STAT;      /* 0x0014 */
-    uint32   rsvd2;          /* 0x0018 */
-    uint32   rsvd3;          /* 0x001C */
-    uint32 CLKTRMI1;       /* 0x0020 */
-    uint32 ECPCNTRL0;      /* 0x0024 */
-    uint32 ECPCNTRL1;      /* 0x0028 */
-    uint32 ECPCNTRL2;      /* 0x002C */
-    uint32 ECPCNTRL3;      /* 0x0030 */
-    uint32   rsvd4;          /* 0x0034 */
-    uint32   rsvd5;          /* 0x0038 */
-    uint32 CLK2CNTRL;      /* 0x003C */
-    uint32 VCLKACON1;      /* 0x0040 */
+    uint32   rsvd3[25U];   /* 0x000C */
+    uint32  CLKSLIP;       /* 0x0070 */
+    uint32  rsvd7[30U];    /* 0x0074 */
+    uint32  EFC_CTLEN;     /* 0x00EC */
+    uint32  DIEIDL_REG0;   /* 0x00F0 */
+    uint32  DIEIDH_REG1;   /* 0x00F4 */
+    uint32  DIEIDL_REG2;   /* 0x00F8 */
+    uint32  DIEIDH_REG3;   /* 0x00FC */
 } systemBASE2_t;
-
 
 /** @def systemREG2
 *   @brief System Register Frame 2 Pointer

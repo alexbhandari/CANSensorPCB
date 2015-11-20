@@ -6,7 +6,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com 
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -44,11 +44,17 @@
 #ifndef __LIN_H__
 #define __LIN_H__
 
+/* USER CODE BEGIN (0) */
+/* USER CODE END */
+
 #include "reg_lin.h"
 
-#ifndef BOOL
-#define BOOL  unsigned char
+#ifdef __cplusplus
+extern "C" {
 #endif
+
+/* USER CODE BEGIN (1) */
+/* USER CODE END */
 
 /** @def LIN_BREAK_INT
 *   @brief Alias for break detect interrupt flag
@@ -191,10 +197,81 @@
 
 enum linPinSelect
 {
-    PIN_LIN_TX   = 4U,
+    PIN_LIN_TX = 4U,
     PIN_LIN_RX = 2U
 };
 
+/* Configuration registers */
+typedef struct lin_config_reg
+{
+    uint32 CONFIG_GCR0;
+    uint32 CONFIG_GCR1;
+    uint32 CONFIG_GCR2;
+    uint32 CONFIG_SETINT;
+    uint32 CONFIG_SETINTLVL;
+    uint32 CONFIG_FORMAT;
+    uint32 CONFIG_BRSR;
+    uint32 CONFIG_FUN;
+    uint32 CONFIG_DIR;
+    uint32 CONFIG_ODR;
+    uint32 CONFIG_PD;	
+	uint32 CONFIG_PSL;
+	uint32 CONFIG_COMP;	
+	uint32 CONFIG_MASK;
+	uint32 CONFIG_MBRSR;
+} lin_config_reg_t;
+
+/* Configuration registers initial value for LIN*/
+#define LIN_GCR0_CONFIGVALUE       0x00000001U   
+#define LIN_GCR1_CONFIGVALUE       (0x03000CE0U \
+                                 | (uint32)((uint32)1U << 12U) \
+                                 | (uint32)((uint32)0U << 2U))
+#define LIN_GCR2_CONFIGVALUE       0x00000000U       
+#define LIN_SETINTLVL_CONFIGVALUE  (0x00000000U \
+								  |	0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U)
+
+#define LIN_SETINT_CONFIGVALUE     (0x00000000U \
+								  |	0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U \
+                                  | 0x00000000U)
+
+#define LIN_FORMAT_CONFIGVALUE     ((uint32)((uint32)(8U - 1U) << 16U))
+#define LIN_BRSR_CONFIGVALUE       (312U)
+#define LIN_COMP_CONFIGVALUE       ((uint32)((uint32)(1U - 1U) << 8U) | (13U - 13U))
+#define LIN_MASK_CONFIGVALUE       ((uint32)((uint32)0xFFU << 16U) | 0xFFU)
+#define LIN_MBRSR_CONFIGVALUE      (4507U)
+#define LIN_FUN_CONFIGVALUE        (4U | 2U | 0U)
+#define LIN_DIR_CONFIGVALUE        (0U | 0U | 0U)
+#define LIN_ODR_CONFIGVALUE        (0U | 0U | 0U)
+#define LIN_PD_CONFIGVALUE         (0U | 0U | 0U)
+#define LIN_PSL_CONFIGVALUE        (4U | 2U | 1U)
+ 
 /** 
  *  @defgroup LIN LIN
  *  @brief Local Interconnect Network Module.
@@ -210,6 +287,7 @@ enum linPinSelect
  *  @addtogroup LIN
  *  @{
  */
+ 
 /* LIN Interface Functions */
 void     linInit(void);
 void     linSetFunctional(linBASE_t *lin, uint32 port);
@@ -217,15 +295,18 @@ void     linSendHeader(linBASE_t *lin, uint8 identifier);
 void     linSendWakupSignal(linBASE_t *lin);
 void     linEnterSleep(linBASE_t *lin);
 void     linSoftwareReset(linBASE_t *lin);
-uint32 linIsTxReady(linBASE_t *lin);
+uint32   linIsTxReady(linBASE_t *lin);
 void     linSetLength(linBASE_t *lin, uint32 length);
 void     linSend(linBASE_t *lin, uint8 * data);
-uint32 linIsRxReady(linBASE_t *lin);
-uint32 linTxRxError(linBASE_t *lin);
-uint32 linGetIdentifier(linBASE_t *lin);
+uint32   linIsRxReady(linBASE_t *lin);
+uint32   linTxRxError(linBASE_t *lin);
+uint32   linGetIdentifier(linBASE_t *lin);
 void     linGetData(linBASE_t *lin, uint8 * const data);
 void     linEnableNotification(linBASE_t *lin, uint32 flags);
 void     linDisableNotification(linBASE_t *lin, uint32 flags);
+void     linEnableLoopback(linBASE_t *lin, loopBackType_t Loopbacktype);
+void     linDisableLoopback(linBASE_t *lin);
+void     linGetConfigValue(lin_config_reg_t *config_reg, config_value_type_t type);
 uint32   linGetStatusFlag(linBASE_t *lin);
 void     linClearStatusFlag(linBASE_t *lin, uint32 flags);
 
@@ -239,5 +320,13 @@ void     linClearStatusFlag(linBASE_t *lin, uint32 flags);
 * interrupt flag register.
 */
 void linNotification(linBASE_t *lin, uint32 flags);
+
+/* USER CODE BEGIN (2) */
+/* USER CODE END */
+
 /**@}*/
+#ifdef __cplusplus
+}
+#endif
+
 #endif
