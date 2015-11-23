@@ -18,6 +18,7 @@ C_SRCS += \
 ../source/esm.c \
 ../source/notification.c \
 ../source/pinmux.c \
+../source/sci.c \
 ../source/sys_main.c \
 ../source/sys_pcr.c \
 ../source/sys_phantom.c \
@@ -32,6 +33,7 @@ OBJS += \
 ./source/esm.obj \
 ./source/notification.obj \
 ./source/pinmux.obj \
+./source/sci.obj \
 ./source/sys_core.obj \
 ./source/sys_intvecs.obj \
 ./source/sys_main.obj \
@@ -56,6 +58,7 @@ C_DEPS += \
 ./source/esm.pp \
 ./source/notification.pp \
 ./source/pinmux.pp \
+./source/sci.pp \
 ./source/sys_main.pp \
 ./source/sys_pcr.pp \
 ./source/sys_phantom.pp \
@@ -69,6 +72,7 @@ C_DEPS__QUOTED += \
 "source\esm.pp" \
 "source\notification.pp" \
 "source\pinmux.pp" \
+"source\sci.pp" \
 "source\sys_main.pp" \
 "source\sys_pcr.pp" \
 "source\sys_phantom.pp" \
@@ -83,6 +87,7 @@ OBJS__QUOTED += \
 "source\esm.obj" \
 "source\notification.obj" \
 "source\pinmux.obj" \
+"source\sci.obj" \
 "source\sys_core.obj" \
 "source\sys_intvecs.obj" \
 "source\sys_main.obj" \
@@ -107,6 +112,7 @@ C_SRCS__QUOTED += \
 "../source/esm.c" \
 "../source/notification.c" \
 "../source/pinmux.c" \
+"../source/sci.c" \
 "../source/sys_main.c" \
 "../source/sys_pcr.c" \
 "../source/sys_phantom.c" \

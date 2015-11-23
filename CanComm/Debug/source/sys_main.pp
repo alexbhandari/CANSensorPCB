@@ -9,16 +9,15 @@ source/sys_main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h
 source/sys_main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
 source/sys_main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/linkage.h
 source/sys_main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/_lock.h
-source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/system.h
-source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_system.h
-source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_gio.h
-source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_flash.h
-source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_tcram.h
 source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/can.h
 source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_can.h
 source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/esm.h
 source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_esm.h
 source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/sys_core.h
+source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/sci.h
+source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_sci.h
+source/sys_main.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_gio.h
+source/sys_main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h
 
 ../source/sys_main.c: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/sys_common.h: 
@@ -29,13 +28,12 @@ C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/yvals.h:
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/linkage.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/_lock.h: 
-C:/Users/Zoltan/TI_Workspace/CAN_example/include/system.h: 
-C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_system.h: 
-C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_gio.h: 
-C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_flash.h: 
-C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_tcram.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/can.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_can.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/esm.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_esm.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/sys_core.h: 
+C:/Users/Zoltan/TI_Workspace/CAN_example/include/sci.h: 
+C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_sci.h: 
+C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_gio.h: 
+C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdlib.h: 

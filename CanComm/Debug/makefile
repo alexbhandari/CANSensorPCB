@@ -15,6 +15,7 @@ ORDERED_OBJS += \
 "./source/esm.obj" \
 "./source/notification.obj" \
 "./source/pinmux.obj" \
+"./source/sci.obj" \
 "./source/sys_core.obj" \
 "./source/sys_intvecs.obj" \
 "./source/sys_main.obj" \
@@ -151,7 +152,7 @@ all: CAN_example.out
 CAN_example.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7R4 --code_state=32 --abi=eabi -me -g --diag_wrap=off --diag_warning=225 --display_error_number --enum_type=packed -z -m"CAN_example.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --xml_link_info="CAN_example_linkInfo.xml" --rom_model -o "CAN_example.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7R4 --code_state=32 --abi=eabi -me -g --diag_wrap=off --diag_warning=225 --display_error_number --enum_type=packed --printf_support=full -z -m"CAN_example.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --xml_link_info="CAN_example_linkInfo.xml" --rom_model -o "CAN_example.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -164,8 +165,8 @@ CAN_example.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "source\can.pp" "source\esm.pp" "source\notification.pp" "source\pinmux.pp" "source\sys_main.pp" "source\sys_pcr.pp" "source\sys_phantom.pp" "source\sys_selftest.pp" "source\sys_startup.pp" "source\sys_vim.pp" "source\system.pp" 
-	-$(RM) "source\can.obj" "source\dabort.obj" "source\esm.obj" "source\notification.obj" "source\pinmux.obj" "source\sys_core.obj" "source\sys_intvecs.obj" "source\sys_main.obj" "source\sys_mpu.obj" "source\sys_pcr.obj" "source\sys_phantom.obj" "source\sys_pmu.obj" "source\sys_selftest.obj" "source\sys_startup.obj" "source\sys_vim.obj" "source\system.obj" 
+	-$(RM) "source\can.pp" "source\esm.pp" "source\notification.pp" "source\pinmux.pp" "source\sci.pp" "source\sys_main.pp" "source\sys_pcr.pp" "source\sys_phantom.pp" "source\sys_selftest.pp" "source\sys_startup.pp" "source\sys_vim.pp" "source\system.pp" 
+	-$(RM) "source\can.obj" "source\dabort.obj" "source\esm.obj" "source\notification.obj" "source\pinmux.obj" "source\sci.obj" "source\sys_core.obj" "source\sys_intvecs.obj" "source\sys_main.obj" "source\sys_mpu.obj" "source\sys_pcr.obj" "source\sys_phantom.obj" "source\sys_pmu.obj" "source\sys_selftest.obj" "source\sys_startup.obj" "source\sys_vim.obj" "source\system.obj" 
 	-$(RM) "source\dabort.pp" "source\sys_core.pp" "source\sys_intvecs.pp" "source\sys_mpu.pp" "source\sys_pmu.pp" 
 	-@echo 'Finished clean'
 	-@echo ' '
