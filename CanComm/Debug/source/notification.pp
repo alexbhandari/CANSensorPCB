@@ -34,6 +34,8 @@ source/notification.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_he
 source/notification.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h
 source/notification.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/htu.h
 source/notification.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_htu.h
+source/notification.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/sci.h
+source/notification.obj: C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_sci.h
 
 ../source/notification.c: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/esm.h: 
@@ -69,3 +71,5 @@ C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_het.h:
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/htu.h: 
 C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_htu.h: 
+C:/Users/Zoltan/TI_Workspace/CAN_example/include/sci.h: 
+C:/Users/Zoltan/TI_Workspace/CAN_example/include/reg_sci.h: 
