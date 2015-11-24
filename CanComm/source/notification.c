@@ -117,7 +117,7 @@ void canStatusChangeNotification(canBASE_t *node, uint32 notification)
 }
 
 #pragma WEAK(canMessageNotification)
-void canMessageNotification(canBASE_t *node, uint32 messageBox)  
+void canMessageNotification(canBASE_t *node, uint32 messageBox)  /* zoltan - i guess this method must be called in the interupt handeler, its not called in sys_main. */
 {
 /*  enter user code between the USER CODE BEGIN and USER CODE END. */
 /* USER CODE BEGIN (15) */
