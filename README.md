@@ -1,7 +1,11 @@
-# TMS570-CAN-ADC
+# RM42 CAN Sensor Node
+Performs analog to digital to CAN protocol conversion.
 
-Generated using http://www.ti.com/tool/halcogen
+## PCB Design
+Eagle
 
-Compile using http://www.ti.com/tool/ccstudio
+## Code
+HalCoGen: Generated using http://www.ti.com/tool/halcogen
+IDE: CCS http://www.ti.com/tool/ccstudio
 
-Used for chip: TMS570ls0432
+Used for chip: RM42L432BPZT
