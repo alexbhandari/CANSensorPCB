@@ -7907,6 +7907,7 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <part name="D1" library="docu-dummy" deviceset="DIODE" device=""/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0402" value="499k"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7921,6 +7922,7 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <text x="487.68" y="76.2" size="5.08" layer="91">Transceivers</text>
 <text x="373.38" y="78.74" size="5.08" layer="91">Microchip</text>
 <text x="469.9" y="-48.26" size="1.778" layer="91">high speed mode</text>
+<text x="462.28" y="66.04" size="1.27" layer="91">need to decouple +5V more and address stability of ECU supply</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="340.36" y="53.34"/>
@@ -7968,6 +7970,7 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <instance part="D1" gate="G$1" x="86.36" y="-33.02" rot="R180"/>
 <instance part="R7" gate="G$1" x="76.2" y="-25.4" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="76.2" y="-15.24"/>
+<instance part="P+3" gate="1" x="38.1" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -8073,46 +8076,6 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="VIN" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="VIN1"/>
-<wire x1="104.14" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="VIN1_2"/>
-<wire x1="101.6" y1="12.7" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<junction x="101.6" y="12.7"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U2" gate="A" pin="VIN2"/>
-<wire x1="104.14" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="VIN2_2"/>
-<wire x1="101.6" y1="-7.62" x2="86.36" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-5.08" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="101.6" y="-7.62"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="-7.62" x2="76.2" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-7.62" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
-<junction x="86.36" y="-7.62"/>
-<wire x1="86.36" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
-<junction x="86.36" y="12.7"/>
-<junction x="76.2" y="12.7"/>
-<wire x1="76.2" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="10.16" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
-<junction x="38.1" y="12.7"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="10.16" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<junction x="48.26" y="12.7"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="10.16" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
-<junction x="58.42" y="12.7"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8267,6 +8230,46 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="485.14" y1="50.8" x2="485.14" y2="53.34" width="0.1524" layer="91"/>
 <junction x="485.14" y="50.8"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="VIN1"/>
+<wire x1="104.14" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VIN1_2"/>
+<wire x1="101.6" y1="12.7" x2="86.36" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<junction x="101.6" y="12.7"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U2" gate="A" pin="VIN2"/>
+<wire x1="104.14" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VIN2_2"/>
+<wire x1="101.6" y1="-7.62" x2="86.36" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-5.08" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="101.6" y="-7.62"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="-7.62" x2="76.2" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-7.62" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<junction x="86.36" y="-7.62"/>
+<wire x1="86.36" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<junction x="86.36" y="12.7"/>
+<junction x="76.2" y="12.7"/>
+<wire x1="76.2" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="10.16" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<junction x="38.1" y="12.7"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="10.16" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
+<junction x="48.26" y="12.7"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="10.16" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+<junction x="58.42" y="12.7"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="38.1" y1="12.7" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
