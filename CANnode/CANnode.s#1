@@ -11656,11 +11656,11 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="93.98" y="-10.16" size="1.27" layer="91">GND</text>
 <text x="208.28" y="15.24" size="1.27" layer="91">GND</text>
 <text x="208.28" y="-12.7" size="1.27" layer="91">GND</text>
-<text x="439.42" y="25.4" size="1.778" layer="91">high speed mode</text>
+<text x="472.44" y="10.16" size="1.778" layer="91">high speed mode</text>
 <text x="104.14" y="48.26" size="5.08" layer="91">Dual Channel Power Supply (LDO)</text>
 <text x="487.68" y="76.2" size="5.08" layer="91">Transceivers</text>
 <text x="373.38" y="78.74" size="5.08" layer="91">Microchip</text>
-<text x="436.88" y="-48.26" size="1.778" layer="91">high speed mode</text>
+<text x="469.9" y="-63.5" size="1.778" layer="91">high speed mode</text>
 <text x="431.8" y="66.04" size="1.27" layer="91">need to decouple +5V more and address stability of ECU supply</text>
 <text x="304.8" y="73.66" size="1.778" layer="91">???? What about this extra pin? and where
  is VCC_SRAM, and VNMA?</text>
@@ -12099,21 +12099,24 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$3" gate="A" pin="TXD"/>
-<wire x1="436.88" y1="30.48" x2="462.28" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="30.48" x2="436.88" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="30.48" x2="462.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="30.48" x2="439.42" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="CAN1TX"/>
+<wire x1="439.42" y1="-53.34" x2="431.8" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="TXD"/>
-<wire x1="439.42" y1="-43.18" x2="459.74" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-43.18" x2="439.42" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="-43.18" x2="459.74" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="-43.18" x2="444.5" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="CAN2TX"/>
+<wire x1="444.5" y1="-58.42" x2="431.8" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="439.42" y1="-33.02" x2="439.42" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-15.24" x2="487.68" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="-15.24" x2="487.68" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="-15.24" x2="500.38" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="-15.24" x2="500.38" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="A" pin="RXD"/>
@@ -12121,6 +12124,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="487.68" y1="-17.78" x2="487.68" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="487.68" y="-15.24"/>
+<wire x1="441.96" y1="-15.24" x2="441.96" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="-55.88" x2="429.26" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -12133,7 +12138,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="490.22" y1="58.42" x2="490.22" y2="60.96" width="0.1524" layer="91"/>
 <junction x="490.22" y="60.96"/>
-<wire x1="436.88" y1="60.96" x2="436.88" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="CAN1RX"/>
+<wire x1="431.8" y1="-50.8" x2="436.88" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="436.88" y1="-50.8" x2="436.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
