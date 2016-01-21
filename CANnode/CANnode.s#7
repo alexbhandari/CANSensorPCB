@@ -11656,12 +11656,14 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <text x="93.98" y="-10.16" size="1.27" layer="91">GND</text>
 <text x="208.28" y="15.24" size="1.27" layer="91">GND</text>
 <text x="208.28" y="-12.7" size="1.27" layer="91">GND</text>
-<text x="439.42" y="25.4" size="1.778" layer="91">high speed mode</text>
+<text x="472.44" y="10.16" size="1.778" layer="91">high speed mode</text>
 <text x="104.14" y="48.26" size="5.08" layer="91">Dual Channel Power Supply (LDO)</text>
 <text x="487.68" y="76.2" size="5.08" layer="91">Transceivers</text>
 <text x="373.38" y="78.74" size="5.08" layer="91">Microchip</text>
-<text x="436.88" y="-48.26" size="1.778" layer="91">high speed mode</text>
+<text x="469.9" y="-63.5" size="1.778" layer="91">high speed mode</text>
 <text x="431.8" y="66.04" size="1.27" layer="91">need to decouple +5V more and address stability of ECU supply</text>
+<text x="304.8" y="73.66" size="1.778" layer="91">???? What about this extra pin? and where
+ is VCC_SRAM, and VNMA?</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="104.14" y="17.78"/>
@@ -11974,6 +11976,28 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="246.38" y1="40.64" x2="246.38" y2="45.72" width="0.1524" layer="91"/>
 <junction x="246.38" y="40.64"/>
+<wire x1="302.26" y1="40.64" x2="317.5" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="40.64" x2="317.5" y2="35.56" width="0.1524" layer="91"/>
+<junction x="302.26" y="40.64"/>
+<pinref part="U7" gate="A" pin="VCCIO"/>
+<wire x1="330.2" y1="48.26" x2="325.12" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="48.26" x2="325.12" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="VCCP"/>
+<wire x1="325.12" y1="45.72" x2="325.12" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="43.18" x2="325.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="40.64" x2="325.12" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="35.56" x2="330.2" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="VCCIO_4"/>
+<wire x1="330.2" y1="40.64" x2="325.12" y2="40.64" width="0.1524" layer="91"/>
+<junction x="325.12" y="40.64"/>
+<pinref part="U7" gate="A" pin="VCCIO_3"/>
+<wire x1="330.2" y1="43.18" x2="325.12" y2="43.18" width="0.1524" layer="91"/>
+<junction x="325.12" y="43.18"/>
+<pinref part="U7" gate="A" pin="VCCIO_2"/>
+<wire x1="330.2" y1="45.72" x2="325.12" y2="45.72" width="0.1524" layer="91"/>
+<junction x="325.12" y="45.72"/>
+<wire x1="317.5" y1="35.56" x2="325.12" y2="35.56" width="0.1524" layer="91"/>
+<junction x="325.12" y="35.56"/>
 </segment>
 </net>
 <net name="+1V2" class="0">
@@ -12028,6 +12052,31 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <wire x1="228.6" y1="68.58" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
 <junction x="228.6" y="68.58"/>
 <pinref part="U$4" gate="A" pin="+1V2"/>
+<pinref part="U7" gate="A" pin="VCC"/>
+<wire x1="330.2" y1="63.5" x2="325.12" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="63.5" x2="325.12" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="VCC_5"/>
+<wire x1="325.12" y1="60.96" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="58.42" x2="325.12" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="55.88" x2="325.12" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="53.34" x2="330.2" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="VCC_4"/>
+<wire x1="330.2" y1="55.88" x2="325.12" y2="55.88" width="0.1524" layer="91"/>
+<junction x="325.12" y="55.88"/>
+<pinref part="U7" gate="A" pin="VCC_3"/>
+<wire x1="330.2" y1="58.42" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
+<junction x="325.12" y="58.42"/>
+<pinref part="U7" gate="A" pin="VCC_2"/>
+<wire x1="330.2" y1="60.96" x2="325.12" y2="60.96" width="0.1524" layer="91"/>
+<junction x="325.12" y="60.96"/>
+<pinref part="U7" gate="A" pin="VCC_6"/>
+<wire x1="330.2" y1="50.8" x2="325.12" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="50.8" x2="325.12" y2="53.34" width="0.1524" layer="91"/>
+<junction x="325.12" y="53.34"/>
+<wire x1="304.8" y1="68.58" x2="325.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="68.58" x2="325.12" y2="63.5" width="0.1524" layer="91"/>
+<junction x="304.8" y="68.58"/>
+<junction x="325.12" y="63.5"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12050,21 +12099,24 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$3" gate="A" pin="TXD"/>
-<wire x1="436.88" y1="30.48" x2="462.28" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="30.48" x2="436.88" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="30.48" x2="462.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="439.42" y1="30.48" x2="439.42" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="CAN1TX"/>
+<wire x1="439.42" y1="-53.34" x2="431.8" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$2" gate="A" pin="TXD"/>
-<wire x1="439.42" y1="-43.18" x2="459.74" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-43.18" x2="439.42" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="-43.18" x2="459.74" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="-43.18" x2="444.5" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="CAN2TX"/>
+<wire x1="444.5" y1="-58.42" x2="431.8" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="439.42" y1="-33.02" x2="439.42" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="439.42" y1="-15.24" x2="487.68" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="-15.24" x2="487.68" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="487.68" y1="-15.24" x2="500.38" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="-15.24" x2="500.38" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="A" pin="RXD"/>
@@ -12072,6 +12124,8 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="487.68" y1="-17.78" x2="487.68" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="487.68" y="-15.24"/>
+<wire x1="441.96" y1="-15.24" x2="441.96" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="-55.88" x2="429.26" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -12084,7 +12138,9 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="490.22" y1="58.42" x2="490.22" y2="60.96" width="0.1524" layer="91"/>
 <junction x="490.22" y="60.96"/>
-<wire x1="436.88" y1="60.96" x2="436.88" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U7" gate="A" pin="CAN1RX"/>
+<wire x1="431.8" y1="-50.8" x2="436.88" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="436.88" y1="-50.8" x2="436.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -12965,27 +13021,6 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <label x="500.38" y="-264.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="VCC"/>
-<wire x1="330.2" y1="63.5" x2="325.12" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="63.5" x2="325.12" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U7" gate="A" pin="VCC_5"/>
-<wire x1="325.12" y1="60.96" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="58.42" x2="325.12" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="55.88" x2="325.12" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="53.34" x2="330.2" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U7" gate="A" pin="VCC_4"/>
-<wire x1="330.2" y1="55.88" x2="325.12" y2="55.88" width="0.1524" layer="91"/>
-<junction x="325.12" y="55.88"/>
-<pinref part="U7" gate="A" pin="VCC_3"/>
-<wire x1="330.2" y1="58.42" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
-<junction x="325.12" y="58.42"/>
-<pinref part="U7" gate="A" pin="VCC_2"/>
-<wire x1="330.2" y1="60.96" x2="325.12" y2="60.96" width="0.1524" layer="91"/>
-<junction x="325.12" y="60.96"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
@@ -13027,4 +13062,10 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
