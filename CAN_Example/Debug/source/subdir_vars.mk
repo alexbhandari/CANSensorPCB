@@ -27,6 +27,20 @@ C_SRCS += \
 ../source/sys_vim.c \
 ../source/system.c 
 
+C_DEPS += \
+./source/can.pp \
+./source/esm.pp \
+./source/notification.pp \
+./source/pinmux.pp \
+./source/sci.pp \
+./source/sys_main.pp \
+./source/sys_pcr.pp \
+./source/sys_phantom.pp \
+./source/sys_selftest.pp \
+./source/sys_startup.pp \
+./source/sys_vim.pp \
+./source/system.pp 
+
 OBJS += \
 ./source/can.obj \
 ./source/dabort.obj \
@@ -53,59 +67,45 @@ ASM_DEPS += \
 ./source/sys_mpu.pp \
 ./source/sys_pmu.pp 
 
-C_DEPS += \
-./source/can.pp \
-./source/esm.pp \
-./source/notification.pp \
-./source/pinmux.pp \
-./source/sci.pp \
-./source/sys_main.pp \
-./source/sys_pcr.pp \
-./source/sys_phantom.pp \
-./source/sys_selftest.pp \
-./source/sys_startup.pp \
-./source/sys_vim.pp \
-./source/system.pp 
+OBJS__QUOTED += \
+"source/can.obj" \
+"source/dabort.obj" \
+"source/esm.obj" \
+"source/notification.obj" \
+"source/pinmux.obj" \
+"source/sci.obj" \
+"source/sys_core.obj" \
+"source/sys_intvecs.obj" \
+"source/sys_main.obj" \
+"source/sys_mpu.obj" \
+"source/sys_pcr.obj" \
+"source/sys_phantom.obj" \
+"source/sys_pmu.obj" \
+"source/sys_selftest.obj" \
+"source/sys_startup.obj" \
+"source/sys_vim.obj" \
+"source/system.obj" 
 
 C_DEPS__QUOTED += \
-"source\can.pp" \
-"source\esm.pp" \
-"source\notification.pp" \
-"source\pinmux.pp" \
-"source\sci.pp" \
-"source\sys_main.pp" \
-"source\sys_pcr.pp" \
-"source\sys_phantom.pp" \
-"source\sys_selftest.pp" \
-"source\sys_startup.pp" \
-"source\sys_vim.pp" \
-"source\system.pp" 
-
-OBJS__QUOTED += \
-"source\can.obj" \
-"source\dabort.obj" \
-"source\esm.obj" \
-"source\notification.obj" \
-"source\pinmux.obj" \
-"source\sci.obj" \
-"source\sys_core.obj" \
-"source\sys_intvecs.obj" \
-"source\sys_main.obj" \
-"source\sys_mpu.obj" \
-"source\sys_pcr.obj" \
-"source\sys_phantom.obj" \
-"source\sys_pmu.obj" \
-"source\sys_selftest.obj" \
-"source\sys_startup.obj" \
-"source\sys_vim.obj" \
-"source\system.obj" 
+"source/can.pp" \
+"source/esm.pp" \
+"source/notification.pp" \
+"source/pinmux.pp" \
+"source/sci.pp" \
+"source/sys_main.pp" \
+"source/sys_pcr.pp" \
+"source/sys_phantom.pp" \
+"source/sys_selftest.pp" \
+"source/sys_startup.pp" \
+"source/sys_vim.pp" \
+"source/system.pp" 
 
 ASM_DEPS__QUOTED += \
-"source\dabort.pp" \
-"source\sys_core.pp" \
-"source\sys_intvecs.pp" \
-"source\sys_mpu.pp" \
-"source\sys_pmu.pp" 
+"source/dabort.pp" \
+"source/sys_core.pp" \
+"source/sys_intvecs.pp" \
+"source/sys_mpu.pp" \
+"source/sys_pmu.pp" 
 
 C_SRCS__QUOTED += \
 "../source/can.c" \
