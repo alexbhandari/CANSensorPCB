@@ -24718,19 +24718,6 @@ they were the wrong values</text>
 </net>
 <net name="5V_IN" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="VBUS"/>
-<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="0" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<junction x="0" y="12.7"/>
-<label x="0" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X1" gate="/1" pin="1"/>
 <wire x1="248.92" y1="-154.94" x2="241.3" y2="-154.94" width="0.1524" layer="91"/>
 <label x="233.68" y="-154.94" size="1.778" layer="95"/>
@@ -24738,6 +24725,20 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-68.58" x2="248.92" y2="-68.58" width="0.1524" layer="91"/>
 <label x="241.3" y="-68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<junction x="0" y="12.7"/>
+<wire x1="0" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
+<label x="-15.24" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VBUS"/>
+<wire x1="-2.54" y1="-78.74" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
+<label x="2.54" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
