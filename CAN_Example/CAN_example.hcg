@@ -190,7 +190,9 @@
       <HDRGIO>
         <NAME>gio.h</NAME>
       </HDRGIO>
-      <SRCGIO/>
+      <SRCGIO>
+        <NAME>gio.c</NAME>
+      </SRCGIO>
       <HDRLIN_R>
         <NAME>reg_lin.h</NAME>
       </HDRLIN_R>
@@ -204,7 +206,9 @@
       <HDRSCI>
         <NAME>sci.h</NAME>
       </HDRSCI>
-      <SRCSCI/>
+      <SRCSCI>
+        <NAME>sci.c</NAME>
+      </SRCSCI>
       <HDRMIBSPI_R>
         <NAME>reg_mibspi.h</NAME>
       </HDRMIBSPI_R>
@@ -234,7 +238,9 @@
       <HDRADC>
         <NAME>adc.h</NAME>
       </HDRADC>
-      <SRCADC/>
+      <SRCADC>
+        <NAME>adc.c</NAME>
+      </SRCADC>
       <HET1ASMHDR>
         <NAME/>
       </HET1ASMHDR>
@@ -364,7 +370,7 @@
         <PATH>include\gio.h</PATH>
       </HDRGIO>
       <SRCGIO>
-        <PATH/>
+        <PATH>source\gio.c</PATH>
       </SRCGIO>
     </FILENAMES>
   </GIO>
@@ -390,7 +396,7 @@
         <PATH>include\sci.h</PATH>
       </HDRSCI>
       <SRCSCI>
-        <PATH/>
+        <PATH>source\sci.c</PATH>
       </SRCSCI>
     </FILENAMES>
   </SCI>
@@ -442,7 +448,7 @@
         <PATH>include\adc.h</PATH>
       </HDRADC>
       <SRCADC>
-        <PATH/>
+        <PATH>source\adc.c</PATH>
       </SRCADC>
     </FILENAMES>
   </ADC>

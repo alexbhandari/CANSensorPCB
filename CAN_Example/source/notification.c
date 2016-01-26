@@ -50,7 +50,9 @@
 
 #include "esm.h"
 #include "sys_selftest.h"
+#include "adc.h"
 #include "can.h"
+#include "gio.h"
 #include "sci.h"
 
 /* USER CODE BEGIN (0) */
@@ -100,6 +102,16 @@ void memoryPort1TestFailNotification(uint32 groupSelect, uint32 dataSelect, uint
 
 /* USER CODE BEGIN (8) */
 /* USER CODE END */
+#pragma WEAK(adcNotification)
+void adcNotification(adcBASE_t *adc, uint32 group)
+{
+/*  enter user code between the USER CODE BEGIN and USER CODE END. */
+/* USER CODE BEGIN (11) */
+/* USER CODE END */
+}
+
+/* USER CODE BEGIN (12) */
+/* USER CODE END */
 #pragma WEAK(canErrorNotification)
 void canErrorNotification(canBASE_t *node, uint32 notification)
 {
@@ -117,7 +129,7 @@ void canStatusChangeNotification(canBASE_t *node, uint32 notification)
 }
 
 #pragma WEAK(canMessageNotification)
-void canMessageNotification(canBASE_t *node, uint32 messageBox)  /* zoltan - i guess this method must be called in the interupt handeler, its not called in sys_main. */
+void canMessageNotification(canBASE_t *node, uint32 messageBox)  
 {
 /*  enter user code between the USER CODE BEGIN and USER CODE END. */
 /* USER CODE BEGIN (15) */
@@ -142,6 +154,16 @@ void canMessageNotification(canBASE_t *node, uint32 messageBox)  /* zoltan - i g
 }
 
 /* USER CODE BEGIN (16) */
+/* USER CODE END */
+#pragma WEAK(gioNotification)
+void gioNotification(gioPORT_t *port, uint32 bit)
+{
+/*  enter user code between the USER CODE BEGIN and USER CODE END. */
+/* USER CODE BEGIN (19) */
+/* USER CODE END */
+}
+
+/* USER CODE BEGIN (20) */
 /* USER CODE END */
 
 #pragma WEAK(sciNotification)
