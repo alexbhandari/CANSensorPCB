@@ -23871,11 +23871,6 @@ they were the wrong values</text>
 <pinref part="IC1" gate="G$1" pin="TXD"/>
 </segment>
 <segment>
-<pinref part="X1" gate="/4" pin="1"/>
-<wire x1="248.92" y1="-162.56" x2="241.3" y2="-162.56" width="0.1524" layer="91"/>
-<label x="233.68" y="-162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="256.54" y1="-76.2" x2="248.92" y2="-76.2" width="0.1524" layer="91"/>
 <label x="241.3" y="-76.2" size="1.778" layer="95"/>
 </segment>
@@ -23887,11 +23882,6 @@ they were the wrong values</text>
 <pinref part="U7" gate="A" pin="CAN2TX"/>
 <wire x1="457.2" y1="-58.42" x2="431.8" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="TXD"/>
-</segment>
-<segment>
-<pinref part="X1" gate="/6" pin="1"/>
-<wire x1="248.92" y1="-167.64" x2="241.3" y2="-167.64" width="0.1524" layer="91"/>
-<label x="233.68" y="-167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="-81.28" x2="248.92" y2="-81.28" width="0.1524" layer="91"/>
@@ -23907,11 +23897,6 @@ they were the wrong values</text>
 <pinref part="U7" gate="A" pin="CAN2RX"/>
 </segment>
 <segment>
-<pinref part="X1" gate="/5" pin="1"/>
-<wire x1="241.3" y1="-165.1" x2="248.92" y2="-165.1" width="0.1524" layer="91"/>
-<label x="233.68" y="-165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="248.92" y1="-78.74" x2="256.54" y2="-78.74" width="0.1524" layer="91"/>
 <label x="241.3" y="-78.74" size="1.778" layer="95"/>
 </segment>
@@ -23923,11 +23908,6 @@ they were the wrong values</text>
 <wire x1="431.8" y1="-50.8" x2="449.58" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="449.58" y1="-50.8" x2="449.58" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="RXD"/>
-</segment>
-<segment>
-<pinref part="X1" gate="/3" pin="1"/>
-<wire x1="248.92" y1="-160.02" x2="241.3" y2="-160.02" width="0.1524" layer="91"/>
-<label x="233.68" y="-160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="-73.66" x2="248.92" y2="-73.66" width="0.1524" layer="91"/>
@@ -23997,7 +23977,7 @@ they were the wrong values</text>
 <junction x="50.8" y="12.7"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="CAN1H" class="0">
 <segment>
 <wire x1="505.46" y1="30.48" x2="523.24" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="523.24" y1="30.48" x2="533.4" y2="30.48" width="0.1524" layer="91"/>
@@ -24008,9 +23988,15 @@ they were the wrong values</text>
 <wire x1="533.4" y1="30.48" x2="538.48" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="533.4" y1="33.02" x2="533.4" y2="30.48" width="0.1524" layer="91"/>
 <junction x="533.4" y="30.48"/>
+<label x="541.02" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="/3" pin="1"/>
+<wire x1="248.92" y1="-160.02" x2="241.3" y2="-160.02" width="0.1524" layer="91"/>
+<label x="233.68" y="-160.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="CAN1L" class="0">
 <segment>
 <wire x1="518.16" y1="27.94" x2="518.16" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="20.32" x2="523.24" y2="20.32" width="0.1524" layer="91"/>
@@ -24023,9 +24009,15 @@ they were the wrong values</text>
 <pinref part="D9" gate="G$1" pin="2"/>
 <wire x1="533.4" y1="20.32" x2="533.4" y2="17.78" width="0.1524" layer="91"/>
 <junction x="533.4" y="20.32"/>
+<label x="541.02" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="/4" pin="1"/>
+<wire x1="248.92" y1="-162.56" x2="241.3" y2="-162.56" width="0.1524" layer="91"/>
+<label x="233.68" y="-162.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="CAN2L" class="0">
 <segment>
 <wire x1="502.92" y1="-45.72" x2="515.62" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="515.62" y1="-45.72" x2="515.62" y2="-53.34" width="0.1524" layer="91"/>
@@ -24038,9 +24030,15 @@ they were the wrong values</text>
 <wire x1="533.4" y1="-53.34" x2="541.02" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="533.4" y1="-55.88" x2="533.4" y2="-53.34" width="0.1524" layer="91"/>
 <junction x="533.4" y="-53.34"/>
+<label x="538.48" y="-53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="/6" pin="1"/>
+<wire x1="248.92" y1="-167.64" x2="241.3" y2="-167.64" width="0.1524" layer="91"/>
+<label x="233.68" y="-167.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="CAN2H" class="0">
 <segment>
 <wire x1="502.92" y1="-43.18" x2="520.7" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -24051,6 +24049,12 @@ they were the wrong values</text>
 <wire x1="533.4" y1="-43.18" x2="541.02" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="533.4" y1="-40.64" x2="533.4" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="533.4" y="-43.18"/>
+<label x="538.48" y="-43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="/5" pin="1"/>
+<wire x1="241.3" y1="-165.1" x2="248.92" y2="-165.1" width="0.1524" layer="91"/>
+<label x="233.68" y="-165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">

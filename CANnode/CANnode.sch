@@ -23265,11 +23265,11 @@ they were the wrong values</text>
 <attribute name="VALUE" x="125.8316" y="-464.185" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="FB1" gate="G$1" x="104.14" y="-416.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="105.41" y="-420.5986" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="105.41" y="-410.4386" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="111.76" y="-413.258" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="FB2" gate="G$1" x="104.14" y="-419.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="105.41" y="-410.4386" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="105.41" y="-420.5986" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="111.76" y="-423.418" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C56" gate="G$1" x="105.41" y="-372.11"/>
