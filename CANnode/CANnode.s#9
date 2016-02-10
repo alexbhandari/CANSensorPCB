@@ -22532,6 +22532,9 @@ they were the wrong values</text>
 <text x="160.02" y="-345.44" size="2.54" layer="97">XDS100V2 CPLD</text>
 <text x="165.1" y="-502.92" size="2.54" layer="97">XDS100V2 FT2322HL</text>
 <text x="144.78" y="-226.06" size="6.4516" layer="91">JTAG Interface</text>
+<text x="55.88" y="-81.28" size="1.778" layer="91">USB-</text>
+<text x="55.88" y="-88.9" size="1.778" layer="91">USB+</text>
+<text x="68.58" y="-86.36" size="1.778" layer="91">check that DM and DP are USB- and + (in datasheet)</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="104.14" y="17.78"/>
@@ -24715,19 +24718,6 @@ they were the wrong values</text>
 </net>
 <net name="5V_IN" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="VBUS"/>
-<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="0" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<junction x="0" y="12.7"/>
-<label x="0" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X1" gate="/1" pin="1"/>
 <wire x1="248.92" y1="-154.94" x2="241.3" y2="-154.94" width="0.1524" layer="91"/>
 <label x="233.68" y="-154.94" size="1.778" layer="95"/>
@@ -24735,6 +24725,20 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-68.58" x2="248.92" y2="-68.58" width="0.1524" layer="91"/>
 <label x="241.3" y="-68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<junction x="0" y="12.7"/>
+<wire x1="0" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
+<label x="-15.24" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VBUS"/>
+<wire x1="-2.54" y1="-78.74" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
+<label x="2.54" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -24759,26 +24763,6 @@ they were the wrong values</text>
 <wire x1="17.78" y1="-91.44" x2="17.78" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="17.78" y="-83.82"/>
 <pinref part="D3" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="USB_NEG" class="0">
-<segment>
-<pinref part="R41" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-81.28" x2="43.18" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-81.28" x2="50.8" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-78.74" x2="43.18" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-78.74" x2="43.18" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="43.18" y="-81.28"/>
-</segment>
-</net>
-<net name="USB_POS" class="0">
-<segment>
-<pinref part="R42" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-88.9" x2="43.18" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-88.9" x2="48.26" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-91.44" x2="43.18" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-91.44" x2="43.18" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="43.18" y="-88.9"/>
 </segment>
 </net>
 <net name="A4_3V3" class="0">
@@ -26657,12 +26641,22 @@ they were the wrong values</text>
 <wire x1="149.86" y1="-431.8" x2="128.27" y2="-431.8" width="0.1524" layer="91"/>
 <label x="128.27" y="-431.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R41" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="-81.28" x2="50.8" y2="-81.28" width="0.1524" layer="91"/>
+<label x="48.26" y="-81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DP" class="0">
 <segment>
 <pinref part="U10" gate="U1" pin="DP"/>
 <wire x1="149.86" y1="-434.34" x2="128.27" y2="-434.34" width="0.1524" layer="91"/>
 <label x="128.27" y="-434.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R42" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="-88.9" x2="50.8" y2="-88.9" width="0.1524" layer="91"/>
+<label x="48.26" y="-88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">

@@ -22336,27 +22336,21 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <part name="C44" library="rcl" deviceset="C-EU" device="C0402" value=".01uF"/>
 <part name="C45" library="rcl" deviceset="C-EU" device="C0402" value=".01uF"/>
 <part name="U$2" library="supply1" deviceset="+1V2" device=""/>
-<part name="R80" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D4" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D5" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D6" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
-<part name="R59" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D10" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D11" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D12" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
-<part name="R60" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D13" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D14" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D15" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
-<part name="R85" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D16" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D17" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D18" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
-<part name="R87" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D19" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D20" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D21" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
-<part name="R88" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D22" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D23" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D24" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
@@ -22414,7 +22408,7 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <part name="R93" library="launchpad" deviceset="RES" device="0402" value="0R"/>
 <part name="R94" library="launchpad" deviceset="RES" device="0402" value="0R"/>
 <part name="R95" library="launchpad" deviceset="RES" device="0402" value="0R"/>
-<part name="R96" library="launchpad" deviceset="RES" device="0402" value="200R"/>
+<part name="R96" library="launchpad" deviceset="RES" device="0402" value="200"/>
 <part name="R97" library="launchpad" deviceset="RES" device="0402" value="10K"/>
 <part name="R98" library="launchpad" deviceset="RES" device="0402" value="1K"/>
 <part name="R99" library="launchpad" deviceset="RES" device="0402" value="1K"/>
@@ -22491,6 +22485,12 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <part name="R114" library="launchpad" deviceset="RES" device="0402" value="120R"/>
 <part name="GND119" library="supply1" deviceset="GND" device=""/>
 <part name="R115" library="launchpad" deviceset="RES" device="0402" value="100K"/>
+<part name="D30" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
+<part name="D31" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
+<part name="D32" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
+<part name="D33" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
+<part name="D34" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
+<part name="D35" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 </parts>
 <sheets>
 <sheet>
@@ -22814,54 +22814,48 @@ they were the wrong values</text>
 <instance part="C44" gate="G$1" x="645.16" y="-358.14"/>
 <instance part="C45" gate="G$1" x="642.62" y="-309.88"/>
 <instance part="U$2" gate="A" x="279.4" y="-60.96"/>
-<instance part="R80" gate="G$1" x="660.4" y="-104.14" rot="R90"/>
 <instance part="D4" gate="G$1" x="502.92" y="-104.14" rot="R90"/>
 <instance part="D5" gate="G$1" x="553.72" y="-104.14" rot="R90"/>
 <instance part="D6" gate="G$1" x="607.06" y="-104.14" rot="R90"/>
-<instance part="R59" gate="G$1" x="660.4" y="-152.4" rot="R90"/>
 <instance part="D10" gate="G$1" x="502.92" y="-152.4" rot="R90"/>
 <instance part="D11" gate="G$1" x="553.72" y="-152.4" rot="R90"/>
 <instance part="D12" gate="G$1" x="607.06" y="-152.4" rot="R90"/>
-<instance part="R60" gate="G$1" x="660.4" y="-205.74" rot="R90"/>
 <instance part="D13" gate="G$1" x="502.92" y="-205.74" rot="R90"/>
 <instance part="D14" gate="G$1" x="553.72" y="-205.74" rot="R90"/>
 <instance part="D15" gate="G$1" x="607.06" y="-205.74" rot="R90"/>
-<instance part="R85" gate="G$1" x="660.4" y="-256.54" rot="R90"/>
 <instance part="D16" gate="G$1" x="502.92" y="-256.54" rot="R90"/>
 <instance part="D17" gate="G$1" x="553.72" y="-256.54" rot="R90"/>
 <instance part="D18" gate="G$1" x="607.06" y="-256.54" rot="R90"/>
-<instance part="R87" gate="G$1" x="657.86" y="-314.96" rot="R90"/>
 <instance part="D19" gate="G$1" x="500.38" y="-314.96" rot="R90"/>
 <instance part="D20" gate="G$1" x="551.18" y="-314.96" rot="R90"/>
 <instance part="D21" gate="G$1" x="604.52" y="-314.96" rot="R90"/>
-<instance part="R88" gate="G$1" x="657.86" y="-363.22" rot="R90"/>
 <instance part="D22" gate="G$1" x="500.38" y="-363.22" rot="R90"/>
 <instance part="D23" gate="G$1" x="551.18" y="-363.22" rot="R90"/>
-<instance part="D24" gate="G$1" x="604.52" y="-363.22" rot="R90"/>
-<instance part="GND13" gate="1" x="502.92" y="-111.76"/>
-<instance part="GND38" gate="1" x="553.72" y="-111.76"/>
-<instance part="GND75" gate="1" x="660.4" y="-111.76"/>
-<instance part="GND76" gate="1" x="607.06" y="-111.76"/>
-<instance part="GND80" gate="1" x="502.92" y="-160.02"/>
-<instance part="GND81" gate="1" x="553.72" y="-160.02"/>
-<instance part="GND82" gate="1" x="660.4" y="-160.02"/>
-<instance part="GND83" gate="1" x="607.06" y="-160.02"/>
-<instance part="GND77" gate="1" x="500.38" y="-370.84"/>
-<instance part="GND78" gate="1" x="551.18" y="-370.84"/>
-<instance part="GND79" gate="1" x="657.86" y="-370.84"/>
-<instance part="GND84" gate="1" x="604.52" y="-370.84"/>
-<instance part="GND85" gate="1" x="500.38" y="-322.58"/>
-<instance part="GND86" gate="1" x="551.18" y="-322.58"/>
-<instance part="GND87" gate="1" x="657.86" y="-322.58"/>
-<instance part="GND88" gate="1" x="604.52" y="-322.58"/>
-<instance part="GND89" gate="1" x="502.92" y="-264.16"/>
-<instance part="GND90" gate="1" x="553.72" y="-264.16"/>
-<instance part="GND91" gate="1" x="660.4" y="-264.16"/>
-<instance part="GND92" gate="1" x="607.06" y="-264.16"/>
-<instance part="GND93" gate="1" x="502.92" y="-213.36"/>
-<instance part="GND94" gate="1" x="553.72" y="-213.36"/>
-<instance part="GND95" gate="1" x="660.4" y="-213.36"/>
-<instance part="GND96" gate="1" x="607.06" y="-213.36"/>
+<instance part="D24" gate="G$1" x="607.06" y="-363.22" rot="R90"/>
+<instance part="GND13" gate="1" x="502.92" y="-114.3"/>
+<instance part="GND38" gate="1" x="553.72" y="-114.3"/>
+<instance part="GND75" gate="1" x="660.4" y="-114.3"/>
+<instance part="GND76" gate="1" x="607.06" y="-114.3"/>
+<instance part="GND80" gate="1" x="502.92" y="-162.56"/>
+<instance part="GND81" gate="1" x="553.72" y="-162.56"/>
+<instance part="GND82" gate="1" x="660.4" y="-162.56"/>
+<instance part="GND83" gate="1" x="607.06" y="-162.56"/>
+<instance part="GND77" gate="1" x="500.38" y="-373.38"/>
+<instance part="GND78" gate="1" x="551.18" y="-373.38"/>
+<instance part="GND79" gate="1" x="662.94" y="-370.84"/>
+<instance part="GND84" gate="1" x="607.06" y="-373.38"/>
+<instance part="GND85" gate="1" x="500.38" y="-325.12"/>
+<instance part="GND86" gate="1" x="551.18" y="-325.12"/>
+<instance part="GND87" gate="1" x="657.86" y="-325.12"/>
+<instance part="GND88" gate="1" x="604.52" y="-325.12"/>
+<instance part="GND89" gate="1" x="502.92" y="-266.7"/>
+<instance part="GND90" gate="1" x="553.72" y="-266.7"/>
+<instance part="GND91" gate="1" x="660.4" y="-266.7"/>
+<instance part="GND92" gate="1" x="607.06" y="-266.7"/>
+<instance part="GND93" gate="1" x="502.92" y="-215.9"/>
+<instance part="GND94" gate="1" x="553.72" y="-215.9"/>
+<instance part="GND95" gate="1" x="660.4" y="-215.9"/>
+<instance part="GND96" gate="1" x="607.06" y="-215.9"/>
 <instance part="D7" gate="G$1" x="533.4" y="-60.96" rot="R90"/>
 <instance part="D8" gate="G$1" x="533.4" y="-35.56" rot="R90"/>
 <instance part="D9" gate="G$1" x="533.4" y="12.7" rot="R90"/>
@@ -23162,6 +23156,12 @@ they were the wrong values</text>
 <attribute name="NAME" x="257.81" y="-360.9086" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="257.81" y="-363.728" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="D30" gate="G$1" x="660.4" y="-104.14" rot="R90"/>
+<instance part="D31" gate="G$1" x="660.4" y="-256.54" rot="R90"/>
+<instance part="D32" gate="G$1" x="660.4" y="-205.74" rot="R90"/>
+<instance part="D33" gate="G$1" x="660.4" y="-152.4" rot="R90"/>
+<instance part="D34" gate="G$1" x="657.86" y="-314.96" rot="R90"/>
+<instance part="D35" gate="G$1" x="662.94" y="-360.68" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -24295,34 +24295,32 @@ they were the wrong values</text>
 <segment>
 <pinref part="D4" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="502.92" y1="-111.76" x2="502.92" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D5" gate="G$1" pin="1"/>
 <pinref part="GND38" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R80" gate="G$1" pin="1"/>
-<pinref part="GND75" gate="1" pin="GND"/>
+<wire x1="553.72" y1="-111.76" x2="553.72" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D6" gate="G$1" pin="1"/>
 <pinref part="GND76" gate="1" pin="GND"/>
+<wire x1="607.06" y1="-111.76" x2="607.06" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D10" gate="G$1" pin="1"/>
 <pinref part="GND80" gate="1" pin="GND"/>
+<wire x1="502.92" y1="-160.02" x2="502.92" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D11" gate="G$1" pin="1"/>
 <pinref part="GND81" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R59" gate="G$1" pin="1"/>
-<pinref part="GND82" gate="1" pin="GND"/>
+<wire x1="553.72" y1="-160.02" x2="553.72" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D12" gate="G$1" pin="1"/>
 <pinref part="GND83" gate="1" pin="GND"/>
+<wire x1="607.06" y1="-160.02" x2="607.06" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND97" gate="1" pin="GND"/>
@@ -24547,6 +24545,96 @@ they were the wrong values</text>
 <pinref part="D29" gate="G$1" pin="C"/>
 <wire x1="271.78" y1="-408.94" x2="271.78" y2="-405.13" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND75" gate="1" pin="GND"/>
+<pinref part="D30" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="-111.76" x2="660.4" y2="-109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND91" gate="1" pin="GND"/>
+<pinref part="D31" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="-264.16" x2="660.4" y2="-261.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND95" gate="1" pin="GND"/>
+<pinref part="D32" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="-213.36" x2="660.4" y2="-210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND82" gate="1" pin="GND"/>
+<pinref part="D33" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="-160.02" x2="660.4" y2="-157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND87" gate="1" pin="GND"/>
+<pinref part="D34" gate="G$1" pin="1"/>
+<wire x1="657.86" y1="-322.58" x2="657.86" y2="-320.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND79" gate="1" pin="GND"/>
+<pinref part="D35" gate="G$1" pin="1"/>
+<wire x1="662.94" y1="-368.3" x2="662.94" y2="-365.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND84" gate="1" pin="GND"/>
+<pinref part="D24" gate="G$1" pin="1"/>
+<wire x1="607.06" y1="-370.84" x2="607.06" y2="-368.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D23" gate="G$1" pin="1"/>
+<pinref part="GND78" gate="1" pin="GND"/>
+<wire x1="551.18" y1="-370.84" x2="551.18" y2="-368.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D22" gate="G$1" pin="1"/>
+<pinref part="GND77" gate="1" pin="GND"/>
+<wire x1="500.38" y1="-370.84" x2="500.38" y2="-368.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D19" gate="G$1" pin="1"/>
+<pinref part="GND85" gate="1" pin="GND"/>
+<wire x1="500.38" y1="-322.58" x2="500.38" y2="-320.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D20" gate="G$1" pin="1"/>
+<pinref part="GND86" gate="1" pin="GND"/>
+<wire x1="551.18" y1="-322.58" x2="551.18" y2="-320.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D21" gate="G$1" pin="1"/>
+<pinref part="GND88" gate="1" pin="GND"/>
+<wire x1="604.52" y1="-322.58" x2="604.52" y2="-320.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D17" gate="G$1" pin="1"/>
+<pinref part="GND90" gate="1" pin="GND"/>
+<wire x1="553.72" y1="-264.16" x2="553.72" y2="-261.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D16" gate="G$1" pin="1"/>
+<pinref part="GND89" gate="1" pin="GND"/>
+<wire x1="502.92" y1="-264.16" x2="502.92" y2="-261.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D18" gate="G$1" pin="1"/>
+<pinref part="GND92" gate="1" pin="GND"/>
+<wire x1="607.06" y1="-264.16" x2="607.06" y2="-261.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D13" gate="G$1" pin="1"/>
+<pinref part="GND93" gate="1" pin="GND"/>
+<wire x1="502.92" y1="-213.36" x2="502.92" y2="-210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D14" gate="G$1" pin="1"/>
+<pinref part="GND94" gate="1" pin="GND"/>
+<wire x1="553.72" y1="-213.36" x2="553.72" y2="-210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D15" gate="G$1" pin="1"/>
+<pinref part="GND96" gate="1" pin="GND"/>
+<wire x1="607.06" y1="-213.36" x2="607.06" y2="-210.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="A0_BUFFERED" class="0">
 <segment>
@@ -24718,19 +24806,6 @@ they were the wrong values</text>
 </net>
 <net name="5V_IN" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="VBUS"/>
-<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="0" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<junction x="0" y="12.7"/>
-<label x="0" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X1" gate="/1" pin="1"/>
 <wire x1="248.92" y1="-154.94" x2="241.3" y2="-154.94" width="0.1524" layer="91"/>
 <label x="233.68" y="-154.94" size="1.778" layer="95"/>
@@ -24738,6 +24813,20 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-68.58" x2="248.92" y2="-68.58" width="0.1524" layer="91"/>
 <label x="241.3" y="-68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
+<junction x="0" y="12.7"/>
+<wire x1="0" y1="12.7" x2="-15.24" y2="12.7" width="0.1524" layer="91"/>
+<label x="-15.24" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VBUS"/>
+<wire x1="-2.54" y1="-78.74" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
+<label x="2.54" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -25803,8 +25892,12 @@ they were the wrong values</text>
 <net name="D0_IN" class="0">
 <segment>
 <pinref part="R66" gate="G$1" pin="2"/>
-<wire x1="497.84" y1="-307.34" x2="505.46" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="497.84" y1="-307.34" x2="500.38" y2="-307.34" width="0.1524" layer="91"/>
 <label x="502.92" y="-307.34" size="1.778" layer="95"/>
+<pinref part="D19" gate="G$1" pin="2"/>
+<wire x1="500.38" y1="-307.34" x2="505.46" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="-309.88" x2="500.38" y2="-307.34" width="0.1524" layer="91"/>
+<junction x="500.38" y="-307.34"/>
 </segment>
 <segment>
 <label x="284.48" y="-162.56" size="1.778" layer="95"/>
@@ -25818,9 +25911,13 @@ they were the wrong values</text>
 </net>
 <net name="D4_IN" class="0">
 <segment>
-<wire x1="497.84" y1="-355.6" x2="508" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="497.84" y1="-355.6" x2="500.38" y2="-355.6" width="0.1524" layer="91"/>
 <label x="505.46" y="-355.6" size="1.778" layer="95"/>
 <pinref part="R68" gate="G$1" pin="2"/>
+<pinref part="D22" gate="G$1" pin="2"/>
+<wire x1="500.38" y1="-355.6" x2="508" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="-358.14" x2="500.38" y2="-355.6" width="0.1524" layer="91"/>
+<junction x="500.38" y="-355.6"/>
 </segment>
 <segment>
 <label x="284.48" y="-172.72" size="1.778" layer="95"/>
@@ -25834,9 +25931,13 @@ they were the wrong values</text>
 </net>
 <net name="D5_IN" class="0">
 <segment>
-<wire x1="548.64" y1="-355.6" x2="556.26" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="548.64" y1="-355.6" x2="551.18" y2="-355.6" width="0.1524" layer="91"/>
 <label x="553.72" y="-355.6" size="1.778" layer="95"/>
 <pinref part="R69" gate="G$1" pin="2"/>
+<pinref part="D23" gate="G$1" pin="2"/>
+<wire x1="551.18" y1="-355.6" x2="556.26" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="-358.14" x2="551.18" y2="-355.6" width="0.1524" layer="91"/>
+<junction x="551.18" y="-355.6"/>
 </segment>
 <segment>
 <label x="284.48" y="-175.26" size="1.778" layer="95"/>
@@ -25850,9 +25951,13 @@ they were the wrong values</text>
 </net>
 <net name="D1_IN" class="0">
 <segment>
-<wire x1="548.64" y1="-307.34" x2="558.8" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="548.64" y1="-307.34" x2="551.18" y2="-307.34" width="0.1524" layer="91"/>
 <label x="558.8" y="-307.34" size="1.778" layer="95"/>
 <pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="D20" gate="G$1" pin="2"/>
+<wire x1="551.18" y1="-307.34" x2="558.8" y2="-307.34" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="-309.88" x2="551.18" y2="-307.34" width="0.1524" layer="91"/>
+<junction x="551.18" y="-307.34"/>
 </segment>
 <segment>
 <label x="284.48" y="-165.1" size="1.778" layer="95"/>
@@ -25965,10 +26070,10 @@ they were the wrong values</text>
 <pinref part="R84" gate="G$1" pin="2"/>
 <wire x1="655.32" y1="-96.52" x2="660.4" y2="-96.52" width="0.1524" layer="91"/>
 <label x="670.56" y="-93.98" size="1.778" layer="95"/>
-<pinref part="R80" gate="G$1" pin="2"/>
 <wire x1="660.4" y1="-96.52" x2="673.1" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="-99.06" x2="660.4" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="660.4" y="-96.52"/>
+<pinref part="D30" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <label x="233.68" y="-177.8" size="1.778" layer="95"/>
@@ -25985,10 +26090,10 @@ they were the wrong values</text>
 <pinref part="R83" gate="G$1" pin="2"/>
 <wire x1="657.86" y1="-142.24" x2="660.4" y2="-142.24" width="0.1524" layer="91"/>
 <label x="668.02" y="-142.24" size="1.778" layer="95"/>
-<pinref part="R59" gate="G$1" pin="2"/>
 <wire x1="660.4" y1="-142.24" x2="668.02" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="-147.32" x2="660.4" y2="-142.24" width="0.1524" layer="91"/>
 <junction x="660.4" y="-142.24"/>
+<pinref part="D33" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <label x="233.68" y="-187.96" size="1.778" layer="95"/>
@@ -26006,9 +26111,9 @@ they were the wrong values</text>
 <pinref part="R82" gate="G$1" pin="2"/>
 <wire x1="660.4" y1="-195.58" x2="670.56" y2="-195.58" width="0.1524" layer="91"/>
 <label x="670.56" y="-195.58" size="1.778" layer="95"/>
-<pinref part="R60" gate="G$1" pin="2"/>
 <wire x1="660.4" y1="-200.66" x2="660.4" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="660.4" y="-195.58"/>
+<pinref part="D32" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <label x="233.68" y="-198.12" size="1.778" layer="95"/>
@@ -26025,10 +26130,10 @@ they were the wrong values</text>
 <pinref part="R81" gate="G$1" pin="2"/>
 <wire x1="657.86" y1="-246.38" x2="660.4" y2="-246.38" width="0.1524" layer="91"/>
 <label x="670.56" y="-246.38" size="1.778" layer="95"/>
-<pinref part="R85" gate="G$1" pin="2"/>
 <wire x1="660.4" y1="-246.38" x2="673.1" y2="-246.38" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="-251.46" x2="660.4" y2="-246.38" width="0.1524" layer="91"/>
 <junction x="660.4" y="-246.38"/>
+<pinref part="D31" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <label x="284.48" y="-160.02" size="1.778" layer="95"/>
@@ -26038,9 +26143,14 @@ they were the wrong values</text>
 </net>
 <net name="D3_IN" class="0">
 <segment>
-<wire x1="657.86" y1="-304.8" x2="668.02" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="657.86" y1="-304.8" x2="660.4" y2="-304.8" width="0.1524" layer="91"/>
 <label x="665.48" y="-304.8" size="1.778" layer="95"/>
 <pinref part="R79" gate="G$1" pin="2"/>
+<pinref part="D34" gate="G$1" pin="2"/>
+<wire x1="660.4" y1="-304.8" x2="668.02" y2="-304.8" width="0.1524" layer="91"/>
+<wire x1="657.86" y1="-309.88" x2="660.4" y2="-309.88" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="-309.88" x2="660.4" y2="-304.8" width="0.1524" layer="91"/>
+<junction x="660.4" y="-304.8"/>
 </segment>
 <segment>
 <label x="284.48" y="-170.18" size="1.778" layer="95"/>
@@ -26054,9 +26164,14 @@ they were the wrong values</text>
 </net>
 <net name="D7_IN" class="0">
 <segment>
-<wire x1="660.4" y1="-353.06" x2="668.02" y2="-353.06" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="-353.06" x2="662.94" y2="-353.06" width="0.1524" layer="91"/>
 <label x="668.02" y="-353.06" size="1.778" layer="95"/>
 <pinref part="R78" gate="G$1" pin="2"/>
+<pinref part="D35" gate="G$1" pin="2"/>
+<wire x1="662.94" y1="-353.06" x2="668.02" y2="-353.06" width="0.1524" layer="91"/>
+<wire x1="662.94" y1="-355.6" x2="662.94" y2="-358.14" width="0.1524" layer="91"/>
+<wire x1="662.94" y1="-355.6" x2="662.94" y2="-353.06" width="0.1524" layer="91"/>
+<junction x="662.94" y="-353.06"/>
 </segment>
 <segment>
 <label x="284.48" y="-180.34" size="1.778" layer="95"/>
@@ -26071,9 +26186,13 @@ they were the wrong values</text>
 </net>
 <net name="D6_IN" class="0">
 <segment>
-<wire x1="604.52" y1="-355.6" x2="612.14" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="604.52" y1="-355.6" x2="607.06" y2="-355.6" width="0.1524" layer="91"/>
 <label x="612.14" y="-355.6" size="1.778" layer="95"/>
 <pinref part="R77" gate="G$1" pin="2"/>
+<pinref part="D24" gate="G$1" pin="2"/>
+<wire x1="607.06" y1="-355.6" x2="612.14" y2="-355.6" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="-358.14" x2="607.06" y2="-355.6" width="0.1524" layer="91"/>
+<junction x="607.06" y="-355.6"/>
 </segment>
 <segment>
 <label x="284.48" y="-177.8" size="1.778" layer="95"/>
@@ -26090,6 +26209,9 @@ they were the wrong values</text>
 <wire x1="604.52" y1="-307.34" x2="609.6" y2="-307.34" width="0.1524" layer="91"/>
 <label x="609.6" y="-307.34" size="1.778" layer="95"/>
 <pinref part="R67" gate="G$1" pin="2"/>
+<pinref part="D21" gate="G$1" pin="2"/>
+<wire x1="604.52" y1="-309.88" x2="604.52" y2="-307.34" width="0.1524" layer="91"/>
+<junction x="604.52" y="-307.34"/>
 </segment>
 <segment>
 <label x="284.48" y="-167.64" size="1.778" layer="95"/>
