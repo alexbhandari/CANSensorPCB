@@ -24038,6 +24038,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="81.28" y1="-33.02" x2="116.84" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="TP1" gate="G$1" pin="PP"/>
+<label x="96.52" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">

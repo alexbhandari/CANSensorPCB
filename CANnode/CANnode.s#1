@@ -25736,6 +25736,46 @@ they were the wrong values</text>
 <wire x1="411.48" y1="-261.62" x2="411.48" y2="-256.54" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="U2" gate="A" pin="VIN1"/>
+<wire x1="104.14" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VIN1_2"/>
+<wire x1="101.6" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<junction x="101.6" y="12.7"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U2" gate="A" pin="VIN2"/>
+<wire x1="104.14" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VIN2_2"/>
+<wire x1="101.6" y1="-7.62" x2="78.74" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-5.08" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="101.6" y="-7.62"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-7.62" x2="68.58" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-7.62" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+<junction x="78.74" y="-7.62"/>
+<wire x1="78.74" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
+<junction x="78.74" y="12.7"/>
+<junction x="68.58" y="12.7"/>
+<wire x1="68.58" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="10.16" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
+<junction x="30.48" y="12.7"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="30.48" y1="12.7" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="+"/>
+<wire x1="40.64" y1="7.62" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<junction x="40.64" y="12.7"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="7.62" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
+<junction x="50.8" y="12.7"/>
+</segment>
 </net>
 <net name="N$45" class="0">
 <segment>
@@ -27217,48 +27257,6 @@ they were the wrong values</text>
 <junction x="25.4" y="-154.94"/>
 <wire x1="25.4" y1="-144.78" x2="71.12" y2="-144.78" width="0.1524" layer="91"/>
 <junction x="25.4" y="-144.78"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="VIN1"/>
-<wire x1="104.14" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="VIN1_2"/>
-<wire x1="101.6" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<junction x="101.6" y="12.7"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U2" gate="A" pin="VIN2"/>
-<wire x1="104.14" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="VIN2_2"/>
-<wire x1="101.6" y1="-7.62" x2="78.74" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="-5.08" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="101.6" y="-7.62"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-7.62" x2="68.58" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-7.62" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
-<junction x="78.74" y="-7.62"/>
-<wire x1="78.74" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
-<junction x="78.74" y="12.7"/>
-<junction x="68.58" y="12.7"/>
-<wire x1="68.58" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="10.16" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
-<junction x="30.48" y="12.7"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
-<wire x1="30.48" y1="12.7" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="+"/>
-<wire x1="40.64" y1="7.62" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
-<junction x="40.64" y="12.7"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="7.62" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
-<junction x="50.8" y="12.7"/>
 </segment>
 </net>
 </nets>

@@ -22325,6 +22325,7 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
@@ -22479,12 +22480,6 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="D2" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D3" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="C5" library="resistor" deviceset="CPOL-EU" device="CT3528" value="22uF"/>
@@ -22730,6 +22725,12 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="5.5"/>
 <part name="R59" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>
 <part name="GND120" library="supply1" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="P+7" library="supply1" deviceset="+5V" device=""/>
+<part name="P+9" library="supply1" deviceset="+5V" device=""/>
+<part name="P+10" library="supply1" deviceset="+5V" device=""/>
+<part name="P+11" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22927,12 +22928,6 @@ they were the wrong values</text>
 <instance part="GND11" gate="1" x="482.6" y="-33.02"/>
 <instance part="GND12" gate="1" x="497.84" y="-33.02"/>
 <instance part="GND14" gate="1" x="469.9" y="-50.8"/>
-<instance part="+3V7" gate="G$1" x="411.48" y="-101.6"/>
-<instance part="+3V8" gate="G$1" x="411.48" y="-149.86"/>
-<instance part="+3V11" gate="G$1" x="411.48" y="-254"/>
-<instance part="+3V12" gate="G$1" x="411.48" y="-312.42"/>
-<instance part="+3V13" gate="G$1" x="411.48" y="-360.68"/>
-<instance part="+3V9" gate="G$1" x="411.48" y="-203.2"/>
 <instance part="D2" gate="G$1" x="10.16" y="-96.52" rot="R90"/>
 <instance part="D3" gate="G$1" x="17.78" y="-96.52" rot="R90"/>
 <instance part="C5" gate="G$1" x="40.64" y="5.08"/>
@@ -23407,6 +23402,12 @@ they were the wrong values</text>
 <instance part="H4" gate="G$1" x="-2.54" y="-175.26"/>
 <instance part="R59" gate="G$1" x="76.2" y="-144.78" rot="R180"/>
 <instance part="GND120" gate="1" x="93.98" y="-147.32"/>
+<instance part="P+5" gate="1" x="411.48" y="-101.6"/>
+<instance part="P+6" gate="1" x="411.48" y="-149.86"/>
+<instance part="P+7" gate="1" x="411.48" y="-203.2"/>
+<instance part="P+9" gate="1" x="411.48" y="-254"/>
+<instance part="P+10" gate="1" x="411.48" y="-312.42"/>
+<instance part="P+11" gate="1" x="411.48" y="-360.68"/>
 </instances>
 <busses>
 </busses>
@@ -23552,42 +23553,6 @@ they were the wrong values</text>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="480.06" y1="33.02" x2="480.06" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="A" pin="VCC"/>
-<wire x1="408.94" y1="-109.22" x2="411.48" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="-109.22" x2="411.48" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="+3V7" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U4" gate="A" pin="VCC"/>
-<wire x1="408.94" y1="-157.48" x2="411.48" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="-157.48" x2="411.48" y2="-152.4" width="0.1524" layer="91"/>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U6" gate="A" pin="VCC"/>
-<wire x1="408.94" y1="-261.62" x2="411.48" y2="-261.62" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="-261.62" x2="411.48" y2="-256.54" width="0.1524" layer="91"/>
-<pinref part="+3V11" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="VCC"/>
-<wire x1="408.94" y1="-320.04" x2="411.48" y2="-320.04" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="-320.04" x2="411.48" y2="-314.96" width="0.1524" layer="91"/>
-<pinref part="+3V12" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U8" gate="A" pin="VCC"/>
-<wire x1="408.94" y1="-368.3" x2="411.48" y2="-368.3" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="-368.3" x2="411.48" y2="-363.22" width="0.1524" layer="91"/>
-<pinref part="+3V13" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U5" gate="A" pin="VCC"/>
-<wire x1="408.94" y1="-210.82" x2="411.48" y2="-210.82" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="-210.82" x2="411.48" y2="-205.74" width="0.1524" layer="91"/>
-<pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
@@ -25773,6 +25738,42 @@ they were the wrong values</text>
 <wire x1="256.54" y1="-66.04" x2="254" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="254" y1="-66.04" x2="254" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="VCC"/>
+<wire x1="408.94" y1="-109.22" x2="411.48" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-109.22" x2="411.48" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="VCC"/>
+<wire x1="408.94" y1="-157.48" x2="411.48" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-157.48" x2="411.48" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="VCC"/>
+<wire x1="408.94" y1="-210.82" x2="411.48" y2="-210.82" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-210.82" x2="411.48" y2="-205.74" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VCC"/>
+<wire x1="408.94" y1="-320.04" x2="411.48" y2="-320.04" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-320.04" x2="411.48" y2="-314.96" width="0.1524" layer="91"/>
+<pinref part="P+10" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U8" gate="A" pin="VCC"/>
+<wire x1="408.94" y1="-368.3" x2="411.48" y2="-368.3" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-368.3" x2="411.48" y2="-363.22" width="0.1524" layer="91"/>
+<pinref part="P+11" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="VCC"/>
+<wire x1="408.94" y1="-261.62" x2="411.48" y2="-261.62" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="-261.62" x2="411.48" y2="-256.54" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$45" class="0">
