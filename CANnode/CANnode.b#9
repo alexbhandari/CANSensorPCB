@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="6" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="yes"/>
@@ -126,8 +126,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="2.1567125" y1="11.856971875" x2="65.806265625" y2="11.780265625" width="0" layer="20"/>
-<wire x1="65.806265625" y1="11.780265625" x2="65.853509375" y2="72.6555875" width="0" layer="20"/>
+<wire x1="2.1567125" y1="11.856971875" x2="65.806265625" y2="11.892240625" width="0" layer="20"/>
+<wire x1="65.806265625" y1="11.892240625" x2="65.853509375" y2="72.6555875" width="0" layer="20"/>
 <wire x1="65.853509375" y1="72.6555875" x2="2.106675" y2="72.650690625" width="0" layer="20"/>
 <wire x1="2.106675" y1="72.650690625" x2="2.1567125" y2="11.856971875" width="0" layer="20"/>
 </plain>
@@ -5689,7 +5689,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.235915625" y1="39.90633125" x2="53.479940625" y2="45.857128125" width="0" layer="19" extent="1-1"/>
 <wire x1="45.20749375" y1="35.03974375" x2="49.235915625" y2="39.90633125" width="0" layer="19" extent="1-1"/>
 <wire x1="51.327496875" y1="31.419734375" x2="45.20749375" y2="35.03974375" width="0" layer="19" extent="1-1"/>
-<wire x1="53.410578125" y1="31.389915625" x2="51.327496875" y2="31.419734375" width="0" layer="19" extent="1-1"/>
 <wire x1="53.376353125" y1="27.0576375" x2="53.410578125" y2="31.389915625" width="0" layer="19" extent="1-1"/>
 <wire x1="53.267615625" y1="22.160309375" x2="53.376353125" y2="27.0576375" width="0" layer="19" extent="1-1"/>
 <wire x1="51.327496875" y1="22.419753125" x2="53.267615625" y2="22.160309375" width="0" layer="19" extent="1-1"/>
@@ -5740,6 +5739,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.2829875" y1="18.583915625" x2="29.22049375" y2="15.736728125" width="0" layer="19" extent="1-16"/>
 <wire x1="17.170325" y1="20.70995625" x2="23.305240625" y2="21.126925" width="0" layer="19" extent="1-1"/>
 <wire x1="15.977621875" y1="25.19885625" x2="17.170325" y2="20.70995625" width="0" layer="19" extent="1-1"/>
+<wire x1="53.410578125" y1="31.389915625" x2="51.357315625" y2="31.389915625" width="0.1524" layer="1"/>
+<wire x1="51.357315625" y1="31.389915625" x2="51.327496875" y2="31.419734375" width="0.254" layer="1"/>
 </signal>
 <signal name="+1V2">
 <contactref element="U2" pad="16"/>
