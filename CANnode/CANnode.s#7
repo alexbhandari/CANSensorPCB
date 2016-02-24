@@ -23879,29 +23879,6 @@ they were the wrong values</text>
 <label x="241.3" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
-<segment>
-<wire x1="505.46" y1="-40.64" x2="505.46" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="505.46" y1="-20.32" x2="497.84" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="497.84" y1="-20.32" x2="497.84" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<wire x1="497.84" y1="-20.32" x2="497.84" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="497.84" y="-20.32"/>
-<pinref part="IC2" gate="G$1" pin="VCC2"/>
-<wire x1="502.92" y1="-40.64" x2="505.46" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="505.46" y1="33.02" x2="505.46" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="505.46" y1="50.8" x2="513.08" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="513.08" y1="50.8" x2="513.08" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="513.08" y1="50.8" x2="513.08" y2="53.34" width="0.1524" layer="91"/>
-<junction x="513.08" y="50.8"/>
-<pinref part="IC1" gate="G$1" pin="VCC2"/>
-</segment>
-</net>
 <net name="CAN1H" class="0">
 <segment>
 <wire x1="505.46" y1="30.48" x2="523.24" y2="30.48" width="0.1524" layer="91"/>
@@ -25775,6 +25752,27 @@ they were the wrong values</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="7.62" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
 <junction x="50.8" y="12.7"/>
+</segment>
+<segment>
+<wire x1="505.46" y1="33.02" x2="505.46" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="505.46" y1="50.8" x2="513.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="50.8" x2="513.08" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="513.08" y1="50.8" x2="513.08" y2="53.34" width="0.1524" layer="91"/>
+<junction x="513.08" y="50.8"/>
+<pinref part="IC1" gate="G$1" pin="VCC2"/>
+</segment>
+<segment>
+<wire x1="505.46" y1="-40.64" x2="505.46" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="505.46" y1="-20.32" x2="497.84" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="497.84" y1="-20.32" x2="497.84" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<wire x1="497.84" y1="-20.32" x2="497.84" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="497.84" y="-20.32"/>
+<pinref part="IC2" gate="G$1" pin="VCC2"/>
+<wire x1="502.92" y1="-40.64" x2="505.46" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
