@@ -22914,7 +22914,7 @@ they were the wrong values</text>
 <instance part="IC2" gate="G$1" x="490.22" y="-43.18"/>
 <instance part="C7" gate="G$1" x="482.6" y="-25.4"/>
 <instance part="+3V4" gate="G$1" x="477.52" y="-17.78"/>
-<instance part="+3V5" gate="G$1" x="480.06" y="45.72"/>
+<instance part="+3V5" gate="G$1" x="477.52" y="45.72"/>
 <instance part="GND43" gate="1" x="2.54" y="-101.6"/>
 <instance part="GND44" gate="1" x="12.7" y="-111.76"/>
 <instance part="GND5" gate="1" x="0" y="-15.24"/>
@@ -23551,10 +23551,6 @@ they were the wrong values</text>
 <junction x="477.52" y="-22.86"/>
 </segment>
 <segment>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="480.06" y1="33.02" x2="480.06" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="274.32" y1="-58.42" x2="274.32" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="30"/>
@@ -23733,6 +23729,12 @@ they were the wrong values</text>
 <wire x1="271.78" y1="-355.6" x2="261.62" y2="-355.6" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="-355.6" x2="261.62" y2="-358.14" width="0.1524" layer="91"/>
 <junction x="271.78" y="-355.6"/>
+</segment>
+<segment>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="477.52" y1="43.18" x2="477.52" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="33.02" x2="480.06" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VCC1"/>
 </segment>
 </net>
 <net name="+1V2" class="0">
