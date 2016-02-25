@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22735,6 +22735,8 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="GND122" library="supply1" deviceset="GND" device=""/>
+<part name="C74" library="eagle-ltspice" deviceset="C" device="C0402" value="100nF"/>
+<part name="GND123" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23415,6 +23417,8 @@ they were the wrong values</text>
 <instance part="+3V6" gate="G$1" x="454.66" y="53.34"/>
 <instance part="C19" gate="G$1" x="462.28" y="43.18" rot="MR0"/>
 <instance part="GND122" gate="1" x="462.28" y="33.02"/>
+<instance part="C74" gate="G$1" x="58.42" y="5.08"/>
+<instance part="GND123" gate="1" x="58.42" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -24826,6 +24830,11 @@ they were the wrong values</text>
 <pinref part="GND122" gate="1" pin="GND"/>
 <wire x1="462.28" y1="38.1" x2="462.28" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND123" gate="1" pin="GND"/>
+<pinref part="C74" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="-2.54" x2="58.42" y2="0" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="A0_BUFFERED" class="0">
 <segment>
@@ -25770,9 +25779,10 @@ they were the wrong values</text>
 <wire x1="78.74" y1="12.7" x2="68.58" y2="12.7" width="0.1524" layer="91"/>
 <junction x="78.74" y="12.7"/>
 <junction x="68.58" y="12.7"/>
-<wire x1="68.58" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="12.7" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
@@ -25786,6 +25796,9 @@ they were the wrong values</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="7.62" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
 <junction x="50.8" y="12.7"/>
+<pinref part="C74" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="7.62" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+<junction x="58.42" y="12.7"/>
 </segment>
 <segment>
 <wire x1="505.46" y1="33.02" x2="505.46" y2="50.8" width="0.1524" layer="91"/>

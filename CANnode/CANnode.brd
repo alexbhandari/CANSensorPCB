@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4417,9 +4417,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -7333,6 +7330,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="MCU_RTCK">
 <contactref element="R86" pad="2"/>
+<contactref element="U7" pad="80"/>
+<wire x1="23.257115625" y1="39.53103125" x2="33.098490625" y2="32.621875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SUSPEED">
 <contactref element="U9" pad="G1"/>
@@ -7426,12 +7425,18 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="MCU_TMS">
 <contactref element="R95" pad="1"/>
+<contactref element="U7" pad="75"/>
+<wire x1="18.507590625" y1="44.691375" x2="34.718503125" y2="36.241884375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_TRSTN">
 <contactref element="R94" pad="1"/>
+<contactref element="U7" pad="76"/>
+<wire x1="17.2069625" y1="44.69595625" x2="33.098490625" y2="34.621871875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_TDI">
 <contactref element="R93" pad="1"/>
+<contactref element="U7" pad="77"/>
+<wire x1="14.61101875" y1="44.686121875" x2="33.098490625" y2="34.121871875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="T_DIS">
 <contactref element="R92" pad="1"/>
@@ -7444,12 +7449,18 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="MCU_TDO">
 <contactref element="R91" pad="1"/>
+<contactref element="U7" pad="78"/>
+<wire x1="11.346959375" y1="43.63685" x2="33.098490625" y2="33.621875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_TCK">
 <contactref element="R90" pad="1"/>
+<contactref element="U7" pad="79"/>
+<wire x1="23.26273125" y1="43.1667" x2="33.098490625" y2="33.121875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_RESET">
 <contactref element="R89" pad="1"/>
+<contactref element="U7" pad="81"/>
+<wire x1="33.098490625" y1="32.121878125" x2="23.249759375" y2="42.156646875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="U9" pad="B10"/>
