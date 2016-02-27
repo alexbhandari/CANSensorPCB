@@ -7430,6 +7430,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="MCU_TRSTN">
 <contactref element="R94" pad="1"/>
+<contactref element="U7" pad="76"/>
+<wire x1="17.2069625" y1="44.69595625" x2="33.098490625" y2="34.621871875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MCU_TDI">
 <contactref element="R93" pad="1"/>
@@ -7457,6 +7459,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="MCU_RESET">
 <contactref element="R89" pad="1"/>
+<contactref element="U7" pad="81"/>
+<wire x1="33.098490625" y1="32.121878125" x2="23.249759375" y2="42.156646875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="U9" pad="B10"/>
@@ -7664,12 +7668,6 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$8">
 </signal>
 <signal name="N$9">
-</signal>
-<signal name="N$10">
-<contactref element="U7" pad="81"/>
-</signal>
-<signal name="N$70">
-<contactref element="U7" pad="76"/>
 </signal>
 </signals>
 </board>
