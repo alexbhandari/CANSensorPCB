@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23422,37 +23422,6 @@ they were the wrong values</text>
 <busses>
 </busses>
 <nets>
-<net name="CHIP_RESET" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="GND/HEATSINK_2"/>
-<wire x1="104.14" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="104.14" y1="-2.54" x2="93.98" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="GND/HEATSINK_3"/>
-<pinref part="U2" gate="A" pin="*EN1"/>
-<wire x1="104.14" y1="5.08" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="5.08" x2="93.98" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="*EN2"/>
-<wire x1="93.98" y1="2.54" x2="93.98" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="2.54" x2="93.98" y2="2.54" width="0.1524" layer="91"/>
-<junction x="93.98" y="2.54"/>
-<junction x="93.98" y="5.08"/>
-<junction x="93.98" y="-2.54"/>
-</segment>
-<segment>
-<wire x1="104.14" y1="-10.16" x2="93.98" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="GND/HEATSINK_4"/>
-</segment>
-<segment>
-<wire x1="210.82" y1="15.24" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="GND/HEATSINK"/>
-</segment>
-<segment>
-<wire x1="210.82" y1="-12.7" x2="200.66" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="GND/HEATSINK_5"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="PG1"/>
@@ -24833,6 +24802,35 @@ they were the wrong values</text>
 <pinref part="GND123" gate="1" pin="GND"/>
 <pinref part="C74" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="-2.54" x2="58.42" y2="0" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="GND/HEATSINK_2"/>
+<wire x1="104.14" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="210.82" y1="15.24" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="GND/HEATSINK"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="-2.54" x2="93.98" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="GND/HEATSINK_3"/>
+<pinref part="U2" gate="A" pin="*EN1"/>
+<wire x1="104.14" y1="5.08" x2="93.98" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="5.08" x2="93.98" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="*EN2"/>
+<wire x1="93.98" y1="2.54" x2="93.98" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="2.54" x2="93.98" y2="2.54" width="0.1524" layer="91"/>
+<junction x="93.98" y="2.54"/>
+<junction x="93.98" y="5.08"/>
+<junction x="93.98" y="-2.54"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="-10.16" x2="93.98" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="GND/HEATSINK_4"/>
+</segment>
+<segment>
+<wire x1="210.82" y1="-12.7" x2="200.66" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="GND/HEATSINK_5"/>
 </segment>
 </net>
 <net name="A0_BUFFERED" class="0">
