@@ -6,15 +6,15 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="3" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="1" name="Top" color="12" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -6111,6 +6111,13 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="38.5572" y="59.8932"/>
 <vertex x="31.6992" y="59.8932"/>
 </polygon>
+<polygon width="0.127" layer="2">
+<vertex x="8.0772" y="70.1802"/>
+<vertex x="65.8368" y="70.1802"/>
+<vertex x="65.8368" y="12.4206"/>
+<vertex x="8.001" y="12.4206"/>
+<vertex x="8.001" y="70.1802"/>
+</polygon>
 <wire x1="47.819321875" y1="63.37565625" x2="47.908528125" y2="66.45870625" width="0" layer="19" extent="16-16"/>
 <wire x1="45.80615" y1="61.41909375" x2="47.819321875" y2="63.37565625" width="0" layer="19" extent="1-16"/>
 <wire x1="44.76698125" y1="62.0586125" x2="45.80615" y2="61.41909375" width="0" layer="19" extent="1-16"/>
@@ -8239,6 +8246,39 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="21.10311875" y1="32.66960625" x2="21.10311875" y2="31.846996875" width="0.127" layer="16"/>
 <wire x1="21.10311875" y1="31.846996875" x2="21.98878125" y2="30.961334375" width="0.127" layer="16"/>
 <wire x1="21.98878125" y1="30.961334375" x2="21.991621875" y2="30.961334375" width="0.127" layer="16"/>
+<polygon width="0.127" layer="16">
+<vertex x="14.859" y="37.1094"/>
+<vertex x="12.4968" y="37.1094"/>
+<vertex x="12.4968" y="35.1282"/>
+<vertex x="11.049" y="35.1282"/>
+<vertex x="11.049" y="33.6804"/>
+<vertex x="8.0772" y="33.6804"/>
+<vertex x="8.0772" y="30.1752"/>
+<vertex x="13.0302" y="30.1752"/>
+<vertex x="13.0302" y="33.8328"/>
+<vertex x="14.859" y="33.8328"/>
+</polygon>
+<polygon width="0.127" layer="15">
+<vertex x="22.3266" y="52.959"/>
+<vertex x="12.954" y="52.959"/>
+<vertex x="12.954" y="44.196"/>
+<vertex x="15.621" y="44.196"/>
+<vertex x="15.621" y="37.0332"/>
+<vertex x="11.2776" y="37.0332"/>
+<vertex x="11.2776" y="33.6042"/>
+<vertex x="8.3058" y="33.6042"/>
+<vertex x="8.3058" y="30.0228"/>
+<vertex x="13.1826" y="30.0228"/>
+<vertex x="13.1826" y="33.6804"/>
+<vertex x="17.907" y="33.6804"/>
+<vertex x="17.907" y="36.0426"/>
+<vertex x="21.4122" y="36.0426"/>
+<vertex x="21.4122" y="29.8704"/>
+<vertex x="26.4414" y="29.8704"/>
+<vertex x="26.4414" y="31.5468"/>
+<vertex x="22.6314" y="31.5468"/>
+<vertex x="22.6314" y="52.959"/>
+</polygon>
 <wire x1="19.895409375" y1="45.482021875" x2="21.56925" y2="46.383246875" width="0" layer="19" extent="1-16"/>
 <wire x1="14.11925" y1="44.433246875" x2="19.895409375" y2="44.316696875" width="0" layer="19" extent="1-16"/>
 <wire x1="14.11925" y1="36.933246875" x2="14.11925" y2="44.433246875" width="0" layer="19" extent="16-16"/>
