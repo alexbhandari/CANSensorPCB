@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22761,7 +22761,7 @@ SWITCH WITH THE TVS's IN THE LATER STAGES!!!!! </text>
 <text x="497.84" y="-426.72" size="6.4516" layer="91">Input Stages</text>
 <text x="495.3" y="-86.36" size="3.81" layer="91">swapped all of the resisters in the input stages.
 they were the wrong values</text>
-<text x="370.84" y="-96.52" size="2.1844" layer="91">the data sheet seems to tell me that these
+<text x="416.56" y="-96.52" size="2.1844" layer="91">the data sheet seems to tell me that these
  bufferes are within the minimum Vcc supply
  voltage range of 3-30volts</text>
 <text x="495.3" y="-299.72" size="1.778" layer="91">16 KHz filter</text>
@@ -26835,6 +26835,12 @@ they were the wrong values</text>
 <wire x1="217.17" y1="-330.2" x2="234.95" y2="-330.2" width="0.1524" layer="91"/>
 <pinref part="R86" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U7" gate="A" pin="RTCK"/>
+<wire x1="373.38" y1="-76.2" x2="373.38" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-78.74" x2="358.14" y2="-78.74" width="0.1524" layer="91"/>
+<label x="358.14" y="-78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SUSPEED" class="0">
 <segment>
@@ -26936,6 +26942,12 @@ they were the wrong values</text>
 <label x="118.11" y="-304.8" size="1.778" layer="95"/>
 <pinref part="R95" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U7" gate="A" pin="TMS"/>
+<wire x1="386.08" y1="-76.2" x2="386.08" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="-91.44" x2="358.14" y2="-91.44" width="0.1524" layer="91"/>
+<label x="358.14" y="-91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MCU_TRSTN" class="0">
 <segment>
@@ -26943,12 +26955,24 @@ they were the wrong values</text>
 <label x="118.11" y="-307.34" size="1.778" layer="95"/>
 <pinref part="R94" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U7" gate="A" pin="NTRST"/>
+<wire x1="383.54" y1="-76.2" x2="383.54" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="-88.9" x2="358.14" y2="-88.9" width="0.1524" layer="91"/>
+<label x="358.14" y="-88.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MCU_TDI" class="0">
 <segment>
 <wire x1="135.89" y1="-309.88" x2="118.11" y2="-309.88" width="0.1524" layer="91"/>
 <label x="118.11" y="-309.88" size="1.778" layer="95"/>
 <pinref part="R93" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="TDI"/>
+<wire x1="381" y1="-76.2" x2="381" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="381" y1="-86.36" x2="358.14" y2="-86.36" width="0.1524" layer="91"/>
+<label x="358.14" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="T_DIS" class="0">
@@ -26969,6 +26993,12 @@ they were the wrong values</text>
 <label x="118.11" y="-314.96" size="1.778" layer="95"/>
 <pinref part="R91" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U7" gate="A" pin="TDO"/>
+<wire x1="378.46" y1="-76.2" x2="378.46" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="-83.82" x2="358.14" y2="-83.82" width="0.1524" layer="91"/>
+<label x="358.14" y="-83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MCU_TCK" class="0">
 <segment>
@@ -26976,12 +27006,25 @@ they were the wrong values</text>
 <label x="118.11" y="-320.04" size="1.778" layer="95"/>
 <pinref part="R90" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="U7" gate="A" pin="TCK"/>
+<wire x1="375.92" y1="-76.2" x2="375.92" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="-81.28" x2="358.14" y2="-81.28" width="0.1524" layer="91"/>
+<label x="358.14" y="-81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MCU_RESET" class="0">
 <segment>
 <wire x1="135.89" y1="-325.12" x2="118.11" y2="-325.12" width="0.1524" layer="91"/>
 <label x="118.11" y="-325.12" size="1.778" layer="95"/>
 <pinref part="R89" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="NRST"/>
+<wire x1="330.2" y1="12.7" x2="325.12" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="12.7" x2="325.12" y2="0" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="0" x2="307.34" y2="0" width="0.1524" layer="91"/>
+<label x="307.34" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$36" class="0">
