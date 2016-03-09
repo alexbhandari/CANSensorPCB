@@ -22753,9 +22753,7 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 <text x="304.8" y="73.66" size="1.778" layer="91">???? What about this extra pin? and where
  is VCC_SRAM, and VNMA?</text>
 <text x="71.12" y="-38.1" size="1.778" layer="91">made a test point</text>
-<text x="22.86" y="-73.66" size="1.778" layer="91">DM and DP are data lines. we need to wither pass
- them though a JTAG debugging chip, or somehow
- dont do that and get them to the proper data ports.</text>
+<text x="22.86" y="-73.66" size="1.778" layer="91">move TVS to after resistor to limit current</text>
 <text x="20.32" y="-109.22" size="3.81" layer="91">THESE ARE PLACEHOLDER RESISTERS THAT WE WILL
 SWITCH WITH THE TVS's IN THE LATER STAGES!!!!! </text>
 <text x="497.84" y="-426.72" size="6.4516" layer="91">Input Stages</text>

@@ -22086,6 +22086,165 @@ chip</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-phoenix-350">
+<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt; Grid 3.50 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1751316">
+<description>&lt;b&gt;MKDS 1/ 9-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 9&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
+<wire x1="-15.9725" y1="3.65" x2="16.0275" y2="3.65" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="3.65" x2="-15.9725" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="-2.0993" x2="-15.9725" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="-1.6163" x2="16.0275" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="-2.0993" x2="16.0275" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="-1.6163" x2="16.0275" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="1.9123" x2="-15.9725" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="1.9123" x2="16.0275" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="1.4367" x2="16.0275" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-1.6163" x2="-15.9725" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="1.4367" x2="-15.9725" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-1.6163" x2="16.0275" y2="-1.6163" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="3.65" x2="16.0275" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-1.6163" x2="-15.9725" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-2.0993" x2="-15.9725" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-15.1785" y1="-0.811" x2="-13.2615" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="16.0275" y1="-2.911" x2="-15.9725" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-3.65" x2="16.0275" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="-3.35" x2="16.0275" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-3.35" x2="16.0275" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-3.35" x2="-15.9725" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-15.9725" y1="-2.911" x2="-15.9725" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="16.0275" y1="-2.911" x2="16.0275" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-12.7665" y1="0.611" x2="-12.7725" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-12.7725" y1="0.605" x2="-14.6835" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-11.6785" y1="-0.811" x2="-9.7615" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="-9.2665" y1="0.611" x2="-9.2725" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-9.2725" y1="0.605" x2="-11.1835" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-8.1785" y1="-0.811" x2="-6.2615" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="-5.7665" y1="0.611" x2="-5.7725" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-5.7725" y1="0.605" x2="-7.6835" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-4.6785" y1="-0.811" x2="-2.7615" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="-2.2665" y1="0.611" x2="-2.2725" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-2.2725" y1="0.605" x2="-4.1835" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-1.1785" y1="-0.811" x2="0.7385" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="1.2335" y1="0.611" x2="1.2275" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="1.2275" y1="0.605" x2="-0.6835" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="2.3215" y1="-0.811" x2="4.2385" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="4.7335" y1="0.611" x2="4.7275" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="4.7275" y1="0.605" x2="2.8165" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="5.8215" y1="-0.811" x2="7.7385" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="8.2335" y1="0.611" x2="8.2275" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="8.2275" y1="0.605" x2="6.3165" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="9.3215" y1="-0.811" x2="11.2385" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="11.7335" y1="0.611" x2="11.7275" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="11.7275" y1="0.605" x2="9.8165" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="12.8215" y1="-0.811" x2="14.7385" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="15.2335" y1="0.611" x2="15.2275" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="15.2275" y1="0.605" x2="13.3165" y2="-1.306" width="0.1016" layer="51"/>
+<circle x="-13.9725" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="-10.4725" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="-6.9725" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="-3.4725" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="0.0275" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="3.5275" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="7.0275" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="10.5275" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="14.0275" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<pad name="1" x="-13.9725" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="2" x="-10.4725" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="3" x="-6.9725" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="4" x="-3.4725" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="5" x="0.0275" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="6" x="3.5275" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="7" x="7.0275" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="8" x="10.5275" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="9" x="14.0275" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<text x="-14.4225" y="2.2225" size="1.27" layer="21" font="vector">1</text>
+<text x="-10.93" y="2.2225" size="1.27" layer="21" font="vector">2</text>
+<text x="-7.4375" y="2.2225" size="1.27" layer="21" font="vector">3</text>
+<text x="-3.945" y="2.2225" size="1.27" layer="21" font="vector">4</text>
+<text x="-0.4525" y="2.2225" size="1.27" layer="21" font="vector">5</text>
+<text x="3.04" y="2.2225" size="1.27" layer="21" font="vector">6</text>
+<text x="6.5325" y="2.2225" size="1.27" layer="21" font="vector">7</text>
+<text x="10.025" y="2.2225" size="1.27" layer="21" font="vector">8</text>
+<text x="-16.3275" y="-2.8575" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-9.025" y="4.1275" size="1.27" layer="27">&gt;VALUE</text>
+<text x="13.525" y="2.2225" size="1.27" layer="21" font="vector">9</text>
+<polygon width="0.1016" layer="21">
+<vertex x="-15.375" y="-2.8575"/>
+<vertex x="-15.6925" y="-2.2225"/>
+<vertex x="-15.0575" y="-2.2225"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHRAUBKLEMME">
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<circle x="11.43" y="0" radius="0.6839" width="0.254" layer="94"/>
+<text x="1.27" y="-0.889" size="1.778" layer="95">&gt;NAME</text>
+<text x="13.97" y="-0.889" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="K" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1751316" prefix="X">
+<description>&lt;b&gt;MKDS 1/ 9-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 9&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
+<gates>
+<gate name="-1" symbol="SCHRAUBKLEMME" x="0" y="0" addlevel="always"/>
+<gate name="-2" symbol="SCHRAUBKLEMME" x="0" y="-7.62" addlevel="always"/>
+<gate name="-3" symbol="SCHRAUBKLEMME" x="0" y="-15.24" addlevel="always"/>
+<gate name="-4" symbol="SCHRAUBKLEMME" x="0" y="-22.86" addlevel="always"/>
+<gate name="-5" symbol="SCHRAUBKLEMME" x="0" y="-30.48" addlevel="always"/>
+<gate name="-6" symbol="SCHRAUBKLEMME" x="0" y="-38.1" addlevel="always"/>
+<gate name="-7" symbol="SCHRAUBKLEMME" x="0" y="-45.72" addlevel="always"/>
+<gate name="-8" symbol="SCHRAUBKLEMME" x="0" y="-53.34" addlevel="always"/>
+<gate name="-9" symbol="SCHRAUBKLEMME" x="0" y="-60.96" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="1751316">
+<connects>
+<connect gate="-1" pin="K" pad="1"/>
+<connect gate="-2" pin="K" pad="2"/>
+<connect gate="-3" pin="K" pad="3"/>
+<connect gate="-4" pin="K" pad="4"/>
+<connect gate="-5" pin="K" pad="5"/>
+<connect gate="-6" pin="K" pad="6"/>
+<connect gate="-7" pin="K" pad="7"/>
+<connect gate="-8" pin="K" pad="8"/>
+<connect gate="-9" pin="K" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -22501,6 +22660,7 @@ chip</description>
 <part name="GND123" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="0ZCJ0050AF2E"/>
 <part name="SV1" library="con-lsta" deviceset="FE15-2" device=""/>
+<part name="X2" library="con-phoenix-350" deviceset="1751316" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22542,6 +22702,14 @@ they were the wrong values</text>
 <text x="55.88" y="-81.28" size="1.778" layer="91">USB-</text>
 <text x="55.88" y="-88.9" size="1.778" layer="91">USB+</text>
 <text x="68.58" y="-86.36" size="1.778" layer="91">check that DM and DP are USB- and + (in datasheet)</text>
+<text x="162.56" y="-172.72" size="1.778" layer="91">connections:
+5V_IN
+GND
+2 AV
+2 DI
+CAN1H
+CAN1L
+5V</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="104.14" y="17.78"/>
@@ -23177,6 +23345,15 @@ they were the wrong values</text>
 <instance part="GND123" gate="1" x="58.42" y="-5.08"/>
 <instance part="F1" gate="G$1" x="15.24" y="10.16"/>
 <instance part="SV1" gate="1" x="264.16" y="-83.82"/>
+<instance part="X2" gate="-1" x="182.88" y="-137.16"/>
+<instance part="X2" gate="-2" x="182.88" y="-144.78"/>
+<instance part="X2" gate="-3" x="182.88" y="-152.4"/>
+<instance part="X2" gate="-4" x="182.88" y="-160.02"/>
+<instance part="X2" gate="-5" x="182.88" y="-167.64"/>
+<instance part="X2" gate="-6" x="182.88" y="-175.26"/>
+<instance part="X2" gate="-7" x="182.88" y="-182.88"/>
+<instance part="X2" gate="-8" x="182.88" y="-190.5"/>
+<instance part="X2" gate="-9" x="182.88" y="-198.12"/>
 </instances>
 <busses>
 </busses>
