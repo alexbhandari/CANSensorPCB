@@ -23809,6 +23809,11 @@ CAN1L
 <wire x1="248.92" y1="-160.02" x2="241.3" y2="-160.02" width="0.1524" layer="91"/>
 <label x="233.68" y="-160.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X2" gate="-6" pin="K"/>
+<wire x1="180.34" y1="-175.26" x2="175.26" y2="-175.26" width="0.1524" layer="91"/>
+<label x="167.64" y="-175.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CAN1L" class="0">
 <segment>
@@ -23829,6 +23834,11 @@ CAN1L
 <pinref part="X1" gate="/4" pin="1"/>
 <wire x1="248.92" y1="-162.56" x2="241.3" y2="-162.56" width="0.1524" layer="91"/>
 <label x="233.68" y="-162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-5" pin="K"/>
+<wire x1="180.34" y1="-167.64" x2="175.26" y2="-167.64" width="0.1524" layer="91"/>
+<label x="167.64" y="-167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN2L" class="0">
@@ -24745,9 +24755,9 @@ CAN1L
 <pinref part="U2" gate="A" pin="GND/HEATSINK_5"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-1" pin="K"/>
-<wire x1="180.34" y1="-137.16" x2="175.26" y2="-137.16" width="0.1524" layer="91"/>
-<label x="170.18" y="-137.16" size="1.778" layer="95"/>
+<pinref part="X2" gate="-2" pin="K"/>
+<wire x1="180.34" y1="-144.78" x2="175.26" y2="-144.78" width="0.1524" layer="91"/>
+<label x="170.18" y="-144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0_BUFFERED" class="0">
@@ -25734,6 +25744,11 @@ CAN1L
 <pinref part="IC2" gate="G$1" pin="VCC2"/>
 <wire x1="502.92" y1="-40.64" x2="505.46" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="X2" gate="-1" pin="K"/>
+<wire x1="180.34" y1="-137.16" x2="175.26" y2="-137.16" width="0.1524" layer="91"/>
+<label x="170.18" y="-137.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$45" class="0">
 <segment>
@@ -26240,6 +26255,11 @@ CAN1L
 <pinref part="X1" gate="/9" pin="1"/>
 <wire x1="241.3" y1="-175.26" x2="248.92" y2="-175.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="X2" gate="-4" pin="K"/>
+<wire x1="180.34" y1="-160.02" x2="175.26" y2="-160.02" width="0.1524" layer="91"/>
+<label x="167.64" y="-160.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="A3_IN" class="0">
 <segment>
@@ -26255,6 +26275,11 @@ CAN1L
 <label x="233.68" y="-177.8" size="1.778" layer="95"/>
 <pinref part="X1" gate="/10" pin="1"/>
 <wire x1="248.92" y1="-177.8" x2="241.3" y2="-177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-3" pin="K"/>
+<wire x1="180.34" y1="-152.4" x2="175.26" y2="-152.4" width="0.1524" layer="91"/>
+<label x="167.64" y="-152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A7_IN" class="0">
@@ -27182,36 +27207,6 @@ CAN1L
 <junction x="25.4" y="-154.94"/>
 <wire x1="25.4" y1="-144.78" x2="71.12" y2="-144.78" width="0.1524" layer="91"/>
 <junction x="25.4" y="-144.78"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="X2" gate="-6" pin="K"/>
-<wire x1="180.34" y1="-175.26" x2="175.26" y2="-175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="X2" gate="-5" pin="K"/>
-<wire x1="180.34" y1="-167.64" x2="175.26" y2="-167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="X2" gate="-4" pin="K"/>
-<wire x1="180.34" y1="-160.02" x2="175.26" y2="-160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$71" class="0">
-<segment>
-<pinref part="X2" gate="-3" pin="K"/>
-<wire x1="180.34" y1="-152.4" x2="175.26" y2="-152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$72" class="0">
-<segment>
-<pinref part="X2" gate="-2" pin="K"/>
-<wire x1="180.34" y1="-144.78" x2="175.26" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

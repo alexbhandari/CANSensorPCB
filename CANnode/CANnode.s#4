@@ -22008,239 +22008,6 @@ AS Series, Autosport, 8ST, Pro Caps&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="holes">
-<description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="2,8">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 2.8 mm with drill center</description>
-<wire x1="-1.778" y1="0" x2="0" y2="-1.778" width="2.286" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="1.778" x2="1.778" y2="0" width="2.286" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="0.635" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="2.921" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="2.032" layer="40"/>
-<circle x="0" y="0" radius="2.54" width="2.032" layer="39"/>
-<circle x="0" y="0" radius="2.54" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="2.54" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="2.54" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="1.5" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="2.8"/>
-</package>
-<package name="3,0">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.0 mm with drill center</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="1.6" width="0.2032" layer="21"/>
-<text x="-1.27" y="-3.81" size="1.27" layer="48">3,0</text>
-<hole x="0" y="0" drill="3"/>
-</package>
-<package name="3,3">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.3 mm with drill center</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.048" width="2.54" layer="39"/>
-<circle x="0" y="0" radius="3.048" width="2.54" layer="40"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="3.3"/>
-</package>
-<package name="3,6">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.6 mm with drill center</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.048" width="2.7686" layer="39"/>
-<circle x="0" y="0" radius="3.048" width="2.7686" layer="40"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="1.9" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="3.6"/>
-</package>
-<package name="4,1">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.1 mm with drill center</description>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="39"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="40"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="41"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
-<circle x="0" y="0" radius="2.15" width="0.1524" layer="21"/>
-<hole x="0" y="0" drill="4.1"/>
-</package>
-<package name="4,5">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.5 mm with drill center</description>
-<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
-<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
-<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
-<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
-<circle x="0" y="0" radius="3.8184" width="2.54" layer="41"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
-<circle x="0" y="0" radius="2.35" width="0.1524" layer="21"/>
-<text x="-1.27" y="-4.445" size="1.27" layer="48">4,5</text>
-<hole x="0" y="0" drill="4.5"/>
-</package>
-<package name="5,0">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 5.0 mm with drill center</description>
-<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
-<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
-<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
-<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
-<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
-<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
-<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
-<circle x="0" y="0" radius="2.6" width="0.1524" layer="21"/>
-<text x="-1.27" y="-4.445" size="1.27" layer="48">5,0</text>
-<hole x="0" y="0" drill="5"/>
-</package>
-<package name="3,2">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.2 mm with drill center</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
-<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
-<circle x="0" y="0" radius="1.7" width="0.2032" layer="21"/>
-<hole x="0" y="0" drill="3.2"/>
-</package>
-<package name="4,3">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 4.3 mm with drill center</description>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
-<circle x="0" y="0" radius="3.8184" width="2.54" layer="41"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="42"/>
-<circle x="0" y="0" radius="3.81" width="2.54" layer="43"/>
-<circle x="0" y="0" radius="2.25" width="0.1524" layer="21"/>
-<hole x="0" y="0" drill="4.3"/>
-</package>
-<package name="5,5">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 5.5 mm with drill center</description>
-<wire x1="4.445" y1="0" x2="2.159" y2="0" width="0.0508" layer="21"/>
-<wire x1="0" y1="4.445" x2="0" y2="2.159" width="0.0508" layer="21"/>
-<wire x1="-2.159" y1="0" x2="-4.445" y2="0" width="0.0508" layer="21"/>
-<wire x1="0" y1="-2.159" x2="0" y2="-4.445" width="0.0508" layer="21"/>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="3.9116" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="0" width="3.9116" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="4.4958" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="39"/>
-<circle x="0" y="0" radius="4.699" width="4.5466" layer="40"/>
-<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
-<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
-<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
-<circle x="0" y="0" radius="2.85" width="0.1524" layer="21"/>
-<hole x="0" y="0" drill="5.5"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MOUNT-HOLE">
-<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
-<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
-<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
-<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
-<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MOUNT-HOLE" prefix="H">
-<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; with drill center marker</description>
-<gates>
-<gate name="G$1" symbol="MOUNT-HOLE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="2.8" package="2,8">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3.0" package="3,0">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3.3" package="3,3">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3.6" package="3,6">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="4.1" package="4,1">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="4.5" package="4,5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="5.0" package="5,0">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3.2" package="3,2">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="4.3" package="4,3">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="5.5" package="5,5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="adafruit">
 <packages>
 <package name="1812">
@@ -22486,7 +22253,6 @@ chip</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="TP1" library="testpad" deviceset="TPS" device="B1,27"/>
-<part name="SV2" library="con-lsta" deviceset="FE15-2" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="R61" library="rcl" deviceset="R-US_" device="R0402" value="698"/>
@@ -22718,10 +22484,6 @@ chip</description>
 <part name="D33" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D34" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="D35" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
-<part name="H1" library="holes" deviceset="MOUNT-HOLE" device="5.5"/>
-<part name="H2" library="holes" deviceset="MOUNT-HOLE" device="5.5"/>
-<part name="H3" library="holes" deviceset="MOUNT-HOLE" device="5.5"/>
-<part name="H4" library="holes" deviceset="MOUNT-HOLE" device="5.5"/>
 <part name="R59" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>
 <part name="GND120" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
@@ -22738,6 +22500,7 @@ chip</description>
 <part name="C74" library="eagle-ltspice" deviceset="C" device="C0402" value="100nF"/>
 <part name="GND123" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="0ZCJ0050AF2E"/>
+<part name="SV1" library="con-lsta" deviceset="FE15-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22937,7 +22700,6 @@ they were the wrong values</text>
 <instance part="GND7" gate="1" x="40.64" y="-5.08"/>
 <instance part="GND8" gate="1" x="50.8" y="-5.08"/>
 <instance part="TP1" gate="G$1" x="116.84" y="-30.48"/>
-<instance part="SV2" gate="1" x="264.16" y="-83.82"/>
 <instance part="P+4" gate="1" x="254" y="-55.88"/>
 <instance part="+3V10" gate="G$1" x="274.32" y="-55.88"/>
 <instance part="R61" gate="G$1" x="599.44" y="-96.52"/>
@@ -23398,10 +23160,6 @@ they were the wrong values</text>
 <instance part="D33" gate="G$1" x="660.4" y="-152.4" rot="R90"/>
 <instance part="D34" gate="G$1" x="657.86" y="-314.96" rot="R90"/>
 <instance part="D35" gate="G$1" x="662.94" y="-360.68" rot="R90"/>
-<instance part="H1" gate="G$1" x="-2.54" y="-144.78"/>
-<instance part="H2" gate="G$1" x="-2.54" y="-154.94"/>
-<instance part="H3" gate="G$1" x="-2.54" y="-165.1"/>
-<instance part="H4" gate="G$1" x="-2.54" y="-175.26"/>
 <instance part="R59" gate="G$1" x="76.2" y="-144.78" rot="R180"/>
 <instance part="GND120" gate="1" x="93.98" y="-147.32"/>
 <instance part="P+5" gate="1" x="411.48" y="-101.6"/>
@@ -23418,6 +23176,7 @@ they were the wrong values</text>
 <instance part="C74" gate="G$1" x="58.42" y="5.08"/>
 <instance part="GND123" gate="1" x="58.42" y="-5.08"/>
 <instance part="F1" gate="G$1" x="15.24" y="10.16"/>
+<instance part="SV1" gate="1" x="264.16" y="-83.82"/>
 </instances>
 <busses>
 </busses>
@@ -23540,8 +23299,8 @@ they were the wrong values</text>
 <segment>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="274.32" y1="-58.42" x2="274.32" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="SV2" gate="1" pin="30"/>
 <wire x1="274.32" y1="-66.04" x2="271.78" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="30"/>
 </segment>
 <segment>
 <pinref part="+1V20" gate="G$1" pin="+3V3"/>
@@ -23810,10 +23569,10 @@ they were the wrong values</text>
 <junction x="325.12" y="63.5"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="1" pin="28"/>
 <wire x1="271.78" y1="-68.58" x2="279.4" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="-68.58" x2="279.4" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="A" pin="+1V2"/>
+<pinref part="SV1" gate="1" pin="28"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -23834,6 +23593,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-76.2" x2="248.92" y2="-76.2" width="0.1524" layer="91"/>
 <label x="241.3" y="-76.2" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="21"/>
 </segment>
 </net>
 <net name="CAN2TX" class="0">
@@ -23847,6 +23607,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-81.28" x2="248.92" y2="-81.28" width="0.1524" layer="91"/>
 <label x="241.3" y="-81.28" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="17"/>
 </segment>
 </net>
 <net name="CAN2RX" class="0">
@@ -23860,6 +23621,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="248.92" y1="-78.74" x2="256.54" y2="-78.74" width="0.1524" layer="91"/>
 <label x="241.3" y="-78.74" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="19"/>
 </segment>
 </net>
 <net name="CAN1RX" class="0">
@@ -23873,6 +23635,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-73.66" x2="248.92" y2="-73.66" width="0.1524" layer="91"/>
 <label x="241.3" y="-73.66" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="23"/>
 </segment>
 </net>
 <net name="CAN1H" class="0">
@@ -24439,6 +24202,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-71.12" x2="248.92" y2="-71.12" width="0.1524" layer="91"/>
 <label x="241.3" y="-71.12" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="25"/>
 </segment>
 <segment>
 <pinref part="D4" gate="G$1" pin="1"/>
@@ -25010,6 +24774,7 @@ they were the wrong values</text>
 <segment>
 <wire x1="256.54" y1="-68.58" x2="248.92" y2="-68.58" width="0.1524" layer="91"/>
 <label x="241.3" y="-68.58" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="27"/>
 </segment>
 <segment>
 <wire x1="10.16" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
@@ -25712,10 +25477,10 @@ they were the wrong values</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="29"/>
 <wire x1="256.54" y1="-66.04" x2="254" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="254" y1="-66.04" x2="254" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="29"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="VCC"/>
@@ -26125,6 +25890,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-83.82" size="1.778" layer="95"/>
 <wire x1="248.92" y1="-83.82" x2="256.54" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="15"/>
 </segment>
 </net>
 <net name="A4_IN" class="0">
@@ -26145,6 +25911,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-93.98" size="1.778" layer="95"/>
 <wire x1="248.92" y1="-93.98" x2="256.54" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="7"/>
 </segment>
 </net>
 <net name="A8_IN" class="0">
@@ -26165,6 +25932,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-71.12" size="1.778" layer="95"/>
 <wire x1="271.78" y1="-71.12" x2="287.02" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="26"/>
 </segment>
 </net>
 <net name="A12_IN" class="0">
@@ -26185,6 +25953,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-81.28" size="1.778" layer="95"/>
 <wire x1="271.78" y1="-81.28" x2="287.02" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="18"/>
 </segment>
 </net>
 <net name="D0_IN" class="0">
@@ -26205,6 +25974,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-83.82" size="1.778" layer="95"/>
 <wire x1="271.78" y1="-83.82" x2="287.02" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="16"/>
 </segment>
 </net>
 <net name="D4_IN" class="0">
@@ -26225,6 +25995,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-93.98" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-93.98" x2="271.78" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="8"/>
 </segment>
 </net>
 <net name="D5_IN" class="0">
@@ -26245,6 +26016,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-96.52" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-96.52" x2="271.78" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="6"/>
 </segment>
 </net>
 <net name="D1_IN" class="0">
@@ -26265,6 +26037,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-86.36" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-86.36" x2="271.78" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="14"/>
 </segment>
 </net>
 <net name="A13_IN" class="0">
@@ -26301,6 +26074,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-73.66" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-73.66" x2="271.78" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="24"/>
 </segment>
 </net>
 <net name="A5_IN" class="0">
@@ -26321,6 +26095,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-96.52" size="1.778" layer="95"/>
 <wire x1="256.54" y1="-96.52" x2="248.92" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="5"/>
 </segment>
 </net>
 <net name="A1_IN" class="0">
@@ -26341,6 +26116,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-86.36" size="1.778" layer="95"/>
 <wire x1="256.54" y1="-86.36" x2="248.92" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="13"/>
 </segment>
 </net>
 <net name="A2_IN" class="0">
@@ -26361,6 +26137,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-88.9" size="1.778" layer="95"/>
 <wire x1="248.92" y1="-88.9" x2="256.54" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="11"/>
 </segment>
 </net>
 <net name="A3_IN" class="0">
@@ -26381,6 +26158,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-91.44" size="1.778" layer="95"/>
 <wire x1="256.54" y1="-91.44" x2="248.92" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="9"/>
 </segment>
 </net>
 <net name="A7_IN" class="0">
@@ -26399,9 +26177,9 @@ they were the wrong values</text>
 <wire x1="241.3" y1="-187.96" x2="248.92" y2="-187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="1" pin="1"/>
 <wire x1="256.54" y1="-101.6" x2="248.92" y2="-101.6" width="0.1524" layer="91"/>
 <label x="241.3" y="-101.6" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="A11_IN" class="0">
@@ -26421,6 +26199,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-78.74" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-78.74" x2="271.78" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="20"/>
 </segment>
 </net>
 <net name="A15_IN" class="0">
@@ -26458,6 +26237,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-91.44" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-91.44" x2="271.78" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="10"/>
 </segment>
 </net>
 <net name="D7_IN" class="0">
@@ -26477,9 +26257,9 @@ they were the wrong values</text>
 <wire x1="281.94" y1="-180.34" x2="274.32" y2="-180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="1" pin="2"/>
 <wire x1="271.78" y1="-101.6" x2="287.02" y2="-101.6" width="0.1524" layer="91"/>
 <label x="279.4" y="-101.6" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="D6_IN" class="0">
@@ -26500,6 +26280,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-99.06" size="1.778" layer="95"/>
 <wire x1="287.02" y1="-99.06" x2="271.78" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="4"/>
 </segment>
 </net>
 <net name="D2_IN" class="0">
@@ -26519,6 +26300,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-88.9" size="1.778" layer="95"/>
 <wire x1="271.78" y1="-88.9" x2="287.02" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="12"/>
 </segment>
 </net>
 <net name="A14_IN" class="0">
@@ -26555,6 +26337,7 @@ they were the wrong values</text>
 <segment>
 <label x="279.4" y="-76.2" size="1.778" layer="95"/>
 <wire x1="271.78" y1="-76.2" x2="287.02" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="22"/>
 </segment>
 </net>
 <net name="A6_IN" class="0">
@@ -26575,6 +26358,7 @@ they were the wrong values</text>
 <segment>
 <label x="241.3" y="-99.06" size="1.778" layer="95"/>
 <wire x1="248.92" y1="-99.06" x2="256.54" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="FTDI_TCK" class="0">
