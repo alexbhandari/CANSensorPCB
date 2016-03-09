@@ -8,7 +8,7 @@
 </settings>
 <grid distance="6" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="12" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="6" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -8688,7 +8688,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.481253125" y1="32.944834375" x2="30.48578125" y2="32.9493625" width="0.127" layer="16"/>
 <wire x1="12.954" y1="34.058709375" x2="12.954" y2="37.938496875" width="0.127" layer="1"/>
 <wire x1="12.954" y1="37.938496875" x2="13.43126875" y2="38.415765625" width="0.127" layer="1"/>
-<wire x1="30.48578125" y1="32.9493625" x2="35.61378125" y2="33.909" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48578125" y1="32.9493625" x2="30.48578125" y2="33.53378125" width="0.127" layer="1"/>
+<wire x1="30.48578125" y1="33.53378125" x2="30.884625" y2="33.932625" width="0.127" layer="1"/>
+<wire x1="30.884625" y1="33.932625" x2="35.63740625" y2="33.932625" width="0.127" layer="1"/>
 </signal>
 <signal name="T_DIS">
 <contactref element="R92" pad="1"/>
@@ -8704,8 +8706,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R91" pad="1"/>
 <contactref element="U7" pad="78"/>
 <via x="26.23198125" y="33.417846875" extent="1-16" drill="0.254"/>
-<via x="30.8756375" y="33.415490625" extent="1-16" drill="0.254"/>
-<wire x1="30.8756375" y1="33.415490625" x2="35.634478125" y2="33.43555625" width="0.127" layer="1"/>
+<via x="31.1804375" y="33.415490625" extent="1-16" drill="0.254"/>
+<wire x1="31.1804375" y1="33.415490625" x2="35.634478125" y2="33.43555625" width="0.127" layer="1"/>
 <wire x1="35.634478125" y1="33.43555625" x2="35.63740625" y2="33.432628125" width="0.127" layer="1"/>
 <wire x1="14.480540625" y1="35.15170625" x2="14.480540625" y2="33.4740125" width="0.127" layer="1"/>
 <wire x1="14.480540625" y1="33.4740125" x2="16.304696875" y2="31.64985625" width="0.127" layer="1"/>
@@ -8713,7 +8715,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="22.892159375" y1="31.64985625" x2="24.66015" y2="33.417846875" width="0.127" layer="1"/>
 <wire x1="24.66015" y1="33.417846875" x2="26.23198125" y2="33.417846875" width="0.127" layer="1"/>
 <wire x1="26.23198125" y1="33.417846875" x2="30.87328125" y2="33.417846875" width="0.127" layer="16"/>
-<wire x1="30.87328125" y1="33.417846875" x2="30.8756375" y2="33.415490625" width="0.127" layer="16"/>
+<wire x1="30.87328125" y1="33.417846875" x2="31.1804375" y2="33.415490625" width="0.127" layer="16"/>
 </signal>
 <signal name="MCU_TCK">
 <contactref element="R90" pad="1"/>
