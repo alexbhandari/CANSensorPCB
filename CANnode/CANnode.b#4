@@ -5548,7 +5548,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="5.8166" y="14.3002" size="0.635" layer="25" rot="R180"/>
 <attribute name="VALUE" x="3.7338" y="16.0274" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C76" library="rcl" package="C0402" value=".1uF" x="35.052" y="38.1" rot="R270"/>
+<element name="C76" library="rcl" package="C0402" value=".1uF" x="35.052" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.671" y="39.3065" size="0.635" layer="25"/>
+<attribute name="VALUE" x="33.147" y="38.735" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="D36" library="zetex" package="SOD323" value="" x="55.245" y="47.625" smashed="yes">
 <attribute name="MF" value="" x="55.245" y="47.625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1824860" x="55.245" y="47.625" size="1.778" layer="27" display="off"/>

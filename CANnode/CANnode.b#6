@@ -6098,7 +6098,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$13">
 <contactref element="TP1" pad="TP"/>
 <contactref element="D36" pad="2"/>
-<wire x1="56.345" y1="47.625" x2="56.397015625" y2="49.05775625" width="0" layer="19" extent="1-1"/>
+<wire x1="56.345" y1="47.625" x2="56.397015625" y2="47.677015625" width="0.127" layer="1"/>
+<wire x1="56.397015625" y1="47.677015625" x2="56.397015625" y2="49.05775625" width="0.127" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="R9" pad="1"/>

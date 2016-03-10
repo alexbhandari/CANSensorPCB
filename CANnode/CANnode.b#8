@@ -2794,6 +2794,20 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
 <rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
 </package>
+<package name="SOD323">
+<description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
+<wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="0.575" x2="0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="-0.575" x2="-0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="-0.8" y1="-0.575" x2="-0.8" y2="0.575" width="0.2032" layer="51"/>
+<smd name="1" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<smd name="2" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<text x="-0.9" y="0.78" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.805" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.35" y1="-0.2" x2="-0.9" y2="0.2" layer="51"/>
+<rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
+<rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="varistor">
@@ -5535,6 +5549,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="3.7338" y="16.0274" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C76" library="rcl" package="C0402" value=".1uF" x="35.052" y="38.1" rot="R270"/>
+<element name="D36" library="zetex" package="SOD323" value="" x="-4.191" y="-3.937">
+<attribute name="MF" value="" x="-4.191" y="-3.937" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="1824860" x="-4.191" y="-3.937" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="79R6078" x="-4.191" y="-3.937" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CDSOD323-T05C" x="-4.191" y="-3.937" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -6061,9 +6081,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="37.866659375" y1="44.42865" x2="37.84276875" y2="44.452540625" width="0.127" layer="1"/>
 <wire x1="39.1074625" y1="43.99220625" x2="39.1074625" y2="41.1157" width="0.127" layer="1"/>
 <wire x1="39.1074625" y1="41.1157" x2="38.74205625" y2="40.75029375" width="0.127" layer="1"/>
+<contactref element="D36" pad="1"/>
+<wire x1="-5.291" y1="-3.937" x2="38.74205625" y2="40.75029375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="TP1" pad="TP"/>
+<contactref element="D36" pad="2"/>
+<wire x1="-3.091" y1="-3.937" x2="27.695015625" y2="58.83675625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="R9" pad="1"/>
