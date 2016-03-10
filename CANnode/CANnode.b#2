@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
@@ -14,7 +14,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -5548,7 +5548,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="5.8166" y="14.3002" size="0.635" layer="25" rot="R180"/>
 <attribute name="VALUE" x="3.7338" y="16.0274" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C76" library="rcl" package="C0402" value=".1uF" x="35.052" y="38.1" rot="R270"/>
+<element name="C76" library="rcl" package="C0402" value=".1uF" x="35.052" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.671" y="39.3065" size="0.635" layer="25"/>
+<attribute name="VALUE" x="33.147" y="38.735" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="D36" library="zetex" package="SOD323" value="" x="55.245" y="47.625" smashed="yes">
 <attribute name="MF" value="" x="55.245" y="47.625" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1824860" x="55.245" y="47.625" size="1.778" layer="27" display="off"/>
@@ -7267,7 +7270,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="38.29401875" y1="24.54445" x2="40.49981875" y2="26.75025" width="0.127" layer="1"/>
 <wire x1="49.79621875" y1="24.00705" x2="47.05301875" y2="26.75025" width="0.127" layer="1"/>
 <wire x1="38.29401875" y1="23.6360875" x2="38.29401875" y2="24.54445" width="0.127" layer="1"/>
-<wire x1="44.73051875" y1="1.29945" x2="47.66261875" y2="1.29945" width="0" layer="19" extent="1-16"/>
+<wire x1="44.73051875" y1="1.29945" x2="47.66261875" y2="1.29945" width="0.127" layer="16"/>
 </signal>
 <signal name="A9_BUFFERED">
 <contactref element="U5" pad="6"/>
@@ -8776,7 +8779,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U7" pad="75"/>
 <wire x1="5.4724125" y1="28.61364375" x2="4.181396875" y2="27.322628125" width="0.127" layer="1"/>
 <wire x1="4.181396875" y1="27.322628125" x2="4.181396875" y2="20.462925" width="0.127" layer="1"/>
-<wire x1="7.12821875" y1="17.516103125" x2="15.720871875" y2="17.516103125" width="0.127" layer="1"/>
 <wire x1="18.084421875" y1="19.55920625" x2="18.6998625" y2="19.55929375" width="0.127" layer="1"/>
 <via x="18.6998625" y="19.55929375" extent="1-16" drill="0.254"/>
 <via x="21.636340625" y="19.5502875" extent="1-16" drill="0.254"/>
@@ -8788,17 +8790,17 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="18.6998625" y1="19.55929375" x2="21.627334375" y2="19.55929375" width="0.127" layer="16"/>
 <wire x1="21.627334375" y1="19.55929375" x2="21.636340625" y2="19.5502875" width="0.127" layer="16"/>
 <wire x1="18.084421875" y1="19.55920625" x2="17.763975" y2="19.55920625" width="0.127" layer="1"/>
-<wire x1="17.763975" y1="19.55920625" x2="15.720871875" y2="17.516103125" width="0.127" layer="1"/>
-<wire x1="7.12821875" y1="17.516103125" x2="4.181396875" y2="20.462925" width="0.127" layer="1"/>
+<wire x1="17.763975" y1="19.55920625" x2="16.101871875" y2="17.897103125" width="0.127" layer="1"/>
+<wire x1="6.74721875" y1="17.897103125" x2="4.181396875" y2="20.462925" width="0.127" layer="1"/>
+<wire x1="6.74721875" y1="17.897103125" x2="16.101871875" y2="17.897103125" width="0.127" layer="1"/>
 </signal>
 <signal name="MCU_TRSTN">
 <contactref element="R94" pad="1"/>
 <contactref element="U7" pad="76"/>
 <wire x1="5.464659375" y1="27.310375" x2="4.595940625" y2="26.51785625" width="0.127" layer="1"/>
 <wire x1="4.595940625" y1="26.51785625" x2="4.595940625" y2="21.138921875" width="0.127" layer="1"/>
-<wire x1="4.595940625" y1="21.138921875" x2="7.4884" y2="18.1702625" width="0.127" layer="1"/>
-<wire x1="7.4884" y1="18.1702625" x2="15.602846875" y2="18.1702625" width="0.127" layer="1"/>
-<wire x1="15.602846875" y1="18.1702625" x2="17.455278125" y2="20.02269375" width="0.127" layer="1"/>
+<wire x1="4.595940625" y1="21.138921875" x2="7.3614" y2="18.4242625" width="0.127" layer="1"/>
+<wire x1="15.720584375" y1="18.288" x2="17.455278125" y2="20.02269375" width="0.127" layer="1"/>
 <wire x1="17.455278125" y1="20.02269375" x2="18.2744" y2="20.01631875" width="0.127" layer="1"/>
 <via x="18.2744" y="20.01631875" extent="1-16" drill="0.254"/>
 <via x="22.07230625" y="20.02360625" extent="1-16" drill="0.254"/>
@@ -8810,6 +8812,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="22.083575" y1="20.034875" x2="22.07230625" y2="20.02360625" width="0.127" layer="1"/>
 <wire x1="18.2744" y1="20.01631875" x2="22.06501875" y2="20.01631875" width="0.127" layer="16"/>
 <wire x1="22.06501875" y1="20.01631875" x2="22.07230625" y2="20.02360625" width="0.127" layer="16"/>
+<wire x1="15.720584375" y1="18.288" x2="7.4976625" y2="18.288" width="0.127" layer="1"/>
+<wire x1="7.4976625" y1="18.288" x2="7.3614" y2="18.4242625" width="0.127" layer="1"/>
 </signal>
 <signal name="MCU_TDI">
 <contactref element="R93" pad="1"/>
@@ -9164,12 +9168,24 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="SCI1_RX">
 <contactref element="R103" pad="2"/>
 <contactref element="U7" pad="94"/>
-<wire x1="12.342975" y1="18.540478125" x2="27.674025" y2="13.01609375" width="0" layer="19" extent="1-16"/>
+<wire x1="12.342975" y1="18.540478125" x2="12.342975" y2="18.391025" width="0.127" layer="16"/>
+<wire x1="12.342975" y1="18.391025" x2="13.1572" y2="17.5768" width="0.127" layer="16"/>
+<via x="13.1572" y="17.5768" extent="1-16" drill="0.254"/>
+<wire x1="13.1572" y1="17.5768" x2="16.3322" y2="17.5768" width="0.127" layer="1"/>
+<wire x1="16.3322" y1="17.5768" x2="17.7546" y2="16.1544" width="0.127" layer="1"/>
+<wire x1="17.7546" y1="16.1544" x2="27.674025" y2="13.01609375" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCI1_TX">
 <contactref element="R104" pad="2"/>
 <contactref element="U7" pad="95"/>
-<wire x1="8.686025" y1="18.74725625" x2="27.674025" y2="12.51609375" width="0" layer="19" extent="1-16"/>
+<wire x1="8.686025" y1="18.74725625" x2="8.686025" y2="18.644375" width="0.127" layer="16"/>
+<wire x1="8.686025" y1="18.644375" x2="9.7536" y2="17.5768" width="0.127" layer="16"/>
+<via x="9.7536" y="17.5768" extent="1-16" drill="0.254"/>
+<wire x1="9.7536" y1="17.5768" x2="12.0904" y2="17.5768" width="0.127" layer="1"/>
+<wire x1="12.0904" y1="17.5768" x2="12.6492" y2="17.018" width="0.127" layer="1"/>
+<wire x1="12.6492" y1="17.018" x2="16.3576" y2="17.018" width="0.127" layer="1"/>
+<wire x1="16.3576" y1="17.018" x2="17.526" y2="15.8496" width="0.127" layer="1"/>
+<wire x1="17.526" y1="15.8496" x2="27.674025" y2="12.51609375" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$38">
 <contactref element="U10" pad="40"/>
