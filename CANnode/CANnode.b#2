@@ -6429,7 +6429,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="15.22681875" y="49.83885"/>
 <vertex x="20.33221875" y="49.83885"/>
 </polygon>
-<via x="14.84581875" y="48.31485" extent="1-16" drill="0.254"/>
+<via x="14.74421875" y="47.83225" extent="1-16" drill="0.254"/>
 <via x="14.79501875" y="46.18125" extent="1-16" drill="0.254"/>
 <via x="13.85521875" y="46.15585" extent="1-16" drill="0.254"/>
 <via x="8.34341875" y="46.25745" extent="1-16" drill="0.254"/>

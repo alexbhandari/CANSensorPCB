@@ -11,7 +11,7 @@
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="6" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -8265,7 +8265,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R79" pad="2"/>
 <contactref element="D34" pad="2"/>
 <contactref element="X1" pad="26"/>
-<wire x1="21.364415625" y1="38.948665625" x2="20.68781875" y2="38.27206875" width="0.127" layer="1"/>
 <wire x1="20.68781875" y1="38.27206875" x2="20.68781875" y2="36.42765" width="0.127" layer="1"/>
 <wire x1="20.68781875" y1="36.42765" x2="21.37361875" y2="35.74185" width="0.127" layer="1"/>
 <wire x1="21.37361875" y1="35.74185" x2="21.37361875" y2="34.37025" width="0.127" layer="1"/>
@@ -8281,6 +8280,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.76401875" y1="33.76065" x2="20.76401875" y2="32.99865" width="0.127" layer="1"/>
 <wire x1="20.76401875" y1="32.99865" x2="21.67841875" y2="32.08425" width="0.127" layer="1"/>
 <wire x1="21.67841875" y1="32.08425" x2="21.67841875" y2="28.80765" width="0.127" layer="1"/>
+<wire x1="21.364415625" y1="38.948665625" x2="20.68781875" y2="38.27206875" width="0.127" layer="1"/>
 </signal>
 <signal name="D7_IN">
 <contactref element="R78" pad="2"/>
