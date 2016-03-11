@@ -4966,9 +4966,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="19.038265625" y="17.5657" size="0.635" layer="25" rot="R180"/>
 <attribute name="VALUE" x="21.832265625" y="18.2007" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="D38" library="led" package="SMARTLED-TTW" value="" x="32.6498375" y="55.199975" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.493375" y="56.410078125" size="0.635" layer="25" rot="R180"/>
-<attribute name="VALUE" x="33.9198375" y="57.104975" size="1.27" layer="27" rot="R180"/>
+<element name="D38" library="led" package="SMARTLED-TTW" value="" x="32.86943125" y="55.1800125" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.71296875" y="56.390115625" size="0.635" layer="25" rot="R180"/>
+<attribute name="VALUE" x="34.13943125" y="57.0850125" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="Q1" library="zetex" package="SOT-23" value="FDV302P" x="15.872103125" y="40.040909375" smashed="yes" rot="R180">
 <attribute name="MPN" value="" x="15.872103125" y="40.040909375" size="1.778" layer="27" rot="R180" display="off"/>
@@ -5122,9 +5122,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="38.6765375" y="36.676859375" size="0.635" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="38.468059375" y="35.877684375" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R3" library="resistor" package="R0402" value="400" x="35.2181625" y="55.177496875" smashed="yes">
-<attribute name="NAME" x="34.8625625" y="55.761696875" size="0.635" layer="25"/>
-<attribute name="VALUE" x="34.5831625" y="53.145496875" size="1.27" layer="27"/>
+<element name="R3" library="resistor" package="R0402" value="619" x="35.427771875" y="55.167515625" smashed="yes">
+<attribute name="NAME" x="35.072171875" y="55.751715625" size="0.635" layer="25"/>
+<attribute name="VALUE" x="34.792771875" y="53.135515625" size="1.27" layer="27"/>
 </element>
 <element name="R30" library="resistor" package="R0402" value="20.1k" x="35.011428125" y="39.4606125" smashed="yes" rot="MR180">
 <attribute name="NAME" x="33.167340625" y="39.025465625" size="0.635" layer="26" rot="MR180"/>
@@ -5997,9 +5997,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$2">
 <contactref element="D38" pad="A@1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="31.330628125" y1="55.22296875" x2="33.1498375" y2="55.199975" width="0.127" layer="1"/>
-<wire x1="33.1498375" y1="55.199975" x2="33.172315625" y2="55.177496875" width="0.254" layer="1"/>
-<wire x1="33.172315625" y1="55.177496875" x2="34.5681625" y2="55.177496875" width="0.254" layer="1"/>
+<wire x1="33.36943125" y1="55.1800125" x2="33.381928125" y2="55.167515625" width="0.381" layer="1"/>
+<wire x1="33.381928125" y1="55.167515625" x2="34.777771875" y2="55.167515625" width="0.381" layer="1"/>
 </signal>
 <signal name="CAN1TX">
 <contactref element="U7" pad="62"/>
@@ -6758,11 +6757,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="40.996221875" y1="49.440140625" x2="40.9699125" y2="51.615834375" width="0.4064" layer="1"/>
 <via x="40.524059375" y="18.211803125" extent="1-16" drill="0.1524"/>
 <via x="31.28461875" y="55.209940625" extent="1-16" drill="0.1524"/>
-<wire x1="32.1498375" y1="55.199975" x2="32.139871875" y2="55.209940625" width="0.127" layer="1"/>
-<wire x1="32.139871875" y1="55.209940625" x2="31.28461875" y2="55.209940625" width="0.254" layer="1"/>
+<wire x1="32.36943125" y1="55.1800125" x2="32.139871875" y2="55.209940625" width="0.127" layer="1"/>
 <via x="26.32661875" y="47.78145" extent="1-16" drill="0.254"/>
 <via x="24.878228125" y="47.79036875" extent="1-16" drill="0.254"/>
 <contactref element="D37" pad="1"/>
+<wire x1="31.28461875" y1="55.209940625" x2="31.314546875" y2="55.1800125" width="0.381" layer="1"/>
+<wire x1="31.314546875" y1="55.1800125" x2="32.36943125" y2="55.1800125" width="0.381" layer="1"/>
 <wire x1="9.56261875" y1="2.06145" x2="-5.0161875" y2="-4.11033125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A0_BUFFERED">
@@ -6994,8 +6994,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.5328375" y1="42.9179375" x2="31.36841875" y2="42.9179375" width="0.254" layer="1"/>
 <wire x1="23.3133" y1="52.864375" x2="18.650575" y2="52.864375" width="0.254" layer="1"/>
 <wire x1="18.0594" y1="52.2732" x2="18.650575" y2="52.864375" width="0.254" layer="1"/>
-<wire x1="28.306409375" y1="48.37636875" x2="27.74295625" y2="48.6099625" width="0" layer="19" extent="1-1"/>
 <wire x1="26.383203125" y1="55.568409375" x2="26.01470625" y2="55.1999125" width="0.381" layer="1"/>
+<wire x1="28.306409375" y1="48.37636875" x2="27.74295625" y2="48.6099625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="U$5" pad="2"/>
