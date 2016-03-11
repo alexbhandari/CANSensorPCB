@@ -5199,7 +5199,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="27.16353125" y="21.093190625" size="0.635" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="28.90304375" y="19.3364875" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R5" library="resistor" package="R0402" value="DNP" x="50.3942" y="32.098625" smashed="yes" rot="R90">
+<element name="R5" library="resistor" package="R0402" value="120" x="50.3942" y="32.098625" smashed="yes" rot="R90">
 <attribute name="NAME" x="52.103240625" y="32.362484375" size="0.635" layer="25" rot="R180"/>
 <attribute name="VALUE" x="52.4262" y="31.463625" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -5243,7 +5243,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="60.514234375" y="9.350153125" size="0.635" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="56.959346875" y="11.734996875" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R6" library="resistor" package="R0402" value="DNP" x="11.693925" y="12.123771875" smashed="yes" rot="R270">
+<element name="R6" library="resistor" package="R0402" value="120" x="11.693925" y="12.123771875" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.476725" y="12.057109375" size="0.635" layer="25"/>
 <attribute name="VALUE" x="9.661925" y="12.758771875" size="1.27" layer="27" rot="R270"/>
 </element>

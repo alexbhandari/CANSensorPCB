@@ -22060,8 +22060,8 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="619"/>
 <part name="D38" library="led" deviceset="LED" device=""/>
 <part name="D1" library="varistor" deviceset="VARISTOR" device="CN0805"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="120"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="120"/>
 <part name="C9" library="eagle-ltspice" deviceset="C" device="C0402" value=".1uF"/>
 <part name="C10" library="eagle-ltspice" deviceset="C" device="C0402" value=".1uF"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
