@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="6" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
@@ -17,7 +17,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -4379,6 +4379,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -5988,7 +5991,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.943315625" y1="16.9066625" x2="31.339746875" y2="16.9066625" width="0.254" layer="1"/>
 <wire x1="31.339746875" y1="16.9066625" x2="32.015509375" y2="17.582425" width="0.254" layer="1"/>
 <contactref element="C4" pad="-"/>
-<wire x1="48.169909375" y1="41.509225" x2="50.1396" y2="42.1908" width="0" layer="19" extent="1-1"/>
+<wire x1="50.1396" y1="42.1908" x2="47.407909375" y2="42.1908" width="0.508" layer="1"/>
+<wire x1="47.407909375" y1="42.1908" x2="47.407909375" y2="42.271225" width="0.508" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D38" pad="A@1"/>
@@ -6765,6 +6769,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C3" pad="+"/>
 <contactref element="C4" pad="+"/>
 <via x="49.693909375" y="37.521425" extent="1-16" drill="0.254"/>
+<via x="49.8602" y="43.7896" extent="1-16" drill="0.1524"/>
 </signal>
 <signal name="A0_BUFFERED">
 <contactref element="U3" pad="2"/>
@@ -9018,10 +9023,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="18.528109375" y="20.020825"/>
 <vertex x="15.937309375" y="20.020825"/>
 </polygon>
-<via x="3.440509375" y="19.690625" extent="1-16" drill="0.254"/>
-<via x="2.856309375" y="18.954025" extent="1-16" drill="0.254"/>
-<via x="5.218509375" y="19.690625" extent="1-16" drill="0.254"/>
-<via x="5.929709375" y="18.954025" extent="1-16" drill="0.254"/>
+<via x="5.878909375" y="19.639825" extent="1-16" drill="0.254"/>
+<via x="5.853509375" y="18.903225" extent="1-16" drill="0.254"/>
 <via x="6.869509375" y="24.516625" extent="1-16" drill="0.254"/>
 <via x="12.714546875" y="31.449609375" extent="1-16" drill="0.1524"/>
 <wire x1="7.425159375" y1="32.907271875" x2="7.03836875" y2="33.2940625" width="0.1524" layer="16"/>
@@ -9047,6 +9050,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.20131875" y1="33.062215625" x2="12.70791875" y2="32.568815625" width="0.127" layer="1"/>
 <wire x1="13.097525" y1="31.44740625" x2="12.71675" y2="31.44740625" width="0.127" layer="1"/>
 <wire x1="12.71675" y1="31.44740625" x2="12.714546875" y2="31.449609375" width="0.127" layer="1"/>
+<via x="1.967309375" y="19.792225" extent="1-16" drill="0.254"/>
+<via x="1.967309375" y="19.030225" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="JTAG_SEL">
 <contactref element="R60" pad="1"/>
