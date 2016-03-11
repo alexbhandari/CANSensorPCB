@@ -22059,7 +22059,7 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <part name="C4" library="eagle-ltspice" deviceset="C" device="C0402" value="47uF"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$1" library="supply1" deviceset="+1V2" device=""/>
-<part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="250"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="619"/>
 <part name="D38" library="led" deviceset="LED" device=""/>
 <part name="D1" library="varistor" deviceset="VARISTOR" device="CN0805"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>

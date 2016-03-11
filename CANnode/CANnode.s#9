@@ -22061,7 +22061,7 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <part name="U$1" library="supply1" deviceset="+1V2" device=""/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="250"/>
 <part name="LED1" library="led" deviceset="LED" device=""/>
-<part name="R4" library="varistor" deviceset="VARISTOR" device="CN0805"/>
+<part name="D1" library="varistor" deviceset="VARISTOR" device="CN0805"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="DNP"/>
 <part name="C9" library="eagle-ltspice" deviceset="C" device="C0402" value=".1uF"/>
@@ -22520,7 +22520,7 @@ CAN1L
 <instance part="U$1" gate="A" x="248.92" y="2.54"/>
 <instance part="R3" gate="G$1" x="30.48" y="5.08" rot="R90"/>
 <instance part="LED1" gate="G$1" x="30.48" y="-5.08"/>
-<instance part="R4" gate="G$1" x="0" y="5.08" rot="R90"/>
+<instance part="D1" gate="G$1" x="0" y="5.08" rot="R90"/>
 <instance part="R5" gate="G$1" x="523.24" y="25.4" rot="R90"/>
 <instance part="R6" gate="G$1" x="520.7" y="-48.26" rot="R90"/>
 <instance part="C9" gate="G$1" x="513.08" y="43.18" rot="MR0"/>
@@ -23986,7 +23986,7 @@ CAN1L
 <wire x1="17.78" y1="-106.68" x2="17.78" y2="-101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="2"/>
 <wire x1="0" y1="0" x2="0" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
@@ -25544,7 +25544,7 @@ CAN1L
 <junction x="58.42" y="12.7"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="12.7" x2="0" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="1"/>
 <wire x1="0" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="0" y1="10.16" x2="0" y2="12.7" width="0.1524" layer="91"/>
 <junction x="0" y="12.7"/>
