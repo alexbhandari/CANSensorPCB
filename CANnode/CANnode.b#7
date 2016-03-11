@@ -5122,7 +5122,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="38.6765375" y="36.676859375" size="0.635" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="38.468059375" y="35.877684375" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R3" library="resistor" package="R0402" value="1K" x="35.427771875" y="55.167515625" smashed="yes">
+<element name="R3" library="resistor" package="R0402" value="619" x="35.427771875" y="55.167515625" smashed="yes">
 <attribute name="NAME" x="35.072171875" y="55.751715625" size="0.635" layer="25"/>
 <attribute name="VALUE" x="34.792771875" y="53.135515625" size="1.27" layer="27"/>
 </element>
@@ -5560,9 +5560,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="57.52" y="47.389" size="0.635" layer="25"/>
 <attribute name="VALUE" x="54.345" y="45.82" size="1.016" layer="27"/>
 </element>
-<element name="D37" library="eagle-ltspice" package="R0402" value="TVS DIODE" x="-4.3661875" y="-4.11033125">
-<attribute name="SPICEMODEL" value="NONE" x="-4.3661875" y="-4.11033125" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-4.3661875" y="-4.11033125" size="1.778" layer="27" display="off"/>
+<element name="D37" library="eagle-ltspice" package="R0402" value="TVS DIODE" x="30.17755" y="54.63835" rot="R270">
+<attribute name="SPICEMODEL" value="NONE" x="30.17755" y="54.63835" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="30.17755" y="54.63835" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>
@@ -6763,7 +6763,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D37" pad="1"/>
 <wire x1="31.28461875" y1="55.209940625" x2="31.314546875" y2="55.1800125" width="0.381" layer="1"/>
 <wire x1="31.314546875" y1="55.1800125" x2="32.36943125" y2="55.1800125" width="0.381" layer="1"/>
-<wire x1="9.56261875" y1="2.06145" x2="-5.0161875" y2="-4.11033125" width="0" layer="19" extent="1-1"/>
+<wire x1="30.17755" y1="55.28835" x2="30.488846875" y2="55.209940625" width="0.381" layer="1"/>
+<wire x1="30.488846875" y1="55.209940625" x2="31.28461875" y2="55.209940625" width="0.381" layer="1"/>
 </signal>
 <signal name="A0_BUFFERED">
 <contactref element="U3" pad="2"/>
@@ -7771,7 +7772,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="F1" pad="2"/>
 <contactref element="D1" pad="1"/>
 <contactref element="D37" pad="2"/>
-<wire x1="15.079996875" y1="5.79253125" x2="-3.7161875" y2="-4.11033125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$45">
 <contactref element="R61" pad="1"/>

@@ -5122,7 +5122,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="38.6765375" y="36.676859375" size="0.635" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="38.468059375" y="35.877684375" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R3" library="resistor" package="R0402" value="400" x="35.427771875" y="55.167515625" smashed="yes">
+<element name="R3" library="resistor" package="R0402" value="1K" x="35.427771875" y="55.167515625" smashed="yes">
 <attribute name="NAME" x="35.072171875" y="55.751715625" size="0.635" layer="25"/>
 <attribute name="VALUE" x="34.792771875" y="53.135515625" size="1.27" layer="27"/>
 </element>
