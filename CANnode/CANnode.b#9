@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
@@ -9287,22 +9287,22 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="CGND">
 <contactref element="R59" pad="2"/>
-<via x="55.68901875" y="4.11885" extent="1-16" drill="5.4999875"/>
-<via x="4.76201875" y="53.26785" extent="1-16" drill="5.4999875"/>
-<via x="4.45721875" y="4.34745" extent="1-16" drill="5.4999875"/>
-<via x="55.58741875" y="53.80125" extent="1-16" drill="5.4999875"/>
-<wire x1="55.68901875" y1="4.11885" x2="51.57016875" y2="0" width="0.6096" layer="16"/>
-<wire x1="51.57016875" y1="0" x2="8.80466875" y2="0" width="0.6096" layer="16"/>
-<wire x1="8.80466875" y1="0" x2="4.45721875" y2="4.34745" width="0.6096" layer="16"/>
-<wire x1="55.68901875" y1="4.11885" x2="58.293" y2="6.72283125" width="0.6096" layer="16"/>
-<wire x1="58.293" y1="6.72283125" x2="58.293" y2="8.509" width="0.6096" layer="16"/>
-<wire x1="58.293" y1="8.509" x2="58.293" y2="51.09566875" width="0.6096" layer="16"/>
-<wire x1="58.293" y1="51.09566875" x2="55.58741875" y2="53.80125" width="0.6096" layer="16"/>
+<via x="55.81591875" y="3.112725" extent="1-16" drill="5.4999875"/>
+<via x="3.609425" y="53.78600625" extent="1-16" drill="5.4999875"/>
+<via x="3.646153125" y="3.146228125" extent="1-16" drill="5.4999875"/>
+<via x="55.926703125" y="53.82995625" extent="1-16" drill="5.4999875"/>
+<wire x1="52.70319375" y1="0" x2="6.79238125" y2="0" width="0.6096" layer="16"/>
+<wire x1="58.293" y1="5.58980625" x2="58.293" y2="8.509" width="0.6096" layer="16"/>
+<wire x1="58.293" y1="8.509" x2="58.293" y2="51.463659375" width="0.6096" layer="16"/>
 <wire x1="56.97505625" y1="8.812421875" x2="57.989578125" y2="8.812421875" width="0.6096" layer="16"/>
 <wire x1="57.989578125" y1="8.812421875" x2="58.293" y2="8.509" width="0.6096" layer="16"/>
-<wire x1="4.45721875" y1="4.34745" x2="0.508" y2="8.29666875" width="0.508" layer="1"/>
-<wire x1="0.508" y1="8.29666875" x2="0.508" y2="49.01383125" width="0.508" layer="1"/>
-<wire x1="0.508" y1="49.01383125" x2="4.76201875" y2="53.26785" width="0.508" layer="1"/>
+<wire x1="0.508" y1="6.28438125" x2="0.508" y2="50.68458125" width="0.508" layer="1"/>
+<wire x1="58.293" y1="51.463659375" x2="55.926703125" y2="53.82995625" width="0.6096" layer="16"/>
+<wire x1="58.293" y1="5.58980625" x2="55.81591875" y2="3.112725" width="0.6096" layer="16"/>
+<wire x1="52.70319375" y1="0" x2="55.81591875" y2="3.112725" width="0.6096" layer="16"/>
+<wire x1="6.79238125" y1="0" x2="3.646153125" y2="3.146228125" width="0.6096" layer="16"/>
+<wire x1="0.508" y1="6.28438125" x2="3.646153125" y2="3.146228125" width="0.508" layer="1"/>
+<wire x1="0.508" y1="50.68458125" x2="3.609425" y2="53.78600625" width="0.508" layer="1"/>
 </signal>
 <signal name="N$8">
 </signal>
