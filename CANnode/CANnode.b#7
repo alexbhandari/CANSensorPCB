@@ -5555,7 +5555,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="50.6984" y="50.3682" size="0.635" layer="25" rot="R180"/>
 <attribute name="VALUE" x="53.3146" y="44.3992" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4" library="resistor" package="CT3528" value="47uF" x="50.1396" y="40.6908" rot="R90"/>
+<element name="C4" library="resistor" package="CT3528" value="47uF" x="50.1396" y="40.6908" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.5648" y="40.9194" size="0.635" layer="25" rot="R180"/>
+<attribute name="VALUE" x="53.3146" y="38.1508" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
