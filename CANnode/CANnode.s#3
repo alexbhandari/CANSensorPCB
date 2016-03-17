@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22055,6 +22055,8 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <part name="C2" library="eagle-ltspice" deviceset="C" device="C0402" value="1uF"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0402" value="250k"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="250k"/>
+<part name="C3" library="eagle-ltspice" deviceset="C" device="C0402" value="22uF"/>
+<part name="C4" library="eagle-ltspice" deviceset="C" device="C0402" value="47uF"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$1" library="supply1" deviceset="+1V2" device=""/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="619"/>
@@ -22463,8 +22465,6 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <part name="D36" library="zetex" deviceset="D" device="SOD323"/>
 <part name="D37" library="eagle-ltspice" deviceset="R" device="R0402" value="TVS DIODE"/>
 <part name="GND131" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="resistor" deviceset="CPOL-EU" device="CT3528" value="22uF"/>
-<part name="C4" library="resistor" deviceset="CPOL-EU" device="CT3528" value="47uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -22516,6 +22516,8 @@ CAN1L
 <instance part="C2" gate="G$1" x="78.74" y="-10.16"/>
 <instance part="R1" gate="G$1" x="215.9" y="7.62" rot="R90"/>
 <instance part="R2" gate="G$1" x="223.52" y="7.62" rot="R90"/>
+<instance part="C3" gate="G$1" x="233.68" y="10.16"/>
+<instance part="C4" gate="G$1" x="233.68" y="-7.62"/>
 <instance part="+3V1" gate="G$1" x="248.92" y="20.32"/>
 <instance part="U$1" gate="A" x="248.92" y="2.54"/>
 <instance part="R3" gate="G$1" x="30.48" y="5.08" rot="R90"/>
@@ -23163,8 +23165,6 @@ CAN1L
 <instance part="D36" gate="G$1" x="78.74" y="-33.02" rot="R180"/>
 <instance part="D37" gate="G$1" x="15.24" y="5.08" rot="R90"/>
 <instance part="GND131" gate="1" x="15.24" y="-15.24"/>
-<instance part="C3" gate="G$1" x="233.68" y="10.16"/>
-<instance part="C4" gate="G$1" x="233.68" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -23207,12 +23207,12 @@ CAN1L
 <wire x1="215.9" y1="12.7" x2="223.52" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <junction x="223.52" y="12.7"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="223.52" y1="12.7" x2="233.68" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<junction x="233.68" y="12.7"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="233.68" y1="12.7" x2="248.92" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="12.7" x2="248.92" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="+"/>
-<junction x="233.68" y="12.7"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -23498,11 +23498,11 @@ CAN1L
 <junction x="203.2" y="-7.62"/>
 <wire x1="203.2" y1="-5.08" x2="233.68" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="203.2" y="-5.08"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<junction x="233.68" y="-5.08"/>
 <pinref part="U$1" gate="A" pin="+1V2"/>
 <wire x1="233.68" y1="-5.08" x2="248.92" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="-5.08" x2="248.92" y2="0" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="+"/>
-<junction x="233.68" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="1"/>
@@ -24009,14 +24009,14 @@ CAN1L
 <wire x1="78.74" y1="-17.78" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="2.54" x2="233.68" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="C3" gate="G$1" pin="-"/>
 </segment>
 <segment>
+<pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="-15.24" x2="233.68" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="472.44" y1="25.4" x2="472.44" y2="15.24" width="0.1524" layer="91"/>
