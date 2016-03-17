@@ -17,7 +17,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -9023,10 +9023,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="18.528109375" y="20.020825"/>
 <vertex x="15.937309375" y="20.020825"/>
 </polygon>
-<via x="3.440509375" y="19.690625" extent="1-16" drill="0.254"/>
-<via x="2.856309375" y="18.954025" extent="1-16" drill="0.254"/>
-<via x="5.218509375" y="19.690625" extent="1-16" drill="0.254"/>
-<via x="5.929709375" y="18.954025" extent="1-16" drill="0.254"/>
+<via x="5.878909375" y="19.639825" extent="1-16" drill="0.254"/>
+<via x="5.853509375" y="18.903225" extent="1-16" drill="0.254"/>
 <via x="6.869509375" y="24.516625" extent="1-16" drill="0.254"/>
 <via x="12.714546875" y="31.449609375" extent="1-16" drill="0.1524"/>
 <wire x1="7.425159375" y1="32.907271875" x2="7.03836875" y2="33.2940625" width="0.1524" layer="16"/>
@@ -9052,6 +9050,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.20131875" y1="33.062215625" x2="12.70791875" y2="32.568815625" width="0.127" layer="1"/>
 <wire x1="13.097525" y1="31.44740625" x2="12.71675" y2="31.44740625" width="0.127" layer="1"/>
 <wire x1="12.71675" y1="31.44740625" x2="12.714546875" y2="31.449609375" width="0.127" layer="1"/>
+<via x="1.967309375" y="19.792225" extent="1-16" drill="0.254"/>
+<via x="1.967309375" y="19.030225" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="JTAG_SEL">
 <contactref element="R60" pad="1"/>

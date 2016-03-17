@@ -1088,7 +1088,6 @@ Zoltan Bardos</text>
 <rectangle x1="55.491378125" y1="13.749015625" x2="55.628534375" y2="13.764253125" layer="22"/>
 <rectangle x1="55.537096875" y1="13.76425625" x2="55.628534375" y2="13.77949375" layer="22"/>
 <rectangle x1="55.58281875" y1="13.779496875" x2="55.61329375" y2="13.794734375" layer="22"/>
-<text x="24.1554" y="0.8128" size="0.635" layer="21">Built and assembled by Bittele</text>
 </plain>
 <libraries>
 <library name="eagle-ltspice">
