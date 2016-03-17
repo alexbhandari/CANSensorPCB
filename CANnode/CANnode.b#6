@@ -17,7 +17,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -175,9 +175,9 @@ Zoltan Bardos</text>
 <wire x1="36.957" y1="54.864" x2="35.56" y2="54.864" width="0.127" layer="21"/>
 <text x="8.89" y="55.118" size="0.889" layer="21">USB</text>
 <wire x1="8.509" y1="56.388" x2="8.509" y2="54.737" width="0.127" layer="21"/>
-<wire x1="8.509" y1="54.737" x2="11.557" y2="54.737" width="0.127" layer="21"/>
-<wire x1="11.557" y1="54.737" x2="11.557" y2="56.388" width="0.127" layer="21"/>
-<wire x1="11.557" y1="56.388" x2="8.509" y2="56.388" width="0.127" layer="21"/>
+<wire x1="8.509" y1="54.737" x2="11.43" y2="54.737" width="0.127" layer="21"/>
+<wire x1="11.43" y1="54.737" x2="11.43" y2="56.388" width="0.127" layer="21"/>
+<wire x1="11.43" y1="56.388" x2="8.509" y2="56.388" width="0.127" layer="21"/>
 <text x="19.431" y="25.273" size="0.889" layer="21">Emulator</text>
 <text x="34.925" y="16.51" size="0.889" layer="21">RM42</text>
 <text x="31.496" y="27.686" size="0.889" layer="21">Controller</text>
@@ -204,7 +204,7 @@ Zoltan Bardos</text>
 <wire x1="24.384" y1="49.784" x2="28.321" y2="49.784" width="0.127" layer="21"/>
 <wire x1="28.321" y1="49.784" x2="28.321" y2="51.181" width="0.127" layer="21"/>
 <wire x1="28.321" y1="51.181" x2="24.384" y2="51.181" width="0.127" layer="21"/>
-<text x="52.705" y="19.431" size="0.889" layer="21" rot="R90">Test Connector</text>
+<text x="52.705" y="18.923" size="0.889" layer="21" rot="R90">Test Connector</text>
 <text x="17.907" y="0.762" size="0.889" layer="22" rot="MR0">AI 0-3</text>
 <text x="50.292" y="0.762" size="0.889" layer="22" rot="MR0">AI 4-7</text>
 <text x="44.069" y="0.762" size="0.889" layer="22" rot="MR0">AI 8-11</text>

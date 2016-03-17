@@ -157,7 +157,7 @@ Dong Yeol Lee
 Zoltan Bardos</text>
 <text x="38.226290625" y="56.516575" size="1.524" layer="25">CAN Remote I/O</text>
 <text x="38.353290625" y="55.246575" size="0.889" layer="25">P/N: PCBA-001 Rev1</text>
-<text x="24.1554" y="0.8128" size="0.635" layer="21">Built and assembled by Bittele</text>
+<text x="22.2504" y="0.8128" size="0.635" layer="21">Built and assembled by Bittele Electonics</text>
 <text x="47.8536" y="51.4604" size="0.635" layer="21">3.3V</text>
 <text x="46.8376" y="40.1828" size="0.635" layer="21">1.2V</text>
 <wire x1="47.625" y1="52.324" x2="47.625" y2="51.308" width="0.127" layer="21"/>
@@ -175,9 +175,9 @@ Zoltan Bardos</text>
 <wire x1="36.957" y1="54.864" x2="35.56" y2="54.864" width="0.127" layer="21"/>
 <text x="8.89" y="55.118" size="0.889" layer="21">USB</text>
 <wire x1="8.509" y1="56.388" x2="8.509" y2="54.737" width="0.127" layer="21"/>
-<wire x1="8.509" y1="54.737" x2="11.557" y2="54.737" width="0.127" layer="21"/>
-<wire x1="11.557" y1="54.737" x2="11.557" y2="56.388" width="0.127" layer="21"/>
-<wire x1="11.557" y1="56.388" x2="8.509" y2="56.388" width="0.127" layer="21"/>
+<wire x1="8.509" y1="54.737" x2="11.43" y2="54.737" width="0.127" layer="21"/>
+<wire x1="11.43" y1="54.737" x2="11.43" y2="56.388" width="0.127" layer="21"/>
+<wire x1="11.43" y1="56.388" x2="8.509" y2="56.388" width="0.127" layer="21"/>
 <text x="19.431" y="25.273" size="0.889" layer="21">Emulator</text>
 <text x="34.925" y="16.51" size="0.889" layer="21">RM42</text>
 <text x="31.496" y="27.686" size="0.889" layer="21">Controller</text>

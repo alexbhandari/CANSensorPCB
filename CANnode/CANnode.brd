@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,9 +9,9 @@
 <grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="6" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -157,13 +157,12 @@ Dong Yeol Lee
 Zoltan Bardos</text>
 <text x="38.226290625" y="56.516575" size="1.524" layer="25">CAN Remote I/O</text>
 <text x="38.353290625" y="55.246575" size="0.889" layer="25">P/N: PCBA-001 Rev1</text>
-<text x="22.2504" y="0.8128" size="0.635" layer="21">Built and assembled by Bittele Electonics</text>
-<text x="47.8536" y="51.4604" size="0.635" layer="21">3.3V</text>
+<text x="48.2346" y="51.2064" size="0.635" layer="21">3.3V</text>
 <text x="46.8376" y="40.1828" size="0.635" layer="21">1.2V</text>
-<wire x1="47.625" y1="52.324" x2="47.625" y2="51.308" width="0.127" layer="21"/>
-<wire x1="47.625" y1="51.308" x2="49.784" y2="51.308" width="0.127" layer="21"/>
-<wire x1="49.784" y1="51.308" x2="49.784" y2="52.324" width="0.127" layer="21"/>
-<wire x1="49.784" y1="52.324" x2="47.625" y2="52.324" width="0.127" layer="21"/>
+<wire x1="48.006" y1="52.07" x2="48.006" y2="51.054" width="0.127" layer="21"/>
+<wire x1="48.006" y1="51.054" x2="50.165" y2="51.054" width="0.127" layer="21"/>
+<wire x1="50.165" y1="51.054" x2="50.165" y2="52.07" width="0.127" layer="21"/>
+<wire x1="50.165" y1="52.07" x2="48.006" y2="52.07" width="0.127" layer="21"/>
 <wire x1="48.768" y1="41.021" x2="46.736" y2="41.021" width="0.127" layer="21"/>
 <wire x1="46.736" y1="41.021" x2="46.736" y2="40.005" width="0.127" layer="21"/>
 <wire x1="46.736" y1="40.005" x2="48.768" y2="40.005" width="0.127" layer="21"/>
@@ -180,7 +179,7 @@ Zoltan Bardos</text>
 <wire x1="11.43" y1="56.388" x2="8.509" y2="56.388" width="0.127" layer="21"/>
 <text x="19.431" y="25.273" size="0.889" layer="21">Emulator</text>
 <text x="34.925" y="16.51" size="0.889" layer="21">RM42</text>
-<text x="31.496" y="27.686" size="0.889" layer="21">Controller</text>
+<text x="30.734" y="27.686" size="0.889" layer="21">Controller</text>
 <text x="34.163" y="32.385" size="0.889" layer="21">CAN1</text>
 <text x="18.415" y="4.318" size="0.889" layer="21">CAN2</text>
 <wire x1="18.161" y1="5.588" x2="18.161" y2="3.937" width="0.127" layer="21"/>
@@ -192,18 +191,18 @@ Zoltan Bardos</text>
 <wire x1="37.338" y1="32.004" x2="37.338" y2="33.655" width="0.127" layer="21"/>
 <wire x1="37.338" y1="33.655" x2="33.909" y2="33.655" width="0.127" layer="21"/>
 <wire x1="19.177" y1="26.543" x2="19.177" y2="24.892" width="0.127" layer="21"/>
-<wire x1="19.177" y1="24.892" x2="24.765" y2="24.892" width="0.127" layer="21"/>
-<wire x1="24.765" y1="24.892" x2="24.765" y2="26.543" width="0.127" layer="21"/>
-<wire x1="24.765" y1="26.543" x2="19.177" y2="26.543" width="0.127" layer="21"/>
-<wire x1="31.242" y1="28.956" x2="31.242" y2="27.305" width="0.127" layer="21"/>
-<wire x1="31.242" y1="27.305" x2="37.084" y2="27.305" width="0.127" layer="21"/>
+<wire x1="19.177" y1="24.892" x2="25.654" y2="24.892" width="0.127" layer="21"/>
+<wire x1="25.654" y1="24.892" x2="25.654" y2="26.543" width="0.127" layer="21"/>
+<wire x1="25.654" y1="26.543" x2="19.177" y2="26.543" width="0.127" layer="21"/>
+<wire x1="30.226" y1="28.956" x2="30.226" y2="27.305" width="0.127" layer="21"/>
+<wire x1="30.226" y1="27.305" x2="37.084" y2="27.305" width="0.127" layer="21"/>
 <wire x1="37.084" y1="27.305" x2="37.084" y2="28.956" width="0.127" layer="21"/>
-<wire x1="37.084" y1="28.956" x2="31.242" y2="28.956" width="0.127" layer="21"/>
-<text x="24.638" y="50.038" size="0.889" layer="21">Power</text>
-<wire x1="24.384" y1="51.181" x2="24.384" y2="49.784" width="0.127" layer="21"/>
-<wire x1="24.384" y1="49.784" x2="28.321" y2="49.784" width="0.127" layer="21"/>
+<wire x1="37.084" y1="28.956" x2="30.226" y2="28.956" width="0.127" layer="21"/>
+<text x="24.13" y="50.038" size="0.889" layer="21">Power</text>
+<wire x1="23.749" y1="51.181" x2="23.749" y2="49.784" width="0.127" layer="21"/>
+<wire x1="23.749" y1="49.784" x2="28.321" y2="49.784" width="0.127" layer="21"/>
 <wire x1="28.321" y1="49.784" x2="28.321" y2="51.181" width="0.127" layer="21"/>
-<wire x1="28.321" y1="51.181" x2="24.384" y2="51.181" width="0.127" layer="21"/>
+<wire x1="28.321" y1="51.181" x2="23.749" y2="51.181" width="0.127" layer="21"/>
 <text x="52.705" y="18.923" size="0.889" layer="21" rot="R90">Test Connector</text>
 <text x="17.907" y="0.762" size="0.889" layer="22" rot="MR0">AI 0-3</text>
 <text x="50.292" y="0.762" size="0.889" layer="22" rot="MR0">AI 4-7</text>
@@ -4418,9 +4417,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
