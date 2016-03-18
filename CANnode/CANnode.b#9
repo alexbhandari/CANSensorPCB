@@ -9,9 +9,9 @@
 <grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="2" fill="1" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="6" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -157,7 +157,6 @@ Dong Yeol Lee
 Zoltan Bardos</text>
 <text x="38.226290625" y="56.516575" size="1.524" layer="25">CAN Remote I/O</text>
 <text x="38.353290625" y="55.246575" size="0.889" layer="25">P/N: PCBA-001 Rev1</text>
-<text x="22.2504" y="0.8128" size="0.635" layer="21">Built and assembled by Bittele Electonics</text>
 <text x="48.2346" y="51.2064" size="0.635" layer="21">3.3V</text>
 <text x="46.8376" y="40.1828" size="0.635" layer="21">1.2V</text>
 <wire x1="48.006" y1="52.07" x2="48.006" y2="51.054" width="0.127" layer="21"/>
