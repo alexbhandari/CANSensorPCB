@@ -1,2 +1,4 @@
 *.lck
+*.b#*
+*.s#*
 CANnode.PrjPcb/__Previews/CANnode.PcbDocPreview
