@@ -1,4 +1,4 @@
-# RM42 CAN Sensor Node
+# Sensor to CAN Bus Remote IO PCB
 Many wires in, two wires out. 24 input channels on the board interface with analog and digital sensors. Performs analog to digital to CAN protocol conversion.
 
 ## PCB Design
